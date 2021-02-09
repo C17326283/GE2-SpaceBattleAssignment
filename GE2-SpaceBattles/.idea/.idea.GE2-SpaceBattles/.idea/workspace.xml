@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="" />
+    <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Trail.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Trail.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +36,7 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Path.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BigBoid.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RandomTarget.cs" />
       </list>
     </option>
   </component>
@@ -75,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612891529503</updated>
-      <workItem from="1612891533691" duration="702000" />
+      <workItem from="1612891533691" duration="1623000" />
     </task>
     <servers />
   </component>
