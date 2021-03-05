@@ -22,7 +22,7 @@ MonoBehaviour:
     m_Value: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.087
+    m_Value: 0.058
     min: 0
     max: 1
   clamp:
@@ -49,12 +49,12 @@ MonoBehaviour:
     m_Value: 0.96
   contrast:
     m_OverrideState: 1
-    m_Value: 51
+    m_Value: 18
     min: -100
     max: 100
   colorFilter:
-    m_OverrideState: 1
-    m_Value: {r: 0.7322891, g: 0.777703, b: 0.8301887, a: 1}
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 0.8443396, b: 0.91201806, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
@@ -83,17 +83,17 @@ MonoBehaviour:
   active: 1
   m_AdvancedMode: 0
   color:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {r: 0, g: 0, b: 0, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
   center:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {x: 0.5, y: 0.5}
   intensity:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 0.394
     min: 0
     max: 1
   smoothness:
@@ -120,15 +120,15 @@ MonoBehaviour:
   m_AdvancedMode: 0
   threshold:
     m_OverrideState: 1
-    m_Value: 0.99
+    m_Value: 0.41
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 2
     min: 0
   scatter:
     m_OverrideState: 1
-    m_Value: 0.7
+    m_Value: 0.335
     min: 0
     max: 1
   clamp:
@@ -175,6 +175,7 @@ MonoBehaviour:
   - {fileID: -4107453349671392353}
   - {fileID: 5057004591297142441}
   - {fileID: 1584315942757002885}
+  - {fileID: -2169898705435217332}
 --- !u!114 &597665543609112873
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -249,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
   m_Name: LiftGammaGain
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   lift:
     m_OverrideState: 1
