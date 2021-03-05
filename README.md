@@ -5,7 +5,7 @@
 
 ## Source:
 Mass Effect 1
-[![YouTube](https://www.youtube.com/watch?v=bNnd6oUEQ2I&list=PL7-TY0IP_35j_Ef5IZkxGcVshDtdHAxgH&index=4&t=396s)
+[![YouTube](https://www.youtube.com/static?gl=GB&template=terms)](https://www.youtube.com/watch?v=bNnd6oUEQ2I&list=PL7-TY0IP_35j_Ef5IZkxGcVshDtdHAxgH&index=4&t=396s)
 
 # Description
 This project will autonomously recreate a space scene from the ending of mass effect 1.
