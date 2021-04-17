@@ -22,26 +22,8 @@
     <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Trail - Copy.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Trail - Copy.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Trail - Green.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Trail - Green.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1/PP Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1/PP Profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/Help_Icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/Help_Icon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/UniversalIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Icons/UniversalIcon.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Layout.wlt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Layout.wlt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +32,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../FinalYearProject-VR_Ecosystem/FYPEcoVr/Assets/Scripts/PlanetGeneration/RandomGenSpawner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SequenceManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SpawnManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -61,6 +48,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/Wander.cs" />
         <option value="$PROJECT_DIR$/Assets/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Shooting.cs" />
+        <option value="$PROJECT_DIR$/Assets/TeleportSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/SpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/SequenceManager.cs" />
       </list>
     </option>
   </component>
@@ -107,6 +97,7 @@
       <workItem from="1613468664883" duration="166000" />
       <workItem from="1613468987559" duration="2874000" />
       <workItem from="1614906222023" duration="1696000" />
+      <workItem from="1618691235141" duration="1298000" />
     </task>
     <servers />
   </component>

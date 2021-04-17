@@ -14284,6 +14284,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1196486467}
+  - component: {fileID: 1196486470}
+  - component: {fileID: 1196486469}
+  - component: {fileID: 1196486468}
   m_Layer: 0
   m_Name: TeleporterSpawn point
   m_TagString: Untagged
@@ -14299,12 +14302,60 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196486466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 0.0808}
+  m_LocalPosition: {x: 0, y: -0, z: 0.1518}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 543450653661058393}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1196486468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196486466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51c3c215a682cd0498d43becd598d80d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnerGroupsInOrder:
+  - {fileID: 1196486470}
+  - {fileID: 1196486469}
+  spawnedIndex: 0
+--- !u!114 &1196486469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196486466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b519796a7d8506d488301298961c8c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipToSpawn: {fileID: 6229189764925660445, guid: d993793b019cf8f4eba38cc6a634e647, type: 3}
+  radiusToSpawn: 50
+  amountToSpawn: 5
+  spawnEffect: {fileID: 0}
+--- !u!114 &1196486470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196486466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b519796a7d8506d488301298961c8c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipToSpawn: {fileID: 7177627545569228145, guid: c0c60878895618d4a9865bfde260e13b, type: 3}
+  radiusToSpawn: 50
+  amountToSpawn: 2
+  spawnEffect: {fileID: 0}
 --- !u!1 &1206399332
 GameObject:
   m_ObjectHideFlags: 0
@@ -17530,6 +17581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1429017275}
   - component: {fileID: 1429017274}
+  - component: {fileID: 1429017276}
   m_Layer: 0
   m_Name: Sequencemanager
   m_TagString: Untagged
@@ -17647,6 +17699,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1429017276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429017273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e7fa888348e2154cae61d528d690d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnManager: {fileID: 1196486468}
 --- !u!1 &1436198033
 GameObject:
   m_ObjectHideFlags: 0
@@ -25446,8 +25511,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 413744617144029319, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 413744617144029319, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 413744617144029319, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 413744617144029319, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1122
+      value: -89
       objectReference: {fileID: 0}
     - target: {fileID: 413744617144029319, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
       propertyPath: m_LocalPosition.y
@@ -25455,7 +25532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 413744617144029319, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -750
+      value: -1807
       objectReference: {fileID: 0}
     - target: {fileID: 413744617144029319, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
       propertyPath: m_LocalRotation.w

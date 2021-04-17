@@ -24,7 +24,9 @@
           <e p="RandomTarget.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
         </e>
+        <e p="SequenceManager.cs" t="Include" />
         <e p="Shooting.cs" t="Include" />
+        <e p="SpawnManager.cs" t="Include" />
         <e p="Starfield Skybox" t="Include">
           <e p="Demo" t="Include">
             <e p="Script" t="Include">
@@ -32,6 +34,7 @@
             </e>
           </e>
         </e>
+        <e p="TeleportSpawner.cs" t="Include" />
       </e>
       <e p="GE2-SpaceBattles.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
