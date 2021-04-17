@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!64 &7177627545147988408
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2200834037319096689}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3613567641014311022, guid: 48aa410255c04ab419009ae69c07a25b, type: 3}
+--- !u!64 &7177627545630513111
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5807937684307687616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5512361600001258384, guid: 48aa410255c04ab419009ae69c07a25b, type: 3}
 --- !u!1 &7177627544316803938
 GameObject:
   m_ObjectHideFlags: 0
@@ -46,20 +74,6 @@ MonoBehaviour:
   prefab: {fileID: 6173444437283657836, guid: 4121520294649bc4cb077d3975f138e3, type: 3}
   fireRate: 0.01
   tagToShoot: Friendly
---- !u!64 &7177627545147988408
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2200834037319096689}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3613567641014311022, guid: 48aa410255c04ab419009ae69c07a25b, type: 3}
 --- !u!1 &7177627545569228145
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,21 +163,8 @@ MonoBehaviour:
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   path: {fileID: 0}
-  waypointDistance: 5
---- !u!64 &7177627545630513111
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5807937684307687616}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5512361600001258384, guid: 48aa410255c04ab419009ae69c07a25b, type: 3}
+  waypointDistance: 200
+  spawnedPathName: ReaperPath
 --- !u!95 &7177627546067790900
 Animator:
   serializedVersion: 3
@@ -200,11 +201,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 48aa410255c04ab419009ae69c07a25b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 48aa410255c04ab419009ae69c07a25b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -249
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 48aa410255c04ab419009ae69c07a25b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -212,19 +213,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 48aa410255c04ab419009ae69c07a25b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 48aa410255c04ab419009ae69c07a25b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9823428
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 48aa410255c04ab419009ae69c07a25b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.18709034
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 48aa410255c04ab419009ae69c07a25b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 21.566
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 48aa410255c04ab419009ae69c07a25b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y

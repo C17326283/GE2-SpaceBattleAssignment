@@ -11,6 +11,8 @@ public class FollowPath : SteeringBehaviour {
 
     public float waypointDistance = 5;
 
+    public string spawnedPathName;
+
     public void OnDrawGizmos()
     {
         if (isActiveAndEnabled && Application.isPlaying)
@@ -22,7 +24,10 @@ public class FollowPath : SteeringBehaviour {
 
     public void Start()
     {
-        
+        if (path == null) //No path on start so spawned ones need to dynamically assign it
+        {
+            path = GameObject.Find(spawnedPathName).GetComponent<Path>();
+        }
     }
 
     public override Vector3 Calculate()

@@ -5,13 +5,22 @@ using UnityEngine;
 public class OffsetPursue : SteeringBehaviour
 {
     public Boid leader;
+
+    public string spawnedLeaderName;
     Vector3 targetPos;
     Vector3 worldTarget;
     Vector3 offset;
+    
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        if (leader == null) //No path on start so spawned ones need to dynamically assign it
+        {
+            leader = GameObject.Find(spawnedLeaderName+"(Clone)").GetComponent<Boid>();
+        }
+        
         offset = transform.position - leader.transform.position;
 
         offset = Quaternion.Inverse(leader.transform.rotation) * offset;

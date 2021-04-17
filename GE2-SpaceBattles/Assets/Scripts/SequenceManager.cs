@@ -17,6 +17,7 @@ public class SequenceManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2);//wait 2 seconds
         spawnManager.SpawnNextGroup();//spawn reapers
+        yield return new WaitForSeconds(.1f);
         spawnManager.SpawnNextGroup();//spawn reapers
         yield return new WaitForSeconds(10);
         spawnManager.SpawnNextGroup();//spawn alliance
