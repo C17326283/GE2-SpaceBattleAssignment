@@ -20,14 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/SmolReaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/SmolReaper.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/teleporter.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/teleporter.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/teleporter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/teleporter.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1/PP Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1/PP Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,10 +56,12 @@
         <option value="$PROJECT_DIR$/Assets/PathManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/OffsetPursue.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/FollowPath.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/CameraTargeting.cs" />
         <option value="$PROJECT_DIR$/Assets/CameraPointManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rotator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" />
       </list>
     </option>
   </component>
@@ -107,7 +108,8 @@
       <workItem from="1613468664883" duration="166000" />
       <workItem from="1613468987559" duration="2874000" />
       <workItem from="1614906222023" duration="1696000" />
-      <workItem from="1618691235141" duration="10150000" />
+      <workItem from="1618691235141" duration="10788000" />
+      <workItem from="1618755931613" duration="3352000" />
     </task>
     <servers />
   </component>
@@ -127,5 +129,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="638" y="253" width="644" height="534" key="find.popup" timestamp="1618755969848">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="638" y="253" width="644" height="534" key="find.popup/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@0.0.1920.1040" timestamp="1618755969848" />
   </component>
 </project>

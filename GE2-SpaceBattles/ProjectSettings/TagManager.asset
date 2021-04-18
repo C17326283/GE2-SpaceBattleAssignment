@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Enemy
   - Friendly
+  - Reaper
+  - Normandy
+  - Alliance
+  - Sovereign
   layers:
   - Default
   - TransparentFX

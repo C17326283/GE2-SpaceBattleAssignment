@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 9147041654983247201}
   m_Layer: 0
   m_Name: SmolReaper
-  m_TagString: Untagged
+  m_TagString: Reaper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -164,7 +164,7 @@ MonoBehaviour:
   force: {x: 0, y: 0, z: 0}
   boid: {fileID: 0}
   leader: {fileID: 0}
-  spawnedLeaderName: Reaper
+  spawnedLeaderTag: Sovereign
 --- !u!95 &7177627546067790900
 Animator:
   serializedVersion: 3

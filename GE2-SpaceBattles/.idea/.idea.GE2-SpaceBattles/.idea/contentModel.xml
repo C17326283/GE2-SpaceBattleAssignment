@@ -24,6 +24,7 @@
           </e>
           <e p="Projectile.cs" t="Include" />
           <e p="RandomTarget.cs" t="Include" />
+          <e p="Rotator.cs" t="Include" />
           <e p="SequenceManager.cs" t="Include" />
           <e p="Shooting.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />

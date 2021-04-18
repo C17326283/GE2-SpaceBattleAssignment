@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 483149042266115632}
   m_Layer: 0
   m_Name: citadel1
-  m_TagString: Untagged
+  m_TagString: Alliance
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

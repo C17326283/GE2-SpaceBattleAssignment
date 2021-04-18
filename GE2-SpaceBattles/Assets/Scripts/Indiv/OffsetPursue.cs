@@ -6,7 +6,7 @@ public class OffsetPursue : SteeringBehaviour
 {
     public Boid leader;
 
-    public string spawnedLeaderName;
+    public string spawnedLeaderTag;
     Vector3 targetPos;
     Vector3 worldTarget;
     Vector3 offset;
@@ -16,10 +16,9 @@ public class OffsetPursue : SteeringBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (leader == null) //No path on start so spawned ones need to dynamically assign it
-        {
-            leader = GameObject.Find(spawnedLeaderName+"(Clone)").GetComponent<Boid>();
-        }
+        leader = gameObject.GetComponent<Boid>();
+        StartCoroutine(GetLeaderLate());
+        
         
         offset = transform.position - leader.transform.position;
 
@@ -36,4 +35,11 @@ public class OffsetPursue : SteeringBehaviour
         targetPos = worldTarget + (leader.velocity * time);
         return boid.ArriveForce(targetPos);
     }
+
+    IEnumerator GetLeaderLate()
+    {
+        yield return new WaitForSeconds(4);
+        leader = GameObject.FindWithTag(spawnedLeaderTag).GetComponent<Boid>();
+    }
+    
 }

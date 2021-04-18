@@ -13,7 +13,7 @@ public class SpawnManager : MonoBehaviour
 
     public void SpawnNextGroup()
     {
-        spawnerGroupsInOrder[spawnedIndex].SpawnGroup();
+        spawnerGroupsInOrder[spawnedIndex].TriggerSpawn();
 
         spawnedIndex += 1;
     }
