@@ -322,6 +322,9 @@ MonoBehaviour:
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
   tagToShoot: Enemy
+  readyToShoot: 0
+  aimingAtTarget: 0
+  target: {fileID: 0}
 --- !u!1 &6229189764325525041
 GameObject:
   m_ObjectHideFlags: 0
@@ -471,6 +474,7 @@ GameObject:
   - component: {fileID: 6229189764925660432}
   - component: {fileID: 6229189764925660447}
   - component: {fileID: 6229189764925660446}
+  - component: {fileID: 6406610042412187381}
   m_Layer: 0
   m_Name: Ship (8)
   m_TagString: Alliance
@@ -536,6 +540,22 @@ MonoBehaviour:
   target: {x: 0, y: 0, z: 0}
   timeToWait: 1
   radius: 500
+--- !u!114 &6406610042412187381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6229189764925660445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d181d075cff82e74bb6fdbe2279eb3c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 200
+  currentHealth: 200
+  DeathExplosion: {fileID: 7170199903285590178, guid: 26af278b6a7a2984685a10043378302b, type: 3}
+  alive: 1
 --- !u!1 &6229189765184331937
 GameObject:
   m_ObjectHideFlags: 0

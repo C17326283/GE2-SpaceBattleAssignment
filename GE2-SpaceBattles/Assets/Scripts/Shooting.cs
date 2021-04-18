@@ -9,6 +9,12 @@ public class Shooting : MonoBehaviour
     public float fireRate = 0.2f;
 
     public String tagToShoot = "Enemy";
+
+    public bool readyToShoot;
+
+    public bool aimingAtTarget;
+
+    public GameObject target;
     // Start is called before the first frame update
     void Start()
     {

@@ -74,6 +74,9 @@ MonoBehaviour:
   prefab: {fileID: 6173444437283657836, guid: 4121520294649bc4cb077d3975f138e3, type: 3}
   fireRate: 0.01
   tagToShoot: Friendly
+  readyToShoot: 0
+  aimingAtTarget: 0
+  target: {fileID: 0}
 --- !u!1 &7177627545569228145
 GameObject:
   m_ObjectHideFlags: 0
@@ -86,6 +89,7 @@ GameObject:
   - component: {fileID: 7177627545569228147}
   - component: {fileID: 7177627545569228149}
   - component: {fileID: 9147041654983247201}
+  - component: {fileID: -1946592419833695662}
   m_Layer: 0
   m_Name: SmolReaper
   m_TagString: Reaper
@@ -165,6 +169,23 @@ MonoBehaviour:
   boid: {fileID: 0}
   leader: {fileID: 0}
   spawnedLeaderTag: Sovereign
+--- !u!114 &-1946592419833695662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7177627545569228145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d181d075cff82e74bb6fdbe2279eb3c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 200
+  currentHealth: 200
+  DeathExplosion: {fileID: 7170199903285590178, guid: 26af278b6a7a2984685a10043378302b, type: 3}
+  alive: 1
+  explosionSize: 50
 --- !u!95 &7177627546067790900
 Animator:
   serializedVersion: 3
