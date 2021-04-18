@@ -19,6 +19,7 @@ public class TeleportSpawner : MonoBehaviour
             Vector3 randSpawnPos = randPos + this.transform.position;//around center of obj
 
             GameObject spawnedObj = GameObject.Instantiate(shipToSpawn, randSpawnPos, this.transform.rotation);
+            spawnedObj.transform.forward = this.transform.forward;
 
         }
         

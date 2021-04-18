@@ -24,19 +24,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/SmolReaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/SmolReaper.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Projectile.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Projectile.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Indiv/FollowPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Indiv/FollowPath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Indiv/OffsetPursue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Indiv/OffsetPursue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SequenceManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SequenceManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shooting.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shooting.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SpawnManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SpawnManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeleportSpawner.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TeleportSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +38,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/CameraPointManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CameraTargeting.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../FinalYearProject-VR_Ecosystem/FYPEcoVr/Assets/Scripts/PlanetGeneration/RandomGenSpawner.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -63,9 +55,12 @@
         <option value="$PROJECT_DIR$/Assets/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/SequenceManager.cs" />
         <option value="$PROJECT_DIR$/Assets/PathManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/FollowPath.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/OffsetPursue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/FollowPath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/CameraTargeting.cs" />
+        <option value="$PROJECT_DIR$/Assets/CameraPointManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
       </list>
     </option>
   </component>
@@ -112,7 +107,7 @@
       <workItem from="1613468664883" duration="166000" />
       <workItem from="1613468987559" duration="2874000" />
       <workItem from="1614906222023" duration="1696000" />
-      <workItem from="1618691235141" duration="3212000" />
+      <workItem from="1618691235141" duration="10150000" />
     </task>
     <servers />
   </component>

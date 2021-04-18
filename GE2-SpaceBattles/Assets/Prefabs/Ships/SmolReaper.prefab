@@ -124,11 +124,11 @@ MonoBehaviour:
   force: {x: -0.020665003, y: -0.8377609, z: 0.21433336}
   acceleration: {x: -0.116662376, y: -0.05639994, z: -0.3014839}
   velocity: {x: -5.3675203, y: -3.6852767, z: -13.512153}
-  mass: 7.03
+  mass: 5
   damping: 0.001
   banking: 0.001
-  maxSpeed: 130
-  maxForce: 300
+  maxSpeed: 300
+  maxForce: 800
 --- !u!95 &7177627545569228149
 Animator:
   serializedVersion: 3
