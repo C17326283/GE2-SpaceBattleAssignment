@@ -20,12 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/teleporter.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/teleporter.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/teleporter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/teleporter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Fire &amp; Explosion Effects/Materials/EnergyShockwave 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Fire &amp; Explosion Effects/Materials/EnergyShockwave 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Effects/EnergyExplosion (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Effects/EnergyExplosion (1).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Life.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Life.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TeleportTrail.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TeleportTrail.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Normandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Normandy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Ship (8).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Ship (8).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/SmolReaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/SmolReaper.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1/PP Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1/PP Profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +68,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rotator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Life.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
       </list>
     </option>
   </component>
@@ -110,6 +118,7 @@
       <workItem from="1614906222023" duration="1696000" />
       <workItem from="1618691235141" duration="10788000" />
       <workItem from="1618755931613" duration="3352000" />
+      <workItem from="1618843782572" duration="6109000" />
     </task>
     <servers />
   </component>

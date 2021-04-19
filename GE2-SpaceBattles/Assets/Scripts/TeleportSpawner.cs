@@ -36,7 +36,7 @@ public class TeleportSpawner : MonoBehaviour
             GameObject spawnedTrail = GameObject.Instantiate(spawnTrail, spawnedObj.transform.position, this.transform.rotation,spawnedObj.transform);
             spawnedTrail.GetComponent<TrailRenderer>().startWidth = spawnEffectScale*4;
             spawnedTrail.GetComponent<TrailRenderer>().startWidth = spawnEffectScale*4;
-            Destroy(spawnedTrail,.5f);
+            Destroy(spawnedTrail,.1f);
 
             yield return new WaitForSeconds(0.01f);
             //zoom to spawn pos

@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="CameraPointManager.cs" t="Include" />
         <e p="CameraTargeting.cs" t="Include" />
+        <e p="Life.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="BigBoid.cs" t="Include" />
           <e p="BoidPath.cs" t="Include" />

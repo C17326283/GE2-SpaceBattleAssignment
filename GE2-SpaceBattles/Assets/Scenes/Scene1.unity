@@ -1627,7 +1627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -5604,7 +5604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -8293,7 +8293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -11438,7 +11438,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -12201,7 +12201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -12388,7 +12388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -13375,7 +13375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -13668,7 +13668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -13717,7 +13717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -14191,7 +14191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -14378,7 +14378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -14647,7 +14647,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222011770}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2785, y: 0, z: -1984}
+  m_LocalPosition: {x: -1481, y: 0, z: 1737}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 556801587}
@@ -14914,7 +14914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -14963,7 +14963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 4121520294649bc4cb077d3975f138e3, type: 3}
   fireRate: 0.01
-  tagToShoot: Friendly
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -15967,7 +15967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -16902,7 +16902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -18484,7 +18484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -21830,7 +21830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -22295,7 +22295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 4121520294649bc4cb077d3975f138e3, type: 3}
   fireRate: 0.01
-  tagToShoot: Friendly
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -23044,7 +23044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -23331,7 +23331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   fireRate: 0.05
-  tagToShoot: Enemy
+  tagsToShoot: []
   readyToShoot: 0
   aimingAtTarget: 0
   target: {fileID: 0}
@@ -24661,7 +24661,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2658930117068075362, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
       propertyPath: spawnEffectScale
-      value: 30
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658930117068075362, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
+      propertyPath: timeBetweenSpawn
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2658930117068075369, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24715,6 +24719,10 @@ PrefabInstance:
       propertyPath: spawnEffectScale
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 2658930117068075372, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
+      propertyPath: timeBetweenSpawn
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2658930117068075373, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
       propertyPath: spawnTrail
       value: 
@@ -24731,6 +24739,10 @@ PrefabInstance:
       propertyPath: spawnEffectScale
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 2658930117068075373, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
+      propertyPath: timeBetweenSpawn
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2658930117068075375, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
       propertyPath: spawnTrail
       value: 
@@ -24745,7 +24757,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2658930117068075375, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
       propertyPath: spawnEffectScale
-      value: 30
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658930117068075375, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
+      propertyPath: timeBetweenSpawn
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
