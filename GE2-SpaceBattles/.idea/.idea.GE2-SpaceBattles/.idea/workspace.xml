@@ -22,17 +22,11 @@
     <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Fire &amp; Explosion Effects/Materials/EnergyShockwave 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Fire &amp; Explosion Effects/Materials/EnergyShockwave 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Effects/EnergyExplosion (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Effects/EnergyExplosion (1).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Life.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Life.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TeleportTrail.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TeleportTrail.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Normandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Normandy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Ship (8).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Ship (8).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/SmolReaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/SmolReaper.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Indiv/FollowPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Indiv/FollowPath.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Indiv/Path.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Indiv/Path.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +40,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/CameraPointManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CameraTargeting.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../FinalYearProject-VR_Ecosystem/FYPEcoVr/Assets/Scripts/PlanetGeneration/RandomGenSpawner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -61,7 +56,6 @@
         <option value="$PROJECT_DIR$/Assets/SequenceManager.cs" />
         <option value="$PROJECT_DIR$/Assets/PathManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/OffsetPursue.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/FollowPath.cs" />
         <option value="$PROJECT_DIR$/Assets/CameraTargeting.cs" />
         <option value="$PROJECT_DIR$/Assets/CameraPointManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
@@ -70,6 +64,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Life.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/PathManage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/FollowPath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" />
       </list>
     </option>
   </component>
@@ -118,7 +115,8 @@
       <workItem from="1614906222023" duration="1696000" />
       <workItem from="1618691235141" duration="10788000" />
       <workItem from="1618755931613" duration="3352000" />
-      <workItem from="1618843782572" duration="6109000" />
+      <workItem from="1618843782572" duration="8138000" />
+      <workItem from="1619279723980" duration="2446000" />
     </task>
     <servers />
   </component>

@@ -67,7 +67,7 @@ public class Shooting : MonoBehaviour
     {
         while (true)
         {
-            print("repeast shooting");
+//            print("repeast shooting");
             if (GetAngleToTarget() < shootAngle && readyToShoot)
             {
                 print("shoot");

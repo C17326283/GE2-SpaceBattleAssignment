@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Path : MonoBehaviour {
+public class PathManage : MonoBehaviour {
 
     public List<Vector3> waypoints = new List<Vector3>();
 

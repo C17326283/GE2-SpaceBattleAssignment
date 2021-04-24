@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class FollowPath : SteeringBehaviour {
 
-    public Path path;
+    public PathManage path;
 
     Vector3 nextWaypoint;
 
@@ -26,7 +26,7 @@ public class FollowPath : SteeringBehaviour {
     {
         if (path == null) //No path on start so spawned ones need to dynamically assign it
         {
-            path = GameObject.Find(spawnedPathName).GetComponent<Path>();
+            path = GameObject.Find(spawnedPathName).GetComponent<PathManage>();
         }
     }
 
