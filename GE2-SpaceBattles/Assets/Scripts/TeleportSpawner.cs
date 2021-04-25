@@ -14,6 +14,8 @@ public class TeleportSpawner : MonoBehaviour
     public float timeBetweenSpawn = .2f;
     public float spawnEffectScale = 2f;
 
+    public GameObject activeShipsHolder;
+
     private float startDist = 2000f;
 
     public void TriggerSpawn()
@@ -31,6 +33,7 @@ public class TeleportSpawner : MonoBehaviour
             //Spawn ship far away
             GameObject spawnedObj = GameObject.Instantiate(shipToSpawn, randSpawnPos+(-transform.forward*startDist), this.transform.rotation);
             spawnedObj.transform.forward = this.transform.forward;
+            spawnedObj.transform.SetParent(activeShipsHolder.transform);
 
             //add trail
             GameObject spawnedTrail = GameObject.Instantiate(spawnTrail, spawnedObj.transform.position, this.transform.rotation,spawnedObj.transform);

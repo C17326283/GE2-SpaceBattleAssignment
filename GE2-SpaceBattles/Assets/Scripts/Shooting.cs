@@ -52,7 +52,7 @@ public class Shooting : MonoBehaviour
 
     public float GetAngleToTarget()
     {
-        if (target != null)
+        if (target != null && target.activeInHierarchy)
         {
 //            print("get angle");
             Vector3 toTarget = (target.transform.position-transform.position).normalized;

@@ -9,9 +9,12 @@ public class Projectile : MonoBehaviour
 
     private Rigidbody rb;
 
-    public float hitInFrontDistance = 20f;
+    public float hitInFrontDistance = 50f;
 
     public float hitDamage = 5;
+
+    public Vector3 lastPos;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,26 +22,62 @@ public class Projectile : MonoBehaviour
         rb.AddForce(transform.forward*force,ForceMode.Acceleration);
         Destroy(this.gameObject,20);
     }
+    
+    public void OnDrawGizmos()
+    {
+        if (isActiveAndEnabled && Application.isPlaying)
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawLine(transform.position, transform.position + (transform.forward*hitInFrontDistance));
+        }
+    }
 
     // Update is called once per frame
     void Update()
     {
+        
+        Vector3 bulletDir = ( lastPos - transform.position ).normalized;
+        float moveLen = Vector3.Distance(lastPos,transform.position);
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, hitInFrontDistance))
+        if (Physics.Raycast(lastPos, bulletDir, out hit, moveLen))
         {
+            //try get a life script reference
+            Life otherLife = CheckParentLifeRecursive(hit.transform.gameObject);
             
-            if (hit.transform.GetComponentInParent<Life>())
+            if (otherLife!=null)
             {
                 print("hit "+hit.transform.name);
-                Life otherLife = hit.transform.GetComponentInParent<Life>();
                 otherLife.currentHealth -= hitDamage;
+                transform.position = hit.point;
+                rb.isKinematic = true;
+                
             }
             else
             {
-                print("no life hit "+hit.transform.name);
+//                print("no life hit "+hit.transform.name);
             }
         }
+        lastPos = transform.position;
         
+    }
+
+    public Life CheckParentLifeRecursive(GameObject objToCheck)
+    {
+        if (objToCheck.GetComponent<Life>() != null)
+        {
+            //found life obj
+            return objToCheck.GetComponent<Life>();
+        }
+        else if(objToCheck.transform.parent != null && objToCheck.transform.parent.transform.CompareTag(objToCheck.transform.tag))//check parent if its still obj
+        {
+            //check parent and pass result back
+            return CheckParentLifeRecursive(objToCheck.transform.parent.gameObject);
+        }
+        else
+        {
+            //found nothing
+            return null;
+        }
     }
     
     

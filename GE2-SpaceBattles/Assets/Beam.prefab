@@ -142,13 +142,13 @@ TrailRenderer:
   m_Time: 3
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 189.23135
+    widthMultiplier: 10.353712
     widthCurve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.0049751247
-        value: 0.31250036
+        time: 0.023727417
+        value: 0.328125
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -156,8 +156,8 @@ TrailRenderer:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.9380272
-        value: 0.29257524
+        time: 0.9481733
+        value: 0.28476274
         inSlope: -0.14029677
         outSlope: -0.14029677
         tangentMode: 0
@@ -227,6 +227,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 1000000
+  hitInFrontDistance: 500
+  hitDamage: 5
+  lastPos: {x: 0, y: 0, z: 0}
 --- !u!54 &7961098023568849934
 Rigidbody:
   m_ObjectHideFlags: 0

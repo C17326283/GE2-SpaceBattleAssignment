@@ -21,11 +21,30 @@
   <component name="ChangeListManager">
     <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Beam.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Beam.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Effects/DefaultTrail.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Effects/DefaultTrail.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Life.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Life.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Flagship.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Flagship.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Normandy.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Normandy.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Ship (8).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Ship (8).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/SmolReaper.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/SmolReaper.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/citadel1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/citadel1.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Indiv/ShipBoid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Indiv/ShipBoid.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,19 +77,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/OffsetPursue.cs" />
         <option value="$PROJECT_DIR$/Assets/CameraTargeting.cs" />
         <option value="$PROJECT_DIR$/Assets/CameraPointManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rotator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Life.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/PathManage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/FollowPath.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/ShipBoid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/FollowBehaviours.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1.txt" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/ShipBoid.cs" />
+        <option value="$PROJECT_DIR$/Assets/Life.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
       </list>
     </option>
   </component>
@@ -121,7 +140,7 @@
       <workItem from="1618755931613" duration="3352000" />
       <workItem from="1618843782572" duration="8138000" />
       <workItem from="1619279723980" duration="10102000" />
-      <workItem from="1619352862962" duration="10005000" />
+      <workItem from="1619352862962" duration="21543000" />
     </task>
     <servers />
   </component>

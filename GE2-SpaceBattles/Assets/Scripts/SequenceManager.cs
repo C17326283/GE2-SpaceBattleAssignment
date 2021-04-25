@@ -22,13 +22,13 @@ public class SequenceManager : MonoBehaviour
         Seq1();
         yield return new WaitForSeconds(.1f);
         Seq2();
-        yield return new WaitForSeconds(15f);
+        yield return new WaitForSeconds(20f);
         Seq3();
         yield return new WaitForSeconds(.1f);
         Seq4();
         yield return new WaitForSeconds(10f);
         Seq5();
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(40f);
         Seq6();
     }
 

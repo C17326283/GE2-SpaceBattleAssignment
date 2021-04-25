@@ -19,8 +19,8 @@ public class ShipBoid : MonoBehaviour
     
     public void OnDrawGizmos()
     {
-        Gizmos.color = Color.green;
-        Gizmos.DrawLine(transform.position, rb.transform.InverseTransformDirection(forceToApply.normalized));
+        //Gizmos.color = Color.green;
+        //Gizmos.DrawLine(transform.position, rb.transform.InverseTransformDirection(forceToApply.normalized));
     }
 
     private void Start()

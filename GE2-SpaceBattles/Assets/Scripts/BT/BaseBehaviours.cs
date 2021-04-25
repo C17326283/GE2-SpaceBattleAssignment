@@ -27,6 +27,10 @@ public class BaseBehaviours : MonoBehaviour
     public GameObject wanderPoint;
     public float divertRadius = 20;
 
+    public float patrolOffsetDistance;
+
+    public String followObjName;
+
     
     // Start is called before the first frame update
     void Start()
@@ -35,6 +39,7 @@ public class BaseBehaviours : MonoBehaviour
         shipsHolder = GameObject.Find("-ActiveShips-");
         gun = GetComponentInChildren<Shooting>();
         wanderPoint = new GameObject("wanderpoint-"+transform.name);
+        defaultPosObj = GameObject.Find(followObjName);
     }
 
     // Update is called once per frame
@@ -65,6 +70,7 @@ public class BaseBehaviours : MonoBehaviour
             if (target.transform.CompareTag(tag))
             {
                 wanderPoint.transform.position = target.transform.position + (Random.onUnitSphere * divertRadius);
+                wanderPoint.transform.parent = null;
                 target = wanderPoint.transform;
                 Task.current.Succeed();
                 return;
@@ -111,7 +117,9 @@ public class BaseBehaviours : MonoBehaviour
     {
         if (defaultPosObj)
         {
-            target = defaultPosObj.transform;
+            wanderPoint.transform.position = defaultPosObj.transform.position + (Random.onUnitSphere * patrolOffsetDistance);
+            wanderPoint.transform.parent = defaultPosObj.transform;
+            target = wanderPoint.transform;
             Task.current.Succeed();
         }
         else
@@ -123,8 +131,9 @@ public class BaseBehaviours : MonoBehaviour
     
     
     
+    
     [Task]
-    public void StopFollowing()
+    public void SetNoTarget()
     {
         target = null;//remove target so no target to chase
         Task.current.Succeed();
@@ -136,6 +145,10 @@ public class BaseBehaviours : MonoBehaviour
     {
         if (target && target.gameObject.activeInHierarchy && Vector3.Distance(target.position,transform.position)<engagementDistance)
         {
+            if (gameObject.GetComponent<Life>() != null)
+            {
+                
+            }
             Task.current.Succeed();
         }
         else
@@ -147,23 +160,37 @@ public class BaseBehaviours : MonoBehaviour
     [Task]
     public void GetTarget()
     {
+        float closestDist = Mathf.Infinity;
         //Transform[] allShips = shipsHolder.GetComponentsInChildren<Transform>();//all ships in the holder
         foreach (Transform ship in shipsHolder.transform)//search all immediate children
         {
             foreach (var tag in tagsToShoot)
             {
-                if (ship.transform.CompareTag(tag) && ship!=transform && Vector3.Distance(ship.transform.position,transform.position)<engagementDistance)
+                if (ship.transform.CompareTag(tag) && ship.gameObject.activeInHierarchy && ship!=transform && Vector3.Distance(ship.transform.position,transform.position)<engagementDistance)
                 {
+                    //get closest
+                    float curDist = Vector3.Distance(ship.transform.position, transform.position);
+                    if (curDist < closestDist)
+                    {
+                        target = ship.transform;
+                        gun.target = target.gameObject;
+                        closestDist = curDist;
+                    }
 //                    print("set target bt");
-                    target = ship.transform;
-                    gun.target = target.gameObject;
                     Task.current.Succeed();
-                    return;//exit once found
+                    //return;//exit once found
                 }
             }
         }
-        print("no t bt");
-        Task.current.Fail();//only gets here if no target
+        
+        if(closestDist<Mathf.Infinity)
+            Task.current.Succeed();
+        else
+        {
+            //print("no t bt");
+            Task.current.Fail();//only gets here if no target
+        }
+         
     }
     
     [Task]

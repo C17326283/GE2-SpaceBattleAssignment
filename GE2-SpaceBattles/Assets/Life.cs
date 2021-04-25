@@ -59,6 +59,8 @@ public class Life : MonoBehaviour
             tranRb.velocity = new Vector3(Random.Range(-explosionForce, explosionForce), Random.Range(-explosionForce, explosionForce), Random.Range(-explosionForce, explosionForce));
             
         }
+
+        this.enabled = false;
         Destroy(this.gameObject, timeToDespawnAfterDeath);
         //Destroy(transform.GetChild(0), 7);
     }
