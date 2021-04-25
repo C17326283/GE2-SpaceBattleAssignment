@@ -1634,6 +1634,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!1 &113157782
 GameObject:
   m_ObjectHideFlags: 0
@@ -5684,6 +5685,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!1 &468546632
 GameObject:
   m_ObjectHideFlags: 0
@@ -8376,6 +8378,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!1 &652796602
 GameObject:
   m_ObjectHideFlags: 0
@@ -11608,6 +11611,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!4 &888181249 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
@@ -12374,6 +12378,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!1 &968555407
 GameObject:
   m_ObjectHideFlags: 0
@@ -12564,6 +12569,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!4 &971432540 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
@@ -13554,6 +13560,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!1 &1077036188
 GameObject:
   m_ObjectHideFlags: 0
@@ -13852,6 +13859,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!1 &1116131087
 GameObject:
   m_ObjectHideFlags: 0
@@ -13904,6 +13912,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!1001 &1122499121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14381,6 +14390,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!1 &1175905378
 GameObject:
   m_ObjectHideFlags: 0
@@ -14571,6 +14581,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!1001 &1178115843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15110,6 +15121,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!1 &1248982849
 GameObject:
   m_ObjectHideFlags: 0
@@ -15162,6 +15174,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!1 &1251125206
 GameObject:
   m_ObjectHideFlags: 0
@@ -16218,6 +16231,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!1001 &1350583024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17161,6 +17175,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!1001 &1405183339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18746,6 +18761,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!1 &1493156995 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9013638940889411661, guid: 48aa410255c04ab419009ae69c07a25b, type: 3}
@@ -22230,6 +22246,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!4 &1930034200 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
@@ -22698,6 +22715,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!1 &1961157235
 GameObject:
   m_ObjectHideFlags: 0
@@ -23450,6 +23468,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!1 &1992346050 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5546747315237514756, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
@@ -23775,6 +23794,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.1
 --- !u!1 &2036679566
 GameObject:
   m_ObjectHideFlags: 0
@@ -25268,7 +25288,7 @@ PrefabInstance:
       objectReference: {fileID: 4829772502669444026, guid: 71b163d7b9664394b8e1987e2a0b232a, type: 3}
     - target: {fileID: 2658930117068075362, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
       propertyPath: amountToSpawn
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2658930117068075362, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
       propertyPath: spawnEffectScale
@@ -25356,7 +25376,7 @@ PrefabInstance:
       objectReference: {fileID: 4829772502669444026, guid: 71b163d7b9664394b8e1987e2a0b232a, type: 3}
     - target: {fileID: 2658930117068075373, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
       propertyPath: amountToSpawn
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2658930117068075373, guid: 63c6d8870cfaae249b2f4f11f13c47ab, type: 3}
       propertyPath: spawnEffectScale

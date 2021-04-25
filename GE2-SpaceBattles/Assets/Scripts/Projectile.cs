@@ -14,13 +14,15 @@ public class Projectile : MonoBehaviour
     public float hitDamage = 5;
 
     public Vector3 lastPos;
+
+    public float destroyTime = 10;
     
     // Start is called before the first frame update
     void Start()
     {
         rb = this.gameObject.GetComponent<Rigidbody>();
         rb.AddForce(transform.forward*force,ForceMode.Acceleration);
-        Destroy(this.gameObject,20);
+        Destroy(this.gameObject,destroyTime);
     }
     
     public void OnDrawGizmos()
@@ -49,8 +51,10 @@ public class Projectile : MonoBehaviour
                 print("hit "+hit.transform.name);
                 otherLife.currentHealth -= hitDamage;
                 transform.position = hit.point;
-                rb.isKinematic = true;
                 
+                rb.isKinematic = true;
+                GetComponent<MeshRenderer>().enabled = false;
+
             }
             else
             {

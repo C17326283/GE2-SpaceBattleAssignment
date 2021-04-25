@@ -145,11 +145,16 @@ public class BaseBehaviours : MonoBehaviour
     {
         if (target && target.gameObject.activeInHierarchy && Vector3.Distance(target.position,transform.position)<engagementDistance)
         {
-            if (gameObject.GetComponent<Life>() != null)
+            //random chance of reseting so it can check for new target
+            if (Random.value < 0.05f)
             {
-                
+                Task.current.Fail();
             }
-            Task.current.Succeed();
+            else
+            {
+                Task.current.Succeed();
+            }
+            
         }
         else
         {

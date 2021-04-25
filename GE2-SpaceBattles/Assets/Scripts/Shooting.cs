@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Shooting : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class Shooting : MonoBehaviour
 
 
     public float rayDist = 10000f;
+
+    public float maxAccuracyOffset = .1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -85,8 +88,15 @@ public class Shooting : MonoBehaviour
     public void Shoot()
     {
         Vector3 toTarget = (target.transform.position-transform.position).normalized;
+        
+        float randX = Random.Range(-maxAccuracyOffset, maxAccuracyOffset);
+        float randY = Random.Range(-maxAccuracyOffset, maxAccuracyOffset);
+        toTarget.x += randX;
+        toTarget.y += randY;
         GameObject spawned = Instantiate(prefab);
-        spawned.transform.forward = toTarget;
+
+        
+        spawned.transform.forward = toTarget ;
         spawned.transform.position = this.transform.position;
     }
 

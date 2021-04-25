@@ -52,6 +52,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 1000
+  maxAccuracyOffset: 0.01
 --- !u!1 &5655017480225913835
 GameObject:
   m_ObjectHideFlags: 0

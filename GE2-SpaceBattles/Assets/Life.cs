@@ -42,7 +42,7 @@ public class Life : MonoBehaviour
         alive = false;
         GameObject explosion = GameObject.Instantiate(DeathExplosion, transform.position, this.transform.rotation);
         explosion.transform.localScale = new Vector3(explosionSize,explosionSize,explosionSize);
-        gameObject.GetComponent<Boid>().enabled = false;
+        gameObject.GetComponent<ShipBoid>().enabled = false;
         ExplodeParts();
     }
     

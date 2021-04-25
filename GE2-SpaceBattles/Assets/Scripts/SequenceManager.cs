@@ -28,7 +28,7 @@ public class SequenceManager : MonoBehaviour
         Seq4();
         yield return new WaitForSeconds(10f);
         Seq5();
-        yield return new WaitForSeconds(40f);
+        yield return new WaitForSeconds(60f);
         Seq6();
     }
 
@@ -58,7 +58,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq5()//move cam closer
     {
-        camTargeting.transform.position = normandy.transform.position + (-normandy.transform.forward*20)+(normandy.transform.up*5);
+        camTargeting.transform.position = normandy.transform.position + (-normandy.transform.forward*25)+(normandy.transform.up*8);
         camTargeting.transform.parent = normandy.transform;
         //spawnManager.SpawnNextGroup();
     }
