@@ -29,4 +29,6 @@ tree("Arrive")
         HasActiveTarget()
         HasArrived()
         fallback
-            StopFollowing()
+            Divert()
+            GetTarget()
+        

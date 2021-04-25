@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Panda;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class BaseBehaviours : MonoBehaviour
 {
@@ -23,12 +24,17 @@ public class BaseBehaviours : MonoBehaviour
     
     public Shooting gun;
     
+    public GameObject wanderPoint;
+    public float divertRadius = 20;
+
+    
     // Start is called before the first frame update
     void Start()
     {
         shipBoid = GetComponent<ShipBoid>();
         shipsHolder = GameObject.Find("-ActiveShips-");
         gun = GetComponentInChildren<Shooting>();
+        wanderPoint = new GameObject("wanderpoint-"+transform.name);
     }
 
     // Update is called once per frame
@@ -50,6 +56,39 @@ public class BaseBehaviours : MonoBehaviour
         }
         
     }
+    
+    [Task]
+    public void Divert()
+    {
+        foreach (var tag in tagsToShoot)
+        {
+            if (target.transform.CompareTag(tag))
+            {
+                wanderPoint.transform.position = target.transform.position + (Random.onUnitSphere * divertRadius);
+                target = wanderPoint.transform;
+                Task.current.Succeed();
+                return;
+            }
+        }
+        Task.current.Fail();
+    }
+    
+    /*
+     * [Task]
+    public void Divert()
+    {
+        if (target && target == wanderPoint)
+        {
+            wanderPoint.transform.position = target.transform.position + (Random.onUnitSphere * divertRadius);
+            target = wanderPoint.transform;
+            Task.current.Succeed();
+        }
+        else
+        {
+            Task.current.Fail();
+        }
+    }
+     */
     
     /*
     [Task]
@@ -79,8 +118,8 @@ public class BaseBehaviours : MonoBehaviour
         {
             Task.current.Fail();
         }
-        
     }
+    
     
     
     
@@ -115,7 +154,7 @@ public class BaseBehaviours : MonoBehaviour
             {
                 if (ship.transform.CompareTag(tag) && ship!=transform && Vector3.Distance(ship.transform.position,transform.position)<engagementDistance)
                 {
-                    print("set target bt");
+//                    print("set target bt");
                     target = ship.transform;
                     gun.target = target.gameObject;
                     Task.current.Succeed();

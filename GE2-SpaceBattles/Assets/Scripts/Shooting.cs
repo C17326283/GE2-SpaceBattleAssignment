@@ -18,6 +18,7 @@ public class Shooting : MonoBehaviour
 
     public GameObject target;
 
+
     public float rayDist = 10000f;
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class Shooting : MonoBehaviour
         readyToShoot = true;
         StartCoroutine(RepeatShooting());
     }
+    
 
     // Update is called once per frame
     /*
@@ -52,11 +54,11 @@ public class Shooting : MonoBehaviour
     {
         if (target != null)
         {
-            print("get angle");
+//            print("get angle");
             Vector3 toTarget = (target.transform.position-transform.position).normalized;
             
             float angleToTarget = Vector3.Angle(transform.forward, toTarget);
-            print("angleToTarget "+angleToTarget);
+//            print("angleToTarget "+angleToTarget);
             return angleToTarget;//returns value between 0 and 180 based on angle to sun
         }
         else
@@ -72,7 +74,7 @@ public class Shooting : MonoBehaviour
 //            print("repeast shooting");
             if (GetAngleToTarget() < shootAngle && readyToShoot)
             {
-                print("shoot");
+//                print("shoot");
                 Shoot();
                 StartCoroutine(Reload());
             }
