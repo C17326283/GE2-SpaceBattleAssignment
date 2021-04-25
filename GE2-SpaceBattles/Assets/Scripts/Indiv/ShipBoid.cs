@@ -37,9 +37,9 @@ public class ShipBoid : MonoBehaviour
         AimAtMag();
     }
 
-    public void AddToForce(Vector3 forceToAdd)
+    public void AddToForce(Vector3 forceToAdd,float multiplier)
     {
-        forceToApply = forceToApply + forceToAdd;
+        forceToApply = forceToApply + (forceToAdd*multiplier);
     }
 
     public void ApplyForce()

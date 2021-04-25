@@ -74,6 +74,7 @@
           <e p="BoidPath.cs" t="Include" />
           <e p="BT" t="Include">
             <e p="BaseBehaviours.cs" t="Include" />
+            <e p="FollowBehaviours.cs" t="Include" />
             <e p="ShipBehaviour1.txt" t="Include" />
           </e>
           <e p="Indiv" t="Include">
@@ -84,6 +85,7 @@
             <e p="PathManage.cs" t="Include" />
             <e p="Pursue.cs" t="Include" />
             <e p="Seek.cs" t="Include" />
+            <e p="ShipBoid.cs" t="Include" />
             <e p="SteeringBehaviour.cs" t="Include" />
             <e p="Wander.cs" t="Include" />
           </e>

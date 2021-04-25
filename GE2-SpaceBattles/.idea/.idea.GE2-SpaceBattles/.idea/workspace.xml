@@ -23,9 +23,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Indiv/FollowPath.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Indiv/FollowPath.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Indiv/Path.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Indiv/Path.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Indiv/ShipBoid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Indiv/ShipBoid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +42,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/CameraTargeting.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../FinalYearProject-VR_Ecosystem/FYPEcoVr/Assets/Scripts/PlanetGeneration/RandomGenSpawner.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Indiv/ShipBoid.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -63,9 +65,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Rotator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Life.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/PathManage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/FollowPath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/ShipBoid.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BT/FollowBehaviours.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1.txt" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" />
       </list>
     </option>
@@ -116,7 +121,8 @@
       <workItem from="1618691235141" duration="10788000" />
       <workItem from="1618755931613" duration="3352000" />
       <workItem from="1618843782572" duration="8138000" />
-      <workItem from="1619279723980" duration="2446000" />
+      <workItem from="1619279723980" duration="10102000" />
+      <workItem from="1619352862962" duration="5619000" />
     </task>
     <servers />
   </component>
@@ -138,6 +144,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2238" y="280" width="1409" height="974" key="dock-window-1" timestamp="1619306563244">
+      <screen x="1920" y="47" width="1786" height="986" />
+    </state>
+    <state x="2238" y="280" width="1409" height="974" key="dock-window-1/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@1920.47.1786.986" timestamp="1619306563244" />
+    <state x="2096" y="230" width="1409" height="974" key="dock-window-2" timestamp="1619306563244">
+      <screen x="1920" y="47" width="1786" height="986" />
+    </state>
+    <state x="2096" y="230" width="1409" height="974" key="dock-window-2/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@1920.47.1786.986" timestamp="1619306563244" />
     <state x="638" y="253" width="644" height="534" key="find.popup" timestamp="1618755969848">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

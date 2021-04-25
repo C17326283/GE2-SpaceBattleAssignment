@@ -28,6 +28,7 @@ public class Shooting : MonoBehaviour
     }
 
     // Update is called once per frame
+    /*
     void Update()
     {
         //temp find target
@@ -45,6 +46,7 @@ public class Shooting : MonoBehaviour
             }
         }
     }
+    */
 
     public float GetAngleToTarget()
     {

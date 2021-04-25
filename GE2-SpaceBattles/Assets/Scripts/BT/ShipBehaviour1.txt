@@ -1,4 +1,32 @@
 tree("Root")
     fallback
+        tree("Arrive")
+        tree("Chase")
+        tree("SearchForTarget")
+        tree("Patrol")
+        
+
+tree("Patrol")
+    sequence
+        GetPatrolTarget()
         SeekForce()
+
+
+
+
+tree("Chase")
+    sequence
+        HasActiveTarget()
+        SeekForce()
+            
+tree("SearchForTarget")
+    sequence
         GetTarget()
+            
+      
+tree("Arrive")      
+    sequence
+        HasActiveTarget()
+        HasArrived()
+        fallback
+            StopFollowing()

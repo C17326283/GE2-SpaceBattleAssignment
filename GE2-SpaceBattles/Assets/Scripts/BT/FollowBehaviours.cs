@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Panda;
 using UnityEngine;
 
-public class BaseBehaviours : MonoBehaviour
+public class FollowBehaviours : BaseBehaviours
 {
     public ShipBoid shipBoid;
     public Transform target;
@@ -15,20 +15,11 @@ public class BaseBehaviours : MonoBehaviour
     public float slowingDistance = 40.0f;
     public float stoppingDistance = 20.0f;
     
-    public float engagementDistance = 20.0f;
-
-    public GameObject defaultPosObj;
-
-    public PathManage path;
-    
-    public Shooting gun;
-    
     // Start is called before the first frame update
     void Start()
     {
         shipBoid = GetComponent<ShipBoid>();
         shipsHolder = GameObject.Find("-ActiveShips-");
-        gun = GetComponentInChildren<Shooting>();
     }
 
     // Update is called once per frame
@@ -38,7 +29,7 @@ public class BaseBehaviours : MonoBehaviour
     }
     
     [Task]
-    public void HasArrived()
+    public void Arrive()
     {
         if (Vector3.Distance(target.position,transform.position)<stoppingDistance)
         {
@@ -50,52 +41,11 @@ public class BaseBehaviours : MonoBehaviour
         }
         
     }
-    
-    /*
-    [Task]
-    public void NextPath()
-    {
-        if (path!=null)
-        {
-            path.next
-            Task.current.Succeed();
-        }
-        else
-        {
-            Task.current.Fail();
-        }
-        
-    }
-    */
-    [Task]
-    public void GetPatrolTarget()
-    {
-        if (defaultPosObj)
-        {
-            target = defaultPosObj.transform;
-            Task.current.Succeed();
-        }
-        else
-        {
-            Task.current.Fail();
-        }
-        
-    }
-    
-    
-    
-    [Task]
-    public void StopFollowing()
-    {
-        target = null;//remove target so no target to chase
-        Task.current.Succeed();
-        
-    }
 
     [Task]
     public void HasActiveTarget()
     {
-        if (target && target.gameObject.activeInHierarchy && Vector3.Distance(target.position,transform.position)<engagementDistance)
+        if (target && target.gameObject.activeInHierarchy)
         {
             Task.current.Succeed();
         }
@@ -103,21 +53,21 @@ public class BaseBehaviours : MonoBehaviour
         {
             Task.current.Fail();
         }
+        
     }
     
     [Task]
     public void GetTarget()
     {
-        //Transform[] allShips = shipsHolder.GetComponentsInChildren<Transform>();//all ships in the holder
-        foreach (Transform ship in shipsHolder.transform)//search all immediate children
+        Transform[] allShips = shipsHolder.GetComponentsInChildren<Transform>();//all ships in the holder
+        foreach (Transform ship in allShips)
         {
             foreach (var tag in tagsToShoot)
             {
-                if (ship.transform.CompareTag(tag) && ship!=transform && Vector3.Distance(ship.transform.position,transform.position)<engagementDistance)
+                if (ship.transform.CompareTag(tag) && ship!=transform)
                 {
                     print("set target bt");
                     target = ship.transform;
-                    gun.target = target.gameObject;
                     Task.current.Succeed();
                     return;//exit once found
                 }
