@@ -23,30 +23,29 @@ public class SequenceManager : MonoBehaviour
     IEnumerator Sequence()
     {
         yield return new WaitForSeconds(2);//wait 2 seconds
-        StartCoroutine(Seq1x());
+        StartCoroutine(Seq1());
         
-        yield return new WaitForSeconds(10f);
-        Seq2x();
-        
-        
-        //yield return new WaitForSeconds(20f);
-        //StartCoroutine(Seq3x());
-        
-        /*
-        yield return new WaitForSeconds(.1f);
+        yield return new WaitForSeconds(20f);
+        Seq2();
+        yield return new WaitForSeconds(30f);
+        Seq3();
+        yield return new WaitForSeconds(20f);
         Seq4();
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(5f);
         Seq5();
-        yield return new WaitForSeconds(60f);
-        Seq6();
-        */
+        
+        yield return new WaitForSeconds(5);
+        StartCoroutine(Seq6());
+        yield return new WaitForSeconds(5);
+        Seq7();
+        
     }
 
 
     //Start with calm shot of relay
 
     //Reapers arrive and camera follows them as they move toward citadel
-    IEnumerator Seq1x()//Reaper spawns
+    IEnumerator Seq1()//Reaper spawns
     {
         Debug.Log("Reapers arrive and camera follows them as they move toward citadel");
         
@@ -58,26 +57,46 @@ public class SequenceManager : MonoBehaviour
         spawnManager.SpawnNextGroup();
     }
     
-    public void Seq2x()//move cam closer
+    //Destiny ascension tries to escape
+    public void Seq2()//move cam closer
     {
         camTargeting.transform.parent = null;
         camTargeting.transform.position = camPointManager.GetPoint();
         camTargeting.gameObjectToLookAt = GameObject.Find("Flagship");
-        //spawnManager.SpawnNextGroup();
     }
     
-    //Destiny ascension tries to escape
-    
     //Citadel starts closing
+    public void Seq3()
+    {
+        camTargeting.transform.parent = null;
+        camTargeting.transform.position = camPointManager.GetPoint();
+        camTargeting.gameObjectToLookAt = GameObject.Find("Flagship");
+    }
     
     //Reaper ramming ships
+    public void Seq4()
+    {
+        camTargeting.transform.position = camPointManager.GetPoint();
+        camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
+    }
+    
+    
+    
     
     //Reaper inside citadel as it closes
+    public void Seq5()
+    {
+        camTargeting.transform.position = camPointManager.GetPoint();
+        camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
+    }
+
+    
+    
     
     //reaper attaches to spire
     
     //alliance arrives
-    IEnumerator Seq3x()//Alliance arrives
+    IEnumerator Seq6()//Alliance arrives
     {
         spawnManager.SpawnNextGroup();//normandy
         normandy = GameObject.Find("Normandy(Clone)");
@@ -87,9 +106,14 @@ public class SequenceManager : MonoBehaviour
         spawnManager.SpawnNextGroup();//alliance ships
     }
     
-    
-    
     //alliance defend ascension
+    //todo add more
+    public void Seq7()//move cam closer
+    {
+        camTargeting.transform.position = normandy.transform.position + (-normandy.transform.forward*25)+(normandy.transform.up*8);
+        camTargeting.transform.parent = normandy.transform;
+        //spawnManager.SpawnNextGroup();
+    }
     
     //follow normandy as things are getting blown up
     
@@ -105,18 +129,14 @@ public class SequenceManager : MonoBehaviour
     
     //sovereign falls off and dies
     
+    
     // normandy flying away
     
     
     
     
     
-    public void Seq50()//move cam closer
-    {
-        camTargeting.transform.position = normandy.transform.position + (-normandy.transform.forward*25)+(normandy.transform.up*8);
-        camTargeting.transform.parent = normandy.transform;
-        //spawnManager.SpawnNextGroup();
-    }
+    
     public void Seq60()//move cam closer
     {
         camTargeting.transform.parent = null;

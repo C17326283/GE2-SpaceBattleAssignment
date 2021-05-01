@@ -333,7 +333,7 @@ MonoBehaviour:
   wanderPoint: {fileID: 0}
   divertRadius: 600
   patrolOffsetDistance: 200
-  followObjName: AllianceDefencePoint
+  followObjName: CitadelDefencePoint
 --- !u!114 &6462384804597796981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,6 +408,7 @@ MonoBehaviour:
   aimingAtTarget: 0
   target: {fileID: 0}
   rayDist: 10000
+  maxAccuracyOffset: 0.1
 --- !u!1 &6524570001801783915
 GameObject:
   m_ObjectHideFlags: 0

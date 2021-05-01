@@ -21,6 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/citadel1.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/citadel1.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/AllianceShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/AllianceShip.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Ship (6).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Ship (6).prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
@@ -59,15 +62,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rotator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/PathManage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/FollowPath.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/FollowBehaviours.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1.txt" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/ShipBoid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Life.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/FollowPath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Life.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
       </list>
     </option>
@@ -120,7 +123,7 @@
       <workItem from="1618843782572" duration="8138000" />
       <workItem from="1619279723980" duration="10102000" />
       <workItem from="1619352862962" duration="24476000" />
-      <workItem from="1619881780384" duration="2997000" />
+      <workItem from="1619881780384" duration="9094000" />
     </task>
     <servers />
   </component>
