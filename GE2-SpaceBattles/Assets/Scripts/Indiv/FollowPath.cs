@@ -17,7 +17,7 @@ public class FollowPath : SteeringBehaviour {
     {
         if (isActiveAndEnabled && Application.isPlaying)
         {
-            Gizmos.color = Color.cyan;
+            Gizmos.color = Color.blue;
             Gizmos.DrawLine(transform.position, nextWaypoint);
         }
     }
