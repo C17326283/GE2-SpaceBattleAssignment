@@ -29,7 +29,7 @@ public class Life : MonoBehaviour
 
     private void Update()
     {
-        //currentHealth -= 0.05f;//auto kill for testing
+        currentHealth -= 0.2f;//auto kill for testing
         if (currentHealth < .001f)
         {
             if(alive)

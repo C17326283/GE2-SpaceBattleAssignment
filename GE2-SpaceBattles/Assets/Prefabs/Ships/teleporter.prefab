@@ -42,8 +42,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2658930117068075369}
-  - component: {fileID: 2658930117068075372}
   - component: {fileID: 2658930117068075373}
+  - component: {fileID: 2658930117068075372}
   - component: {fileID: 2658930117068075375}
   - component: {fileID: 2658930117068075362}
   - component: {fileID: 2658930117068075374}
@@ -68,23 +68,6 @@ Transform:
   m_Father: {fileID: 413744617144029319}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 139.658, y: 0, z: 0}
---- !u!114 &2658930117068075372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2658930117068075368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b519796a7d8506d488301298961c8c23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shipToSpawn: {fileID: 7177627545569228145, guid: c0c60878895618d4a9865bfde260e13b, type: 3}
-  radiusToSpawn: 1
-  amountToSpawn: 1
-  spawnEffect: {fileID: 0}
-  timeBetweenSpawn: 0.2
 --- !u!114 &2658930117068075373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,7 +84,30 @@ MonoBehaviour:
   radiusToSpawn: 500
   amountToSpawn: 20
   spawnEffect: {fileID: 0}
+  spawnTrail: {fileID: 0}
   timeBetweenSpawn: 0.2
+  spawnEffectScale: 2
+  activeShipsHolder: {fileID: 0}
+--- !u!114 &2658930117068075372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2658930117068075368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b519796a7d8506d488301298961c8c23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipToSpawn: {fileID: 7177627545569228145, guid: c0c60878895618d4a9865bfde260e13b, type: 3}
+  radiusToSpawn: 1
+  amountToSpawn: 1
+  spawnEffect: {fileID: 0}
+  spawnTrail: {fileID: 0}
+  timeBetweenSpawn: 0.2
+  spawnEffectScale: 2
+  activeShipsHolder: {fileID: 0}
 --- !u!114 &2658930117068075375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,7 +124,10 @@ MonoBehaviour:
   radiusToSpawn: 300
   amountToSpawn: 1
   spawnEffect: {fileID: 0}
+  spawnTrail: {fileID: 0}
   timeBetweenSpawn: 0.2
+  spawnEffectScale: 2
+  activeShipsHolder: {fileID: 0}
 --- !u!114 &2658930117068075362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +144,10 @@ MonoBehaviour:
   radiusToSpawn: 300
   amountToSpawn: 10
   spawnEffect: {fileID: 0}
+  spawnTrail: {fileID: 0}
   timeBetweenSpawn: 0.2
+  spawnEffectScale: 2
+  activeShipsHolder: {fileID: 0}
 --- !u!114 &2658930117068075374
 MonoBehaviour:
   m_ObjectHideFlags: 0

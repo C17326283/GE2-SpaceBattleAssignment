@@ -11,7 +11,7 @@ public class SequenceManager : MonoBehaviour
 
     public float seq1wait = 2;
 
-    public float timeGethAfterReaper = .1f;
+    public float timeGethAfterReaper = 2f;
 
     // Start is called before the first frame update
     void Start()
