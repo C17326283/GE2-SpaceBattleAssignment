@@ -13,6 +13,8 @@ public class SequenceManager : MonoBehaviour
 
     public float timeGethAfterReaper = 2f;
 
+    public Animator citadelAnim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -68,6 +70,7 @@ public class SequenceManager : MonoBehaviour
     //Citadel starts closing
     public void Seq3()
     {
+        //citadelAnim.SetTrigger();
         camTargeting.transform.parent = null;
         camTargeting.transform.position = camPointManager.GetPoint();
         camTargeting.gameObjectToLookAt = GameObject.Find("Flagship");
