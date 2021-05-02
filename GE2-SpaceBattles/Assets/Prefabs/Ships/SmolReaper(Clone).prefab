@@ -1495,12 +1495,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 690787040354296551, guid: 28d836ee7cbc18445ae87ae499773b0a, type: 3}
-  shootAttemptRate: 0.02
-  shotCooldown: 4
+  shootAttemptRate: 0.04
+  shotCooldown: 6
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
-  maxAccuracyOffset: 0.1
+  maxAccuracyOffset: 0
 --- !u!1 &7424375729803669821
 GameObject:
   m_ObjectHideFlags: 0

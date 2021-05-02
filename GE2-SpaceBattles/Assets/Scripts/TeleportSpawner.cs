@@ -15,6 +15,7 @@ public class TeleportSpawner : MonoBehaviour
     public float spawnEffectScale = 2f;
 
     public GameObject activeShipsHolder;
+    public Vector3 spawnOffset;
 
     private float startDist = 2000f;
 
@@ -28,7 +29,7 @@ public class TeleportSpawner : MonoBehaviour
         for (int i = 0; i < amountToSpawn; i++)
         {
             Vector3 randPos = Random.insideUnitSphere * radiusToSpawn;//random in circle
-            Vector3 randSpawnPos = randPos + this.transform.position;//around center of obj
+            Vector3 randSpawnPos = randPos + this.transform.position +spawnOffset;//around center of obj
 
             //Spawn ship far away
             GameObject spawnedObj = GameObject.Instantiate(shipToSpawn, randSpawnPos+(-transform.forward*startDist), this.transform.rotation);

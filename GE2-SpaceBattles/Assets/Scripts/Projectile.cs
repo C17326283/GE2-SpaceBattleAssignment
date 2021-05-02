@@ -49,17 +49,19 @@ public class Projectile : MonoBehaviour
 
     public void HitObj(RaycastHit hit)
     {
+        //stop obj but let trail stay 
+        transform.position = hit.point;
+        rb.isKinematic = true;
+        
         //try get a life script reference
         Life otherLife = CheckHitParentLifeRecursive(hit.transform.gameObject);
             
         if (otherLife!=null)
         {
-            print("hit "+hit.transform.name);
+            print(transform.name+" hit "+hit.transform.name);
             otherLife.currentHealth -= hitDamage;
-            transform.position = hit.point;
             GameObject.Instantiate(hitExplosion);
-                
-            rb.isKinematic = true;
+
             GetComponent<MeshRenderer>().enabled = false;
 
         }

@@ -62,6 +62,7 @@ public class SequenceManager : MonoBehaviour
     //Destiny ascension tries to escape
     public void Seq2()//move cam closer
     {
+        Debug.Log("Seq2() Destiny ascension tries to escape");
         camTargeting.transform.parent = null;
         camTargeting.transform.position = camPointManager.GetPoint();
         camTargeting.gameObjectToLookAt = GameObject.Find("Flagship");
@@ -70,6 +71,7 @@ public class SequenceManager : MonoBehaviour
     //Citadel starts closing
     public void Seq3()
     {
+        Debug.Log("Seq3() Citadel starts closing");
         //citadelAnim.SetTrigger();
         camTargeting.transform.parent = null;
         camTargeting.transform.position = camPointManager.GetPoint();
@@ -79,6 +81,7 @@ public class SequenceManager : MonoBehaviour
     //Reaper ramming ships
     public void Seq4()
     {
+        Debug.Log("Seq4() Reaper ramming ships");
         camTargeting.transform.position = camPointManager.GetPoint();
         camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
     }
@@ -89,6 +92,7 @@ public class SequenceManager : MonoBehaviour
     //Reaper inside citadel as it closes
     public void Seq5()
     {
+        Debug.Log("Seq5() Reaper inside citadel as it closes");
         camTargeting.transform.position = camPointManager.GetPoint();
         camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
     }
@@ -99,8 +103,13 @@ public class SequenceManager : MonoBehaviour
     //reaper attaches to spire
     
     //alliance arrives
-    IEnumerator Seq6()//Alliance arrives
+    IEnumerator Seq6()
     {
+        Debug.Log("Seq6() alliance arrives");
+        camTargeting.transform.position = camPointManager.GetPoint();
+        camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
+        yield return new WaitForSeconds(5);
+        
         spawnManager.SpawnNextGroup();//normandy
         normandy = GameObject.Find("Normandy(Clone)");
         camTargeting.transform.position = camPointManager.GetPoint();
@@ -113,7 +122,8 @@ public class SequenceManager : MonoBehaviour
     //todo add more
     public void Seq7()//move cam closer
     {
-        camTargeting.transform.position = normandy.transform.position + (-normandy.transform.forward*25)+(normandy.transform.up*8);
+        Debug.Log("Seq7() alliance defend ascension");
+        camTargeting.transform.position = normandy.transform.position + (-normandy.transform.forward*50)+(normandy.transform.up*16);
         camTargeting.transform.parent = normandy.transform;
         //spawnManager.SpawnNextGroup();
     }
