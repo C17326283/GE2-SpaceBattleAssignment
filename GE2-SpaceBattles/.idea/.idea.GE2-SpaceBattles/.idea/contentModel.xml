@@ -41,28 +41,6 @@
                 <e p="TagDialogue.BT.txt" t="Include" />
               </e>
             </e>
-            <e p="03_Shooter" t="Include">
-              <e p="Assets" t="Include">
-                <e p="AI.BT.lib.txt" t="Include" />
-                <e p="AI.cs" t="Include" />
-                <e p="AIVision.cs" t="Include" />
-                <e p="Bullet.cs" t="Include" />
-                <e p="BulletImpact.cs" t="Include" />
-                <e p="FollowCamera.cs" t="Include" />
-                <e p="GameController.BT.txt" t="Include" />
-                <e p="HUD.cs" t="Include" />
-                <e p="Hunter.BT.txt" t="Include" />
-                <e p="Patroller.BT.txt" t="Include" />
-                <e p="Patroller.cs" t="Include" />
-                <e p="Player.BT.txt" t="Include" />
-                <e p="ShooterGameController.cs" t="Include" />
-                <e p="Sniper.BT.txt" t="Include" />
-                <e p="TriggerType.cs" t="Include" />
-                <e p="Unit.cs" t="Include" />
-                <e p="UnitExplosion.cs" t="Include" />
-                <e p="WaypointPath.cs" t="Include" />
-              </e>
-            </e>
           </e>
           <e p="README.txt" t="Include" />
         </e>
@@ -88,9 +66,11 @@
             <e p="SteeringBehaviour.cs" t="Include" />
             <e p="Wander.cs" t="Include" />
           </e>
+          <e p="Laser.cs" t="Include" />
           <e p="Life.cs" t="Include" />
           <e p="Projectile.cs" t="Include" />
           <e p="RandomTarget.cs" t="Include" />
+          <e p="Rocket.cs" t="Include" />
           <e p="Rotator.cs" t="Include" />
           <e p="SequenceManager.cs" t="Include" />
           <e p="Shooting.cs" t="Include" />

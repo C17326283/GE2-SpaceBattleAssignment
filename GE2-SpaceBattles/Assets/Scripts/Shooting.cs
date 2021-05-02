@@ -11,47 +11,20 @@ public class Shooting : MonoBehaviour
     public float shotCooldown = 0.2f;
     public float shootAngle = 30;
 
-    public String[] tagsToShoot;
-
     public bool readyToShoot;
 
-    public bool aimingAtTarget;
-
     public GameObject target;
-
-
-    public float rayDist = 10000f;
+    
 
     public float maxAccuracyOffset = .1f;
     // Start is called before the first frame update
     void Start()
     {
-        rayDist = 10000f;
         readyToShoot = true;
         StartCoroutine(RepeatShooting());
     }
     
 
-    // Update is called once per frame
-    /*
-    void Update()
-    {
-        //temp find target
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, rayDist))
-        {
-//            print(hit.transform.name+", tag:"+hit.transform.tag);
-            foreach (var tag in tagsToShoot)
-            {
-                if (hit.transform.CompareTag(tag))
-                {
-                    print("set target");
-                    target = hit.transform.gameObject;
-                }
-            }
-        }
-    }
-    */
 
     public float GetAngleToTarget()
     {

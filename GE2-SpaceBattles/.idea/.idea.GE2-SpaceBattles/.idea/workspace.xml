@@ -20,9 +20,101 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Life.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Life.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/Fire &amp; Explosion Effects/Materials/ExplosionDistortion.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Fire &amp; Explosion Effects/Materials/ExplosionDistortion.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Effects/TinyExplosion.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Effects/TinyExplosion.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/DarkBlueGlow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/DarkBlueGlow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/FogEffect.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/FogEffect.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/SMokeFog.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/SMokeFog.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/AI.BT.lib.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/AI.BT.lib.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/AI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/AI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/AIVision.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/AIVision.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Bullet.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Bullet.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/BulletImpact.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/BulletImpact.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/BulletImpact.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/BulletImpact.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/FollowCamera.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/FollowCamera.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/GameController.BT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/GameController.BT.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/GunJammed.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/GunJammed.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/HUD.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/HUD.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Hunter.BT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Hunter.BT.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Patroller.BT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Patroller.BT.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Patroller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Patroller.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Patroller.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Patroller.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Player.BT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Player.BT.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/ShooterGameController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/ShooterGameController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Sniper.BT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Sniper.BT.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Sniper.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Sniper.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/TriggerType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/TriggerType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Unit.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Unit.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/UnitExplosion.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/UnitExplosion.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/UnitExplosion.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/UnitExplosion.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/WaypointPath.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/WaypointPath.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/bullet.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/bullet.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/bullet.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/bullet.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/ground.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/ground.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/hunter.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/hunter.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/hunter.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/hunter.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/patroller.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/patroller.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/player.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/player.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/sniper.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/sniper.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/wall.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/wall.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Shooter.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Shooter.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Shooter.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Shooter/LightingData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Shooter/LightingData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Shooter/NavMesh.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Shooter/NavMesh.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Shooter/ReflectionProbe-0.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Shooter/ReflectionProbe-0.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/AllianceShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/AllianceShip.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Old/Reaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Old/Reaper.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/SmolReaper(Clone).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/SmolReaper(Clone).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1/PP Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1/PP Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Starfield Skybox/Skybox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Starfield Skybox/Skybox.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +126,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../FinalYearProject-VR_Ecosystem/FYPEcoVr/Assets/Scripts/PlanetGeneration/RandomGenSpawner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rocket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Laser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Indiv/ShipBoid.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -60,13 +154,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1.txt" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/ShipBoid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/FollowPath.cs" />
         <option value="$PROJECT_DIR$/Assets/Life.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Life.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Unit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Laser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
       </list>
     </option>
   </component>
@@ -119,7 +217,7 @@
       <workItem from="1619279723980" duration="10102000" />
       <workItem from="1619352862962" duration="24476000" />
       <workItem from="1619881780384" duration="10827000" />
-      <workItem from="1619954661696" duration="1653000" />
+      <workItem from="1619954661696" duration="5801000" />
     </task>
     <servers />
   </component>
