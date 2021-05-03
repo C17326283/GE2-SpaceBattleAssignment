@@ -52,6 +52,9 @@ MonoBehaviour:
   rb: {fileID: 0}
   lastPos: {x: 0, y: 0, z: 0}
   hitExplosion: {fileID: 6525372132480378010, guid: c1d6f3e10d689014788c4525fb46d2eb, type: 3}
+  projectileLayerToAvoid:
+    serializedVersion: 2
+    m_Bits: 0
   continuousForce: 5
 --- !u!54 &8974859291869625079
 Rigidbody:
@@ -154,7 +157,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 10
+  m_Time: 5
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1.9745584
@@ -164,21 +167,21 @@ TrailRenderer:
       - serializedVersion: 3
         time: 0
         value: 0.97284317
-        inSlope: 0
-        outSlope: 0
+        inSlope: 1.6728368
+        outSlope: 1.6728368
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.33333334
+        outWeight: 1
       - serializedVersion: 3
-        time: 0.020663649
-        value: 0.062048867
-        inSlope: -0.22626549
-        outSlope: -0.22626549
+        time: 0.061479334
+        value: 0.07520513
+        inSlope: -0.35956705
+        outSlope: -0.35956705
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.11318666
-        outWeight: 0.19788487
+        outWeight: 0.16436943
       - serializedVersion: 3
         time: 1
         value: 0

@@ -51,7 +51,7 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        HitObj(other.transform.gameObject);
+        //HitObj(other.transform.gameObject);
     }
 
     public void HitObj(GameObject hitGameObject)

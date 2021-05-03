@@ -53,7 +53,7 @@ public class Shooting : MonoBehaviour
                 RaycastHit hit;
                 if (Physics.Raycast(transform.position, toTarget, out hit, Vector3.Distance(target.transform.position,transform.position)))
                 {
-                    print("direct line of sight, shoot");
+//                    print("direct line of sight, shoot");
                     Shoot();
                     StartCoroutine(Reload());
                 }
