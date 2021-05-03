@@ -7,13 +7,14 @@ public class Projectile : MonoBehaviour
 {
     
     public float hitDamage = 5;
-    public float hitInFrontDistance = 50f;
+    public float hitInFrontDistance = 500f;
     public float destroyTime = 10;
 
     public Rigidbody rb;
     public Vector3 lastPos;
 
     public GameObject hitExplosion;
+    public LayerMask projectileLayerToAvoid;
 
 
     public void OnDrawGizmos()
@@ -29,6 +30,7 @@ public class Projectile : MonoBehaviour
     void Awake()
     {
         rb = this.gameObject.GetComponent<Rigidbody>();
+        projectileLayerToAvoid = 1 << 6;//set to only avoid layer 5
     }
     
 
@@ -39,26 +41,31 @@ public class Projectile : MonoBehaviour
         float moveLen = Vector3.Distance(lastPos,transform.position);
         
         RaycastHit hit;
-        if (Physics.Raycast(lastPos, bulletDir, out hit, moveLen))
+        if (Physics.Raycast(lastPos, bulletDir, out hit, moveLen+hitInFrontDistance,projectileLayerToAvoid))
         {
-            HitObj(hit);
+            HitObj(hit.transform.gameObject);
         }
         lastPos = transform.position;
         
     }
 
-    public void HitObj(RaycastHit hit)
+    private void OnCollisionEnter(Collision other)
+    {
+        HitObj(other.transform.gameObject);
+    }
+
+    public void HitObj(GameObject hitGameObject)
     {
         //stop obj but let trail stay 
-        transform.position = hit.point;
+        //transform.position = hit.point;
         rb.isKinematic = true;
         
         //try get a life script reference
-        Life otherLife = CheckHitParentLifeRecursive(hit.transform.gameObject);
+        Life otherLife = CheckHitParentLifeRecursive(hitGameObject.transform.gameObject);
             
         if (otherLife!=null)
         {
-            print(transform.name+" hit "+hit.transform.name);
+            print(transform.name+" hit "+hitGameObject.transform.name);
             otherLife.currentHealth -= hitDamage;
             GameObject.Instantiate(hitExplosion);
 

@@ -14,6 +14,8 @@ public class Shooting : MonoBehaviour
     public bool readyToShoot;
 
     public GameObject target;
+
+    public Vector3 toTarget;
     
 
     public float maxAccuracyOffset = .1f;
@@ -30,11 +32,9 @@ public class Shooting : MonoBehaviour
     {
         if (target != null && target.activeInHierarchy)
         {
-//            print("get angle");
-            Vector3 toTarget = (target.transform.position-transform.position).normalized;
+            toTarget = (target.transform.position-transform.position).normalized;
             
             float angleToTarget = Vector3.Angle(transform.forward, toTarget);
-//            print("angleToTarget "+angleToTarget);
             return angleToTarget;//returns value between 0 and 180 based on angle to sun
         }
         else
@@ -50,9 +50,13 @@ public class Shooting : MonoBehaviour
 //            print("repeast shooting");
             if (GetAngleToTarget() < shootAngle && readyToShoot)
             {
-//                print("shoot");
-                Shoot();
-                StartCoroutine(Reload());
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, toTarget, out hit, Vector3.Distance(target.transform.position,transform.position)))
+                {
+                    print("direct line of sight, shoot");
+                    Shoot();
+                    StartCoroutine(Reload());
+                }
             }
             yield return new WaitForSeconds(shootAttemptRate);
         }

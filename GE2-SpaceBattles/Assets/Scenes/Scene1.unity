@@ -1672,6 +1672,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!4 &107461581 stripped
 Transform:
@@ -3461,6 +3462,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AllianceDefenseShips
       objectReference: {fileID: 0}
+    - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: m_TagString
+      value: Alliance
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: defaultPosObj
       value: 
@@ -3709,6 +3714,10 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_Name
       value: AllianceFlagshipDefense
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: m_TagString
+      value: Alliance
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: defaultPosObj
@@ -5895,6 +5904,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!1 &468546632
 GameObject:
@@ -6134,6 +6144,10 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_Name
       value: AllianceDefenseShips
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: m_TagString
+      value: Alliance
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: defaultPosObj
@@ -8766,6 +8780,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!1 &648325873
 GameObject:
@@ -15622,6 +15637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AllianceFlagshipDefense
       objectReference: {fileID: 0}
+    - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: m_TagString
+      value: Alliance
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: defaultPosObj
       value: 
@@ -15698,6 +15717,10 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_Name
       value: AllianceDefenseShips (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: m_TagString
+      value: Alliance
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: defaultPosObj
@@ -16606,6 +16629,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AllianceDefenseShips
       objectReference: {fileID: 0}
+    - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: m_TagString
+      value: Alliance
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: defaultPosObj
       value: 
@@ -16824,6 +16851,10 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_Name
       value: AllianceDefenseShips (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: m_TagString
+      value: Alliance
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: defaultPosObj
@@ -17113,6 +17144,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!1001 &881892941
 PrefabInstance:
@@ -17176,6 +17208,10 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_Name
       value: AllianceDefenseShips
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: m_TagString
+      value: Alliance
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: defaultPosObj
@@ -18039,6 +18075,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!1 &968555407
 GameObject:
@@ -18227,6 +18264,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!4 &971432540 stripped
 Transform:
@@ -19607,6 +19645,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!1 &1077036188
 GameObject:
@@ -19932,6 +19971,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!1 &1116131087
 GameObject:
@@ -19982,6 +20022,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!1001 &1122499121
 PrefabInstance:
@@ -20595,6 +20636,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!1 &1175905378
 GameObject:
@@ -20783,6 +20825,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!1001 &1178115843
 PrefabInstance:
@@ -21859,6 +21902,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!1 &1248982849
 GameObject:
@@ -21909,6 +21953,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!1001 &1249094273
 PrefabInstance:
@@ -21931,15 +21976,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913834, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -563.9723
+      value: -506.9723
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913834, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 795.58295
+      value: 746.58295
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913834, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10741.859
+      value: 11840.859
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913834, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21972,6 +22017,10 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_Name
       value: AllianceDefenseShips (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: m_TagString
+      value: Alliance
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: defaultPosObj
@@ -22286,6 +22335,10 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_Name
       value: AllianceFlagshipDefense
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: m_TagString
+      value: Alliance
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: defaultPosObj
@@ -23091,6 +23144,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!1001 &1350583024
 PrefabInstance:
@@ -24032,6 +24086,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!1 &1400071670
 GameObject:
@@ -29728,15 +29783,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913834, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -563.9605
+      value: -506.9605
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913834, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 689.282
+      value: 640.282
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913834, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10741.896
+      value: 11840.896
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913834, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_LocalRotation.w
@@ -29769,6 +29824,10 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_Name
       value: AllianceDefenseShips (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: m_TagString
+      value: Alliance
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: defaultPosObj
@@ -30507,6 +30566,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!4 &1492243917 stripped
 Transform:
@@ -39297,6 +39357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AllianceFlagshipDefense
       objectReference: {fileID: 0}
+    - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: m_TagString
+      value: Alliance
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: defaultPosObj
       value: 
@@ -39655,6 +39719,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!4 &1930034200 stripped
 Transform:
@@ -40121,6 +40186,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!1 &1961157235
 GameObject:
@@ -40674,6 +40740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AllianceDefenseShips
       objectReference: {fileID: 0}
+    - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: m_TagString
+      value: Alliance
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: defaultPosObj
       value: 
@@ -40952,6 +41022,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!1 &1992346050 stripped
 GameObject:
@@ -41286,6 +41357,7 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
 --- !u!1 &2031911748 stripped
 GameObject:
@@ -41577,15 +41649,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913834, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -381
+      value: -324
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913834, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 713
+      value: 664
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913834, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10903
+      value: 12002
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913834, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_LocalRotation.w
@@ -41618,6 +41690,10 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_Name
       value: AllianceFlagshipDefense
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: m_TagString
+      value: Alliance
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: defaultPosObj
@@ -41909,6 +41985,10 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_Name
       value: AllianceDefenseShips (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: m_TagString
+      value: Alliance
       objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: defaultPosObj
