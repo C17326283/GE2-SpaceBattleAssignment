@@ -13,24 +13,45 @@ public class Shooting : MonoBehaviour
 
     public bool readyToShoot;
 
-    public GameObject target;
+    public Transform target;
 
     public Vector3 toTarget;
     
 
     public float maxAccuracyOffset = .1f;
+
+    public CombatBehaviour combatBehaviours;//use combat behaviour target if it has one
+    
     // Start is called before the first frame update
     void Start()
     {
         readyToShoot = true;
         StartCoroutine(RepeatShooting());
+        if (combatBehaviours == null && GetComponentInParent<CombatBehaviour>() != null)
+        {
+            combatBehaviours = GetComponentInParent<CombatBehaviour>();
+        }
     }
     
+    public Transform GetTarget()
+    {
+        if (combatBehaviours != null && combatBehaviours.enemyTarget!=null)
+        {
+            target = combatBehaviours.enemyTarget;
+        }
+        else
+        {
+            target = null;
+        }
+
+        return target;
+    }
+
 
 
     public float GetAngleToTarget()
     {
-        if (target != null && target.activeInHierarchy)
+        if (GetTarget() != null && target.gameObject.activeInHierarchy)
         {
             toTarget = (target.transform.position-transform.position).normalized;
             

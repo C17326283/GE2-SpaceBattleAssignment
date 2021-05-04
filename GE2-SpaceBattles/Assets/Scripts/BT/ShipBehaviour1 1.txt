@@ -1,8 +1,16 @@
 tree("Root")
     fallback
+        tree("Combat")
         tree("FollowOffset")
         
-        
+tree("Combat")
+    fallback
+        sequence
+            NeedsToDivert()
+            PursueDivert()    
+        sequence
+            GetEnemyTarget()
+            PursueEnemy()        
 
 tree("FollowOffset")
     fallback

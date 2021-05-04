@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 5210357130399442917}
   - component: {fileID: 4700354124514421623}
   - component: {fileID: 651098678136584903}
-  - component: {fileID: -129555161611945519}
   - component: {fileID: 5311416907141372187}
   - component: {fileID: 4005834024593650106}
+  - component: {fileID: -709042884225375726}
+  - component: {fileID: -129555161611945519}
   - component: {fileID: 1128173742498250210}
   m_Layer: 0
   m_Name: Geth
@@ -75,23 +76,6 @@ MonoBehaviour:
   alive: 1
   explosionSize: 50
   timeToDespawnAfterDeath: 20
---- !u!114 &-129555161611945519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427803425292049769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e855596b3280480c8048d9a0606d7d6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shipBoid: {fileID: 0}
-  followObjName: Reaper(Clone)
-  followObj: {fileID: 0}
-  followOffset: {x: 0, y: 0, z: 0}
-  followOffsetDistance: 0
 --- !u!114 &5311416907141372187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,10 +112,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceToApply: {x: -0.90991277, y: -0.011531306, z: 1.78099}
   rb: {fileID: 1128173742498250210}
-  moveSpeed: 300
-  maxMag: 300
-  bankingAmount: 2
-  turnSpeed: 2
+  moveSpeed: 160
+  maxMag: 160
+  bankingAmount: 5
+  turnSpeed: 1
+--- !u!114 &-709042884225375726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427803425292049769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad05ef8cba64680b5f33598ec1d9e81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipBoid: {fileID: 0}
+  enemyTarget: {fileID: 0}
+  divertTarget: {x: 0, y: 0, z: 0}
+  shipsHolder: {fileID: 0}
+  enemyTags:
+  - Alliance
+  - Normandy
+  engagementDistance: 7000
+  divertDistance: 300
+  arrivedDist: 100
+--- !u!114 &-129555161611945519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427803425292049769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e855596b3280480c8048d9a0606d7d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipBoid: {fileID: 0}
+  followObjName: Reaper(Clone)
+  followObj: {fileID: 0}
+  followOffset: {x: 0, y: 0, z: 0}
+  followOffsetDistance: 600
 --- !u!54 &1128173742498250210
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -199,6 +222,7 @@ MonoBehaviour:
   target: {fileID: 0}
   toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0
+  combatBehaviours: {fileID: 0}
 --- !u!1001 &8206659494598449424
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -20,13 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/FogEffect.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/FogEffect.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/AllianceShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/AllianceShip.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Geth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Geth.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Old/Reaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Old/Reaper.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/BaseShipBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/BaseShipBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/CombatBehaviours.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/CombatBehaviours.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1 1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1 1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Indiv/ShipBoid.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Indiv/ShipBoid.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +52,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rocket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Laser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Indiv/ShipBoid.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -75,16 +83,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Laser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1.txt" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1 1.txt" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BT/BaseShipBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/CombatBehaviours.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BT/DivertingBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BT/BaseShipBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1 1.txt" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BT/CombatBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -94,6 +104,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30010834" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -139,7 +151,8 @@
       <workItem from="1619881780384" duration="10827000" />
       <workItem from="1619954661696" duration="10969000" />
       <workItem from="1620050094370" duration="15587000" />
-      <workItem from="1620127392456" duration="7807000" />
+      <workItem from="1620127392456" duration="14524000" />
+      <workItem from="1620151417391" duration="3512000" />
     </task>
     <servers />
   </component>
@@ -161,6 +174,70 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1726" height="67" key="GridCell.Tab.0.bottom" timestamp="1620151299703">
+      <screen x="-1920" y="86" width="1920" height="1040" />
+    </state>
+    <state width="1726" height="67" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620151299703" />
+    <state width="1726" height="67" key="GridCell.Tab.0.center" timestamp="1620151299703">
+      <screen x="-1920" y="86" width="1920" height="1040" />
+    </state>
+    <state width="1726" height="67" key="GridCell.Tab.0.center/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620151299703" />
+    <state width="1726" height="67" key="GridCell.Tab.0.left" timestamp="1620151299703">
+      <screen x="-1920" y="86" width="1920" height="1040" />
+    </state>
+    <state width="1726" height="67" key="GridCell.Tab.0.left/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620151299703" />
+    <state width="1726" height="67" key="GridCell.Tab.0.right" timestamp="1620151299703">
+      <screen x="-1920" y="86" width="1920" height="1040" />
+    </state>
+    <state width="1726" height="67" key="GridCell.Tab.0.right/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620151299703" />
+    <state width="1726" height="67" key="GridCell.Tab.1.bottom" timestamp="1620151299704">
+      <screen x="-1920" y="86" width="1920" height="1040" />
+    </state>
+    <state width="1726" height="67" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620151299704" />
+    <state width="1726" height="67" key="GridCell.Tab.1.center" timestamp="1620151299704">
+      <screen x="-1920" y="86" width="1920" height="1040" />
+    </state>
+    <state width="1726" height="67" key="GridCell.Tab.1.center/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620151299704" />
+    <state width="1726" height="67" key="GridCell.Tab.1.left" timestamp="1620151299704">
+      <screen x="-1920" y="86" width="1920" height="1040" />
+    </state>
+    <state width="1726" height="67" key="GridCell.Tab.1.left/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620151299704" />
+    <state width="1726" height="67" key="GridCell.Tab.1.right" timestamp="1620151299704">
+      <screen x="-1920" y="86" width="1920" height="1040" />
+    </state>
+    <state width="1726" height="67" key="GridCell.Tab.1.right/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620151299704" />
+    <state width="1726" height="67" key="GridCell.Tab.2.bottom" timestamp="1620151299704">
+      <screen x="-1920" y="86" width="1920" height="1040" />
+    </state>
+    <state width="1726" height="67" key="GridCell.Tab.2.bottom/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620151299704" />
+    <state width="1726" height="67" key="GridCell.Tab.2.center" timestamp="1620151299704">
+      <screen x="-1920" y="86" width="1920" height="1040" />
+    </state>
+    <state width="1726" height="67" key="GridCell.Tab.2.center/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620151299704" />
+    <state width="1726" height="67" key="GridCell.Tab.2.left" timestamp="1620151299704">
+      <screen x="-1920" y="86" width="1920" height="1040" />
+    </state>
+    <state width="1726" height="67" key="GridCell.Tab.2.left/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620151299704" />
+    <state width="1726" height="67" key="GridCell.Tab.2.right" timestamp="1620151299704">
+      <screen x="-1920" y="86" width="1920" height="1040" />
+    </state>
+    <state width="1726" height="67" key="GridCell.Tab.2.right/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620151299704" />
+    <state width="1726" height="67" key="GridCell.Tab.3.bottom" timestamp="1620151299704">
+      <screen x="-1920" y="86" width="1920" height="1040" />
+    </state>
+    <state width="1726" height="67" key="GridCell.Tab.3.bottom/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620151299704" />
+    <state width="1726" height="67" key="GridCell.Tab.3.center" timestamp="1620151299704">
+      <screen x="-1920" y="86" width="1920" height="1040" />
+    </state>
+    <state width="1726" height="67" key="GridCell.Tab.3.center/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620151299704" />
+    <state width="1726" height="67" key="GridCell.Tab.3.left" timestamp="1620151299704">
+      <screen x="-1920" y="86" width="1920" height="1040" />
+    </state>
+    <state width="1726" height="67" key="GridCell.Tab.3.left/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620151299704" />
+    <state width="1726" height="67" key="GridCell.Tab.3.right" timestamp="1620151299704">
+      <screen x="-1920" y="86" width="1920" height="1040" />
+    </state>
+    <state width="1726" height="67" key="GridCell.Tab.3.right/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620151299704" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1620061912256">
       <screen x="1920" y="47" width="1786" height="986" />
     </state>

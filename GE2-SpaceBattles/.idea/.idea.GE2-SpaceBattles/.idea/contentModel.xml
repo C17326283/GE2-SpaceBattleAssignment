@@ -51,7 +51,7 @@
             <e p="BaseBehaviours.cs" t="Include" />
             <e p="BaseBehaviours2.cs" t="Include" />
             <e p="BaseShipBehaviour.cs" t="Include" />
-            <e p="CombatBehaviours.cs" t="Include" />
+            <e p="CombatBehaviour.cs" t="Include" />
             <e p="FollowBehaviours.cs" t="Include" />
             <e p="OffsetPursueBehaviour.cs" t="Include" />
             <e p="ShipBehaviour1 1.txt" t="Include" />
@@ -67,7 +67,6 @@
             <e p="PathManage.cs" t="Include" />
             <e p="Pursue.cs" t="Include" />
             <e p="Seek.cs" t="Include" />
-            <e p="ShipBoid.cs" t="Include" />
             <e p="SteeringBehaviour.cs" t="Include" />
             <e p="Wander.cs" t="Include" />
           </e>
@@ -78,6 +77,7 @@
           <e p="Rocket.cs" t="Include" />
           <e p="Rotator.cs" t="Include" />
           <e p="SequenceManager.cs" t="Include" />
+          <e p="ShipBoid.cs" t="Include" />
           <e p="Shooting.cs" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
           <e p="SpawnManager.cs" t="Include" />

@@ -49,7 +49,9 @@ MonoBehaviour:
   shootAngle: 50
   readyToShoot: 0
   target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.01
+  combatBehaviours: {fileID: 0}
 --- !u!1 &5655017480225913835
 GameObject:
   m_ObjectHideFlags: 0
@@ -64,6 +66,8 @@ GameObject:
   - component: {fileID: 5655017480225913838}
   - component: {fileID: 5655017480225913839}
   - component: {fileID: 6485726412642657951}
+  - component: {fileID: 1758275684227767876}
+  - component: {fileID: -6579382620608616288}
   m_Layer: 0
   m_Name: AllianceShip
   m_TagString: Friendly
@@ -128,7 +132,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5655017480225913835}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55b4cca13f12cea42a807a47bab280bc, type: 3}
   m_Name: 
@@ -162,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scripts:
-  - {fileID: 4900000, guid: 4a86e57df98f46043a9ad5251efaf422, type: 3}
+  - {fileID: 4900000, guid: 86f8db1f4e15b4e4cbf6c1e607c34f62, type: 3}
   autoReset: 1
   tickOn: 0
   sourceInfos:
@@ -185,6 +189,45 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &1758275684227767876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655017480225913835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad05ef8cba64680b5f33598ec1d9e81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipBoid: {fileID: 0}
+  enemyTarget: {fileID: 0}
+  divertTarget: {x: 0, y: 0, z: 0}
+  shipsHolder: {fileID: 0}
+  enemyTags:
+  - Alliance
+  - Normandy
+  engagementDistance: 7000
+  divertDistance: 300
+  arrivedDist: 100
+--- !u!114 &-6579382620608616288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655017480225913835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e855596b3280480c8048d9a0606d7d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipBoid: {fileID: 0}
+  followObjName: Reaper(Clone)
+  followObj: {fileID: 0}
+  followOffset: {x: 0, y: 0, z: 0}
+  followOffsetDistance: 600
 --- !u!64 &5655017479426552974
 MeshCollider:
   m_ObjectHideFlags: 0

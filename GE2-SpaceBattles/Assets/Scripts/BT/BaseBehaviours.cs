@@ -179,7 +179,7 @@ public class BaseBehaviours : MonoBehaviour
                     if (curDist < closestDist)
                     {
                         target = ship.transform;
-                        gun.target = target.gameObject;
+                        gun.target = target;
                         closestDist = curDist;
                     }
 //                    print("set target bt");
