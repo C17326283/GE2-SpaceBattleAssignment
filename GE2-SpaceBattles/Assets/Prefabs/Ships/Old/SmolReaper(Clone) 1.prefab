@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 4005834024593650106}
   - component: {fileID: 1128173742498250210}
   m_Layer: 0
-  m_Name: SmolReaper(Clone)
+  m_Name: SmolReaper(Clone) 1
   m_TagString: Reaper
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

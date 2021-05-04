@@ -48,6 +48,7 @@ public class SequenceManager : MonoBehaviour
     {
         Debug.Log("Reapers arrive and camera follows them as they move toward citadel");
         spawnManager.SpawnNextGroup();//spawn reapers
+        camTargeting.transform.parent = null;
         camTargeting.transform.position = camPointManager.GetPoint();
         camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
         
@@ -67,6 +68,7 @@ public class SequenceManager : MonoBehaviour
     public void Seq1_3(float waitBeforeNext)
     {
         Debug.Log("Reaper Side view");
+        camTargeting.transform.parent = null;
         camTargeting.transform.position = camTargeting.gameObjectToLookAt.transform.position + camTargeting.gameObjectToLookAt.transform.InverseTransformDirection(GetOffset());
         camTargeting.transform.parent = camTargeting.gameObjectToLookAt.transform;
         
@@ -88,6 +90,17 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq2_2(float waitBeforeNext)
     {
+        Debug.Log("Citadel Starts closing");
+        camTargeting.transform.parent = null;
+        camTargeting.transform.position = camPointManager.GetPoint();
+        camTargeting.gameObjectToLookAt = GameObject.Find("CitadelDefencePoint");
+        
+        //continue to next event which trigger next seq
+        StartCoroutine(NextSeq(waitBeforeNext));
+    }
+    
+    public void Seq2_3(float waitBeforeNext)
+    {
         Debug.Log("Reaper ramming ships");
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
         camTargeting.transform.parent = Reaper.transform;
@@ -99,7 +112,7 @@ public class SequenceManager : MonoBehaviour
         StartCoroutine(NextSeq(waitBeforeNext));
     }
     
-    public void Seq2_3(float waitBeforeNext)
+    public void Seq2_4(float waitBeforeNext)
     {
         Debug.Log("Reaper entering citadel");
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
@@ -112,7 +125,7 @@ public class SequenceManager : MonoBehaviour
         StartCoroutine(NextSeq(waitBeforeNext));
     }
     
-    public void Seq2_4(float waitBeforeNext)
+    public void Seq2_5(float waitBeforeNext)
     {
         Debug.Log("Reaper attaching to spire");
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
@@ -128,6 +141,7 @@ public class SequenceManager : MonoBehaviour
     public void Seq3_1(float waitBeforeNext)
     {
         Debug.Log("Focus on teleporter Arrives");
+        camTargeting.transform.parent = null;
         camTargeting.transform.position = camPointManager.GetPoint();
         camTargeting.gameObjectToLookAt = GameObject.Find("Teleporter");
         
@@ -141,7 +155,6 @@ public class SequenceManager : MonoBehaviour
         
         spawnManager.SpawnNextGroup();//normandy
         normandy = GameObject.Find("Normandy(Clone)");
-        camTargeting.transform.position = camPointManager.GetPoint();
         camTargeting.gameObjectToLookAt = normandy;
         
         //continue to next event which trigger next seq
@@ -173,9 +186,8 @@ public class SequenceManager : MonoBehaviour
     public void Seq4_2(float waitBeforeNext)
     {
         Debug.Log("Alliance flies in through explosions");
-        
-        camTargeting.transform.position = normandy.transform.position + normandy.transform.InverseTransformDirection(GetOffset());
         camTargeting.transform.parent = normandy.transform;
+        camTargeting.transform.position = normandy.transform.position + normandy.transform.InverseTransformDirection(GetOffset());
         
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(waitBeforeNext));
@@ -197,9 +209,8 @@ public class SequenceManager : MonoBehaviour
     public void Seq5_1(float waitBeforeNext)
     {
         Debug.Log("Citadel opens and ships move in");
-        
-        camTargeting.transform.position = normandy.transform.position + normandy.transform.InverseTransformDirection(GetOffset());
         camTargeting.transform.parent = normandy.transform;
+        camTargeting.transform.position = normandy.transform.position + normandy.transform.InverseTransformDirection(GetOffset());
         
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(waitBeforeNext));
@@ -236,7 +247,7 @@ public class SequenceManager : MonoBehaviour
     public void Seq5_4(float waitBeforeNext)
     {
         Debug.Log("Everyone starts firing");
-        
+        camTargeting.transform.parent = null;
         camTargeting.transform.position = camPointManager.GetPoint();
         //todo look at alliance ship instead of reaper
         camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
@@ -248,7 +259,7 @@ public class SequenceManager : MonoBehaviour
     public void Seq6_1(float waitBeforeNext)
     {
         Debug.Log("Normandy dips for big attack");
-        
+        camTargeting.transform.parent = null;
         camTargeting.transform.position = camPointManager.GetPoint();
         camTargeting.gameObjectToLookAt = normandy;
         
@@ -258,8 +269,8 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq6_2(float waitBeforeNext)
     {
-        Debug.Log("Normandy dips for big attack");
-        
+        Debug.Log("Normandy shoots big rocket");
+        camTargeting.transform.parent = null;
         camTargeting.transform.position = camPointManager.GetPoint();
         //look at normandy rocket
         camTargeting.gameObjectToLookAt = normandy;
@@ -273,6 +284,7 @@ public class SequenceManager : MonoBehaviour
         Debug.Log("Sovereign explodes");
         
         camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
+        camTargeting.transform.parent = null;
         camTargeting.transform.position = camPointManager.GetPoint();
         
         //continue to next event which trigger next seq
@@ -284,6 +296,7 @@ public class SequenceManager : MonoBehaviour
         Debug.Log("Normandy flys away");
         
         camTargeting.gameObjectToLookAt = normandy;
+        camTargeting.transform.parent = null;
         camTargeting.transform.position = camPointManager.GetPoint();
         
     }
