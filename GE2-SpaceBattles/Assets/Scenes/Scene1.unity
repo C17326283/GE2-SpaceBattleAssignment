@@ -878,6 +878,7 @@ GameObject:
   - component: {fileID: 52227339}
   - component: {fileID: 52227338}
   - component: {fileID: 52227337}
+  - component: {fileID: 52227340}
   m_Layer: 0
   m_Name: Ship (12)
   m_TagString: Friendly
@@ -942,6 +943,19 @@ Transform:
   m_Father: {fileID: 78719686}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -180.278, z: 0}
+--- !u!114 &52227340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52227336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfe07337d1945bbaae78696587418c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipBoid: {fileID: 0}
 --- !u!1 &60312841
 GameObject:
   m_ObjectHideFlags: 0
@@ -16209,7 +16223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &839942950
 Transform:
   m_ObjectHideFlags: 0

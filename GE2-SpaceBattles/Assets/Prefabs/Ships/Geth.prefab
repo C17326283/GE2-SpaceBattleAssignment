@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5210357130399442917}
   - component: {fileID: 4700354124514421623}
   - component: {fileID: 651098678136584903}
+  - component: {fileID: -129555161611945519}
   - component: {fileID: 5311416907141372187}
-  - component: {fileID: 8373680550477045467}
   - component: {fileID: 4005834024593650106}
   - component: {fileID: 1128173742498250210}
   m_Layer: 0
@@ -75,6 +75,23 @@ MonoBehaviour:
   alive: 1
   explosionSize: 50
   timeToDespawnAfterDeath: 20
+--- !u!114 &-129555161611945519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427803425292049769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e855596b3280480c8048d9a0606d7d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipBoid: {fileID: 0}
+  followObjName: Reaper(Clone)
+  followObj: {fileID: 0}
+  followOffset: {x: 0, y: 0, z: 0}
+  followOffsetDistance: 0
 --- !u!114 &5311416907141372187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scripts:
-  - {fileID: 4900000, guid: 4a86e57df98f46043a9ad5251efaf422, type: 3}
+  - {fileID: 4900000, guid: 86f8db1f4e15b4e4cbf6c1e607c34f62, type: 3}
   autoReset: 1
   tickOn: 0
   sourceInfos:
@@ -97,34 +114,6 @@ MonoBehaviour:
     breakPointStatuses: 
     collapsedLines: 
     btScript: 
---- !u!114 &8373680550477045467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427803425292049769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55b4cca13f12cea42a807a47bab280bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shipBoid: {fileID: 4005834024593650106}
-  target: {fileID: 0}
-  shipsHolder: {fileID: 0}
-  tagsToShoot:
-  - Alliance
-  - Normandy
-  slowingDistance: 100
-  stoppingDistance: 200
-  engagementDistance: 20000
-  defaultPosObj: {fileID: 0}
-  path: {fileID: 0}
-  gun: {fileID: 3841683785471769305}
-  wanderPoint: {fileID: 0}
-  divertRadius: 500
-  patrolOffsetDistance: 1000
-  followObjName: Reaper(Clone)
 --- !u!114 &4005834024593650106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,10 +128,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceToApply: {x: -0.90991277, y: -0.011531306, z: 1.78099}
   rb: {fileID: 1128173742498250210}
-  moveSpeed: 400
-  maxMag: 400
-  bankingAmount: 0.1
-  turnSpeed: 10
+  moveSpeed: 300
+  maxMag: 300
+  bankingAmount: 2
+  turnSpeed: 2
 --- !u!54 &1128173742498250210
 Rigidbody:
   m_ObjectHideFlags: 0

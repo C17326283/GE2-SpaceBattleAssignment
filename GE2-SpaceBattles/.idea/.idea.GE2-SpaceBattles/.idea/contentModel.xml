@@ -49,7 +49,12 @@
           <e p="BoidPath.cs" t="Include" />
           <e p="BT" t="Include">
             <e p="BaseBehaviours.cs" t="Include" />
+            <e p="BaseBehaviours2.cs" t="Include" />
+            <e p="BaseShipBehaviour.cs" t="Include" />
+            <e p="CombatBehaviours.cs" t="Include" />
             <e p="FollowBehaviours.cs" t="Include" />
+            <e p="OffsetPursueBehaviour.cs" t="Include" />
+            <e p="ShipBehaviour1 1.txt" t="Include" />
             <e p="ShipBehaviour1.txt" t="Include" />
           </e>
           <e p="CameraPointManager.cs" t="Include" />
