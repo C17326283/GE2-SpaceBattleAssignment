@@ -3415,6 +3415,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2007546604}
     m_Modifications:
+    - target: {fileID: -6579382620608616288, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: followObjName
+      value: CitadelDefencePoint
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913833, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: maxMag
       value: 250
@@ -3668,6 +3672,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2007546604}
     m_Modifications:
+    - target: {fileID: -6579382620608616288, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: followObjName
+      value: Flagship
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758275684227767876, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: engagementDistance
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913833, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: maxMag
       value: 250
@@ -6099,6 +6111,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2007546604}
     m_Modifications:
+    - target: {fileID: -6579382620608616288, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: followObjName
+      value: CitadelDefencePoint
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913833, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: maxMag
       value: 250
@@ -20366,6 +20382,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2007546604}
     m_Modifications:
+    - target: {fileID: -6579382620608616288, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: followObjName
+      value: Flagship
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758275684227767876, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: engagementDistance
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913833, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: maxMag
       value: 250
@@ -20447,6 +20471,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2007546604}
     m_Modifications:
+    - target: {fileID: -6579382620608616288, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: followObjName
+      value: CitadelDefencePoint
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913833, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: maxMag
       value: 50
@@ -21388,6 +21416,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2007546604}
     m_Modifications:
+    - target: {fileID: -6579382620608616288, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: followObjName
+      value: CitadelDefencePoint
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913833, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: maxMag
       value: 250
@@ -21611,6 +21643,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2007546604}
     m_Modifications:
+    - target: {fileID: -6579382620608616288, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: followObjName
+      value: CitadelDefencePoint
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913833, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: maxMag
       value: 50
@@ -21969,6 +22005,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2007546604}
     m_Modifications:
+    - target: {fileID: -6579382620608616288, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: followObjName
+      value: CitadelDefencePoint
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913833, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: maxMag
       value: 250
@@ -26782,6 +26822,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2007546604}
     m_Modifications:
+    - target: {fileID: -6579382620608616288, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: followObjName
+      value: CitadelDefencePoint
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913833, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: maxMag
       value: 50
@@ -27100,6 +27144,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2007546604}
     m_Modifications:
+    - target: {fileID: -6579382620608616288, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: followObjName
+      value: Flagship
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758275684227767876, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: engagementDistance
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913833, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: maxMag
       value: 250
@@ -34972,6 +35024,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2007546604}
     m_Modifications:
+    - target: {fileID: -6579382620608616288, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: followObjName
+      value: CitadelDefencePoint
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913833, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: maxMag
       value: 50
@@ -44629,6 +44685,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2007546604}
     m_Modifications:
+    - target: {fileID: -6579382620608616288, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: followObjName
+      value: Flagship
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758275684227767876, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: engagementDistance
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913833, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: maxMag
       value: 250
@@ -46014,6 +46078,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2007546604}
     m_Modifications:
+    - target: {fileID: -6579382620608616288, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: followObjName
+      value: CitadelDefencePoint
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913833, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: maxMag
       value: 250
@@ -46967,6 +47035,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2007546604}
     m_Modifications:
+    - target: {fileID: -6579382620608616288, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: followObjName
+      value: Flagship
+      objectReference: {fileID: 0}
+    - target: {fileID: 1758275684227767876, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: engagementDistance
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913833, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: maxMag
       value: 250
@@ -47262,6 +47338,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2007546604}
     m_Modifications:
+    - target: {fileID: -6579382620608616288, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: followObjName
+      value: CitadelDefencePoint
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913833, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: maxMag
       value: 50

@@ -133,8 +133,8 @@ MonoBehaviour:
   mass: 5
   damping: 0.001
   banking: 0.001
-  maxSpeed: 150
-  maxForce: 200
+  maxSpeed: 100
+  maxForce: 100
 --- !u!95 &7177627545569228149
 Animator:
   serializedVersion: 3

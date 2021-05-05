@@ -100,7 +100,7 @@ public class SequenceManager : MonoBehaviour
     {
         Debug.Log("Citadel Starts closing");
         SetCameraLook(camPointManager.GetPoint());
-        camTargeting.gameObjectToLookAt = GameObject.Find("CitadelDefencePoint");
+        //camTargeting.gameObjectToLookAt = GameObject.Find("CitadelDefencePoint");
         
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(waitBeforeNext));
