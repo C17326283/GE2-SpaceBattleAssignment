@@ -8,13 +8,18 @@ public class Projectile : MonoBehaviour
     
     public float hitDamage = 5;
     public float hitInFrontDistance = 500f;
-    public float destroyTime = 10;
+    public float minDestroyTime = 9;
+    public float maxDestroyTime = 11;
 
     public Rigidbody rb;
     public Vector3 lastPos;
 
     public GameObject hitExplosion;
-    public LayerMask projectileLayerToAvoid;
+    
+    public float startForce = 10;
+    //public LayerMask projectileLayerToAvoid;
+
+    public String parentShipTag;
 
 
     public void OnDrawGizmos()
@@ -30,20 +35,24 @@ public class Projectile : MonoBehaviour
     void Awake()
     {
         rb = this.gameObject.GetComponent<Rigidbody>();
-        projectileLayerToAvoid = 1 << 6;//set to only avoid layer 5
+        //projectileLayerToAvoid = 1 << 6;//set to only avoid layer 5
+        
+        //lasers have initial force
+        rb.AddForce(transform.forward*startForce,ForceMode.Impulse);
     }
     
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         Vector3 bulletDir = ( lastPos - transform.position ).normalized;
         float moveLen = Vector3.Distance(lastPos,transform.position);
         
         RaycastHit hit;
-        if (Physics.Raycast(lastPos, bulletDir, out hit, moveLen+hitInFrontDistance,projectileLayerToAvoid))
+        if (Physics.Raycast(lastPos, bulletDir, out hit, moveLen+hitInFrontDistance))
         {
-            HitObj(hit.transform.gameObject);
+            if(!hit.transform.CompareTag(transform.tag))//dont hit self
+                HitObj(hit.transform.gameObject);
         }
         lastPos = transform.position;
         
@@ -56,26 +65,21 @@ public class Projectile : MonoBehaviour
 
     public void HitObj(GameObject hitGameObject)
     {
+        print("hitobj: "+hitGameObject);
         //stop obj but let trail stay 
-        //transform.position = hit.point;
         rb.isKinematic = true;
+        
+        print(transform.name+" hit "+hitGameObject.transform.name);
+        GameObject explosion = GameObject.Instantiate(hitExplosion);
+        explosion.transform.position = this.transform.position;
+        GetComponentInChildren<MeshRenderer>().enabled = false;
         
         //try get a life script reference
         Life otherLife = CheckHitParentLifeRecursive(hitGameObject.transform.gameObject);
             
         if (otherLife!=null)
         {
-            print(transform.name+" hit "+hitGameObject.transform.name);
             otherLife.currentHealth -= hitDamage;
-            GameObject explosion = GameObject.Instantiate(hitExplosion);
-            explosion.transform.position = this.transform.position;
-
-            GetComponent<MeshRenderer>().enabled = false;
-
-        }
-        else
-        {
-//                print("no life hit "+hit.transform.name);
         }
     }
 

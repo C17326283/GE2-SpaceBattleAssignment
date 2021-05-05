@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6330373739725993282}
   - component: {fileID: 455518239073510736}
   - component: {fileID: 7961098023568849934}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: AllianceLaser
   m_TagString: Untagged
   m_Icon: {fileID: 0}

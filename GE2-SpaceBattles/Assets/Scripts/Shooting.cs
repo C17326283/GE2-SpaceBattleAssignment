@@ -96,6 +96,7 @@ public class Shooting : MonoBehaviour
         
         spawned.transform.forward = toTarget ;
         spawned.transform.position = this.transform.position;
+        spawned.transform.tag = transform.parent.tag;//tag the projectile to avoid hitting own ships
 
         if (spawned.GetComponent<SeekingRocket>())
             spawned.GetComponent<SeekingRocket>().target = target;

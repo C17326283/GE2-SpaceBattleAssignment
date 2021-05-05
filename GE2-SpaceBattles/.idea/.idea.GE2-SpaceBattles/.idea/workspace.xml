@@ -20,11 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/AllianceLaser.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/AllianceLaser.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rocket.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rocket.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SeekingRocket.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SeekingRocket.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/AllianceShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/AllianceShip.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Geth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Geth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Old/Reaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Old/Reaper.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Laser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Laser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SeekingRocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SeekingRocket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +74,6 @@
         <option value="$PROJECT_DIR$/Assets/Life.cs" />
         <option value="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/PandaBehaviour/Examples/03_Shooter/Assets/Unit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Laser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Sequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1.txt" />
@@ -80,14 +86,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1 1.txt" />
         <option value="$PROJECT_DIR$/Assets/DestroyAfterTime.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/CombatBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraTargeting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraPointManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Life.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SeekingRocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Laser.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SeekingRocket.cs" />
       </list>
     </option>
   </component>
@@ -145,7 +152,8 @@
       <workItem from="1619954661696" duration="10969000" />
       <workItem from="1620050094370" duration="15587000" />
       <workItem from="1620127392456" duration="14524000" />
-      <workItem from="1620151417391" duration="13791000" />
+      <workItem from="1620151417391" duration="14210000" />
+      <workItem from="1620217793694" duration="3773000" />
     </task>
     <servers />
   </component>

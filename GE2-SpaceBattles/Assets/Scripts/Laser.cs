@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class Laser : Projectile
 {
-    public float startForce = 1000;
     void Start()
     {
-        //lasers have initial force
-        rb.AddForce(transform.forward*startForce,ForceMode.Impulse);
         //rockets explode before death
-        Invoke("DestroyObj",destroyTime);//explode before normal 
+        Invoke("DestroyObj",Random.Range(minDestroyTime,maxDestroyTime));//explode before normal 
     }
 }

@@ -9,25 +9,35 @@ public class SeekingRocket : Rocket
     public float turnSpeed = 10;
     public void FixedUpdate()
     {
+        
+        
         if (GetAngleToTarget() < maxSeekingAngle)
         {
-            Quaternion toTarget = Quaternion.LookRotation(target.transform.position - transform.position);
+            Quaternion toTarget = Quaternion.LookRotation((target.transform.position - transform.position).normalized);
             
             
             transform.rotation = Quaternion.Slerp( transform.rotation, toTarget, Time.deltaTime * turnSpeed );
 
         }
-        base.rb.AddForce(transform.forward*continuousForce,ForceMode.VelocityChange);
+        base.rb.AddForce(transform.forward * (continuousForce * Time.deltaTime),ForceMode.Force);
+        rb.velocity = Vector3.ClampMagnitude(rb.velocity,maxVel);//prevent goinf too fast
 
     }
 
     public float GetAngleToTarget()
     {
-        Vector3 toTarget = (target.transform.position - transform.position).normalized;
+        if (target && target.gameObject.activeInHierarchy)
+        {
+            Vector3 toTarget = (target.transform.position - transform.position).normalized;
 
-        float angleToTarget = Vector3.Angle(transform.forward, toTarget);
+            float angleToTarget = Vector3.Angle(transform.forward, toTarget);
         
-        return angleToTarget; //returns value between 0 and 180 based on angle to sun
+            return angleToTarget; //returns value between 0 and 180 based on angle to sun
+        }
+        else
+        {
+            return Mathf.Infinity;//no target
+        }
     }
     
 

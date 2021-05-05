@@ -75,7 +75,7 @@ MonoBehaviour:
   currentHealth: 300
   DeathExplosion: {fileID: 7170199903285590178, guid: 26af278b6a7a2984685a10043378302b, type: 3}
   alive: 1
-  explosionSize: 50
+  explosionSize: 70
   timeToDespawnAfterDeath: 20
 --- !u!114 &5311416907141372187
 MonoBehaviour:
