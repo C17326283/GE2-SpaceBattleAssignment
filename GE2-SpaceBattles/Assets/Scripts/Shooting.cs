@@ -96,6 +96,9 @@ public class Shooting : MonoBehaviour
         
         spawned.transform.forward = toTarget ;
         spawned.transform.position = this.transform.position;
+
+        if (spawned.GetComponent<SeekingRocket>())
+            spawned.GetComponent<SeekingRocket>().target = target;
     }
 
     IEnumerator Reload()

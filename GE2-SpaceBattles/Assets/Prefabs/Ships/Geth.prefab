@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -709042884225375726}
   - component: {fileID: -129555161611945519}
   - component: {fileID: 1128173742498250210}
+  - component: {fileID: 7222630041932220408}
   m_Layer: 0
   m_Name: Geth
   m_TagString: Reaper
@@ -112,8 +113,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceToApply: {x: -0.90991277, y: -0.011531306, z: 1.78099}
   rb: {fileID: 1128173742498250210}
-  moveSpeed: 160
-  maxMag: 160
+  moveSpeed: 100
+  maxMag: 100
   bankingAmount: 5
   turnSpeed: 1
 --- !u!114 &-709042884225375726
@@ -135,9 +136,9 @@ MonoBehaviour:
   enemyTags:
   - Alliance
   - Normandy
-  engagementDistance: 7000
-  divertDistance: 300
-  arrivedDist: 100
+  engagementDistance: 9000
+  divertDistance: 500
+  arrivedDist: 150
 --- !u!114 &-129555161611945519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,11 +167,24 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &7222630041932220408
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427803425292049769}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: -181.8, y: 151.4, z: 1041.28}
+  m_Center: {x: 0, y: 0, z: 47.27}
 --- !u!1 &7281579435692897985
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26399e4a9ce5f2f41815c823e505f174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 690787040354296551, guid: 28d836ee7cbc18445ae87ae499773b0a, type: 3}
+  prefab: {fileID: 690787040354296551, guid: be8f9887851fe974abb338d5ee539ff0, type: 3}
   shootAttemptRate: 0.04
   shotCooldown: 6
   shootAngle: 50

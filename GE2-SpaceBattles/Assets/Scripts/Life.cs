@@ -44,6 +44,7 @@ public class Life : MonoBehaviour
         explosion.transform.localScale = new Vector3(explosionSize,explosionSize,explosionSize);
         gameObject.GetComponent<ShipBoid>().enabled = false;
         ExplodeParts();
+        print("Die"+transform.name);
     }
     
     private void ExplodeParts()

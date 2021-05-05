@@ -65,9 +65,10 @@ GameObject:
   - component: {fileID: 5655017480225913833}
   - component: {fileID: 5655017480225913838}
   - component: {fileID: 5655017480225913839}
-  - component: {fileID: 6485726412642657951}
   - component: {fileID: 1758275684227767876}
   - component: {fileID: -6579382620608616288}
+  - component: {fileID: 4452117245609018859}
+  - component: {fileID: 285387355290647551}
   m_Layer: 0
   m_Name: AllianceShip
   m_TagString: Friendly
@@ -121,8 +122,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceToApply: {x: 0, y: 0, z: 0}
   rb: {fileID: 0}
-  moveSpeed: 200
-  maxMag: 200
+  moveSpeed: 110
+  maxMag: 110
   bankingAmount: 0.1
   turnSpeed: 10
 --- !u!114 &5655017480225913838
@@ -175,20 +176,6 @@ MonoBehaviour:
     breakPointStatuses: 
     collapsedLines: 
     btScript: 
---- !u!64 &6485726412642657951
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5655017480225913835}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!114 &1758275684227767876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,11 +193,11 @@ MonoBehaviour:
   divertTarget: {x: 0, y: 0, z: 0}
   shipsHolder: {fileID: 0}
   enemyTags:
-  - Alliance
-  - Normandy
-  engagementDistance: 7000
-  divertDistance: 300
-  arrivedDist: 100
+  - Reaper
+  - Sovereign
+  engagementDistance: 4000
+  divertDistance: 500
+  arrivedDist: 200
 --- !u!114 &-6579382620608616288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,20 +215,37 @@ MonoBehaviour:
   followObj: {fileID: 0}
   followOffset: {x: 0, y: 0, z: 0}
   followOffsetDistance: 600
---- !u!64 &5655017479426552974
-MeshCollider:
+--- !u!114 &4452117245609018859
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9043042079469643125}
+  m_GameObject: {fileID: 5655017480225913835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d181d075cff82e74bb6fdbe2279eb3c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 300
+  currentHealth: 300
+  DeathExplosion: {fileID: 7170199903285590178, guid: 26af278b6a7a2984685a10043378302b, type: 3}
+  alive: 1
+  explosionSize: 50
+  timeToDespawnAfterDeath: 20
+--- !u!65 &285387355290647551
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655017480225913835}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5512361600001258384, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 16.48, y: 8.410038, z: 55.341602}
+  m_Center: {x: 0, y: -0.95955515, z: -4.6860166}
 --- !u!1001 &2071497278720752895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -550,6 +554,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -5546747315237514756, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5546747315237514756, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
       propertyPath: m_TagString
       value: Friendly
       objectReference: {fileID: 0}
@@ -574,10 +582,5 @@ PrefabInstance:
 --- !u!4 &5327777132035003234 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
-  m_PrefabInstance: {fileID: 5655017479426552969}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &9043042079469643125 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -5546747315237514756, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
   m_PrefabInstance: {fileID: 5655017479426552969}
   m_PrefabAsset: {fileID: 0}

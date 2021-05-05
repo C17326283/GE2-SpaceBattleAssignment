@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 690787040354296552}
-  - component: {fileID: 2452912710700619171}
   - component: {fileID: 8974859291869625079}
   - component: {fileID: 3523085584948924232}
+  - component: {fileID: -2113252120300105726}
   m_Layer: 6
-  m_Name: Rocket
+  m_Name: SeekingRocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,29 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2452912710700619171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 690787040354296551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5d8d0a0d7059164ea2795c4da9ff1bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitDamage: 300
-  hitInFrontDistance: 500
-  destroyTime: 8
-  rb: {fileID: 0}
-  lastPos: {x: 0, y: 0, z: 0}
-  hitExplosion: {fileID: 6525372132480378010, guid: c1d6f3e10d689014788c4525fb46d2eb, type: 3}
-  projectileLayerToAvoid:
-    serializedVersion: 2
-    m_Bits: 64
-  continuousForce: 5
-  explosionSize: 20
 --- !u!54 &8974859291869625079
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -86,6 +63,32 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.008043638, y: 0.011369997, z: 0.041102953}
   m_Center: {x: 0.0008259132, y: 0.00049703656, z: 0.000794096}
+--- !u!114 &-2113252120300105726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690787040354296551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7264578fd445e8a6123cfc6267231c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitDamage: 300
+  hitInFrontDistance: 500
+  destroyTime: 8
+  rb: {fileID: 0}
+  lastPos: {x: 0, y: 0, z: 0}
+  hitExplosion: {fileID: 6525372132480378010, guid: c1d6f3e10d689014788c4525fb46d2eb, type: 3}
+  projectileLayerToAvoid:
+    serializedVersion: 2
+    m_Bits: 64
+  continuousForce: 5
+  explosionSize: 20
+  target: {fileID: 0}
+  maxSeekingAngle: 90
+  turnSpeed: 20000
 --- !u!1 &690787040962485325
 GameObject:
   m_ObjectHideFlags: 0

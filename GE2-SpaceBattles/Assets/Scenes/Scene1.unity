@@ -34414,8 +34414,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   cameraOffsets:
-  - {x: -100, y: 0, z: 0}
-  - {x: 0, y: -50, z: 100}
+  - {x: -2000, y: 0, z: 0}
+  - {x: 0, y: -200, z: 400}
   - {x: 0, y: -10, z: 500}
   - {x: 0, y: 0, z: 700}
   - {x: 500, y: 0, z: 0}
@@ -35849,13 +35849,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499350257}
-  m_LocalRotation: {x: -0.0070859347, y: -0.9609242, z: 0.024817849, w: -0.27560574}
-  m_LocalPosition: {x: 964.52344, y: 76.64686, z: -6945.338}
+  m_LocalRotation: {x: -0.010166018, y: -0.98805314, z: 0.023723155, w: -0.15193683}
+  m_LocalPosition: {x: 965.8, y: 123.9, z: -6947.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2106106352}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 2.864, y: 162.534, z: 0.739}
 --- !u!4 &1504370017 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 754a44094856f524ca0b456d7d61330b, type: 3}

@@ -21,7 +21,7 @@ public class Projectile : MonoBehaviour
     {
         if (isActiveAndEnabled && Application.isPlaying)
         {
-            Gizmos.color = Color.blue;
+            Gizmos.color = Color.red;
             Gizmos.DrawLine(transform.position, transform.position + (transform.forward*hitInFrontDistance));
         }
     }
