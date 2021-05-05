@@ -232,6 +232,9 @@ MonoBehaviour:
   rb: {fileID: 0}
   lastPos: {x: 0, y: 0, z: 0}
   hitExplosion: {fileID: 6525372132480378010, guid: c1d6f3e10d689014788c4525fb46d2eb, type: 3}
+  projectileLayerToAvoid:
+    serializedVersion: 2
+    m_Bits: 64
   startForce: 1000
 --- !u!54 &7961098023568849934
 Rigidbody:

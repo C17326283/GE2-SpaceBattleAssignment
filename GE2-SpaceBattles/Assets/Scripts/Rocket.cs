@@ -5,6 +5,7 @@ using UnityEngine;
 public class Rocket : Projectile
 {
     public float continuousForce = 100f;
+    public float explosionSize =2;
     
     void Start()
     {
@@ -18,7 +19,9 @@ public class Rocket : Projectile
 
     public void Explode()
     {
-        GameObject.Instantiate(hitExplosion);
+        GameObject explosion = GameObject.Instantiate(hitExplosion);
+        explosion.transform.localScale = new Vector3(explosionSize,explosionSize,explosionSize);
+        explosion.transform.position = this.transform.position;
         base.DestroyObj();
     }
 }

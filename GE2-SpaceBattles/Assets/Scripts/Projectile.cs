@@ -67,7 +67,8 @@ public class Projectile : MonoBehaviour
         {
             print(transform.name+" hit "+hitGameObject.transform.name);
             otherLife.currentHealth -= hitDamage;
-            GameObject.Instantiate(hitExplosion);
+            GameObject explosion = GameObject.Instantiate(hitExplosion);
+            explosion.transform.position = this.transform.position;
 
             GetComponent<MeshRenderer>().enabled = false;
 
@@ -100,7 +101,7 @@ public class Projectile : MonoBehaviour
     public void DestroyObj()
     {
         CancelInvoke();
-        Destroy(this);
+        Destroy(this.gameObject);
     }
     
     

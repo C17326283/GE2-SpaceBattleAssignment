@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraPointManager : MonoBehaviour
 {
     
-    public List<Vector3> points = new List<Vector3>();
+    public List<Transform> points = new List<Transform>();
     public int current = 0;
 
 
@@ -15,13 +15,13 @@ public class CameraPointManager : MonoBehaviour
         int count = transform.childCount;
         for (int i = 0; i < count; i++)
         {
-            points.Add(transform.GetChild(i).position);
+            points.Add(transform.GetChild(i));
         }
     }
     
-    public Vector3 GetPoint()
+    public Transform GetPoint()
     {
-        Vector3 pointToReturn = points[current];
+        Transform pointToReturn = points[current];
         AdvanceToNext();
         return pointToReturn;//the one before advanced
     }

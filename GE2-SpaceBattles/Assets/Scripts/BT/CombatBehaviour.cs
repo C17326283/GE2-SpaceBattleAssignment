@@ -7,9 +7,7 @@ using Random = UnityEngine.Random;
 
 public class CombatBehaviour : BaseShipBehaviour
 {
-    [HideInInspector]
     public Transform enemyTarget;
-    [HideInInspector]
     public Vector3 divertTarget = Vector3.zero;
     [HideInInspector]
     public GameObject shipsHolder;//Object holding all ships for easy searching//todo increase performance by checking ships in collider?
