@@ -51,11 +51,11 @@ public class PathFollowBehaviour : BaseShipBehaviour
     [Task]
     public void SeekNextPoint()
     {
+        base.shipBoid.ArriveForce(nextWaypoint,2);
+        //Vector3 desired = nextWaypoint - transform.position;
+        //desired.Normalize();
 
-        Vector3 desired = nextWaypoint - transform.position;
-        desired.Normalize();
-
-        shipBoid.AddToForce(desired, 2);
+        //shipBoid.AddToForce(desired, 2);
         Task.current.Succeed();
         
     }

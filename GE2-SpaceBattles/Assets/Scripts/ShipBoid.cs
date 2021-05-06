@@ -10,6 +10,8 @@ public class ShipBoid : MonoBehaviour
     public Rigidbody rb;
 
     public float moveSpeed;
+    
+    public float maxSpeed;
     public float maxMag;
 
     private Vector3 force;
@@ -40,12 +42,37 @@ public class ShipBoid : MonoBehaviour
         AimAtMag();
         
     }
-
-    //add to the force that needs to be added on the update but compound them together
-    public void AddToForce(Vector3 forceToAdd,float multiplier)
+    
+    public void SeekForce(Vector3 target)
     {
-        //forceToApply = forceToApply + (transform.InverseTransformDirection(forceToAdd)*multiplier);
-        forceToApply = forceToApply + (forceToAdd*multiplier);
+        Vector3 desired = target - transform.position;
+        desired.Normalize();
+        desired *= moveSpeed;
+
+        AddToForce(desired,2);
+    }
+
+    public void ArriveForce(Vector3 target, float slowingDistance = 100.0f)
+    {
+        Vector3 toTarget = target - transform.position;
+
+        float distance = Vector3.Distance(target,transform.position);
+        
+        if (distance > slowingDistance/100)//dont apply if super close
+        {        
+            float ramped = maxSpeed * (distance / slowingDistance);
+
+            float clamped = Mathf.Min(ramped, maxSpeed);
+            Vector3 desired = clamped * (toTarget / distance);
+
+            AddToForce(desired,2);
+        }  
+    }
+
+    //separated so can be called in special cases as well as from seek or arrive force
+    public void AddToForce(Vector3 forceToAdd,float mult)
+    {
+        forceToApply = forceToApply + (forceToAdd*mult);
     }
 
     //add the force based on the built up calculations
@@ -75,11 +102,6 @@ public class ShipBoid : MonoBehaviour
             Vector3 tempUp = Vector3.Lerp(transform.up, Vector3.up + (acceleration * bankingAmount), Time.deltaTime * 3.0f);
 
             transform.LookAt(transform.position+rb.velocity, tempUp);
-
-            //Quaternion rotation = Quaternion.LookRotation(rb.velocity, tempUp);
-            //do it slowly over time
-            //rb.transform.rotation = Quaternion.Slerp(transform.rotation, rotation, (turnSpeed)*Time.deltaTime);
-
         }
     }
 }

@@ -6,8 +6,6 @@ using Random = UnityEngine.Random;
 
 public class GunTargeting : MonoBehaviour
 {
-    public float checkFrequency = 1;
-
     public float range = 3000;
 
     public float radius = 1000;

@@ -27,12 +27,13 @@ public class CombatBehaviour : BaseShipBehaviour
     [Task]
     public void PursueEnemy()
     {
-        Vector3 desired = enemyTarget.position - transform.position;
-        desired.Normalize();
+        base.shipBoid.ArriveForce(enemyTarget.position,2);
+        //Vector3 desired = enemyTarget.position - transform.position;
+        //desired.Normalize();
         //desired *= maxSpeed;
         
 //        print("shipBoid "+base.shipBoid+",desired"+desired);
-        base.shipBoid.AddToForce(desired,2);
+        //base.shipBoid.AddToForce(desired,2);
         Task.current.Succeed();
     }
     

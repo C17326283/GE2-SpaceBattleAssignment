@@ -78,13 +78,15 @@ public class FollowBehaviours : BaseBehaviours
     }
     
     [Task]
-    public void SeekForce()
+    public void SeekTarget()
     {
-        Vector3 desired = target.position - transform.position;
-        desired.Normalize();
+        base.shipBoid.ArriveForce(target.position,2);
+        
+        //Vector3 desired = target.position - transform.position;
+        //desired.Normalize();
         //desired *= maxSpeed;
         
-        shipBoid.AddToForce(desired,2);
+        //shipBoid.AddToForce(desired,2);
         Task.current.Succeed();
     }
     

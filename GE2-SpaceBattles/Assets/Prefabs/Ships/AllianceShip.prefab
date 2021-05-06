@@ -66,7 +66,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 9000
   radius: 800
   enemyTags: []
@@ -145,7 +144,7 @@ MonoBehaviour:
   maxMag: 300
   bankingAmount: 0.1
   turnSpeed: 10
-  mass: 5
+  mass: 10
 --- !u!114 &5655017480225913838
 MonoBehaviour:
   m_ObjectHideFlags: 0
