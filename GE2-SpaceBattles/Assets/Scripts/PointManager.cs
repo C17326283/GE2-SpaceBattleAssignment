@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraPointManager : MonoBehaviour
+public class PointManager : MonoBehaviour
 {
     
     public List<Transform> points = new List<Transform>();
@@ -19,7 +19,7 @@ public class CameraPointManager : MonoBehaviour
         }
     }
     
-    public Transform GetPoint()
+    public Transform GetNextPoint()
     {
         Transform pointToReturn = points[current];
         AdvanceToNext();

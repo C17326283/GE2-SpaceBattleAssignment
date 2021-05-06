@@ -20,7 +20,7 @@ public class TriggerSequence : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print("trigger from "+other);
+//        print("trigger from "+other);
         if (other.transform.name == nameOfTriggerObj)
         {
             print("trigger match ");

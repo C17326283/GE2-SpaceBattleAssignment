@@ -403,9 +403,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceToApply: {x: 0, y: 0, z: 0}
   rb: {fileID: 675041803783481498}
-  moveSpeed: 100
-  maxSpeed: 100
-  maxMag: 100
+  moveSpeed: 150
+  maxSpeed: 150
+  maxMag: 150
   bankingAmount: 0.34
   turnSpeed: 100
   mass: 5

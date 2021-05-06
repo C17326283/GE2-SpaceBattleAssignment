@@ -20,14 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/cit2.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/cit2.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/citadel2.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/citadel2.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Effects/EnergyExplosion (1).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Effects/EnergyExplosion (1).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GunTargeting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GunTargeting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/AllianceShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/AllianceShip.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Geth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Geth.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Normandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Normandy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Old/Reaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Old/Reaper.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SuperSeekingRocket 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SuperSeekingRocket 1.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/PathFollowBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/PathFollowBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraPointManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PointManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraPointManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PointManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Indiv/PathManage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Indiv/PathManage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Life.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Life.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TriggerSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TriggerSequence.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +55,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/GunTargeting.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rocket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Laser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.3.1/Runtime/ShadowUtils.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TriggerSequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DestroyAfterTime.cs" root0="FORCE_HIGHLIGHTING" />
@@ -65,7 +78,6 @@
         <option value="$PROJECT_DIR$/Assets/CameraPointManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rotator.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/PathManage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/ShipBoid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/FollowPath.cs" />
         <option value="$PROJECT_DIR$/Assets/Life.cs" />
@@ -81,8 +93,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/BaseShipBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/DestroyAfterTime.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraTargeting.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CameraPointManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Life.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Laser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SeekingRocket.cs" />
@@ -92,10 +102,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/CombatBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/FollowBehaviours.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/PathBehaviour.txt" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BT/PathFollowBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/PathManage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BT/PathFollowBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/GunTargeting.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraPointManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Life.cs" />
         <option value="$PROJECT_DIR$/Assets/TriggerSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
       </list>
@@ -157,7 +170,7 @@
       <workItem from="1620127392456" duration="14524000" />
       <workItem from="1620151417391" duration="14210000" />
       <workItem from="1620217793694" duration="23558000" />
-      <workItem from="1620303971174" duration="9550000" />
+      <workItem from="1620303971174" duration="17285000" />
     </task>
     <servers />
   </component>
@@ -255,10 +268,10 @@
       <screen x="1920" y="47" width="1786" height="986" />
     </state>
     <state x="2096" y="230" width="1409" height="974" key="dock-window-2/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@1920.47.1786.986" timestamp="1619306563244" />
-    <state x="-842" y="257" width="716" height="592" key="find.popup" timestamp="1620317275153">
+    <state x="-842" y="257" width="716" height="592" key="find.popup" timestamp="1620328384025">
       <screen x="-1920" y="86" width="1920" height="1040" />
     </state>
-    <state x="-842" y="257" width="716" height="592" key="find.popup/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620317275153" />
+    <state x="-842" y="257" width="716" height="592" key="find.popup/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620328384025" />
     <state x="638" y="253" width="644" height="534" key="find.popup/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@0.0.1920.1040" timestamp="1618755969848" />
     <state x="2513" y="287" width="666" height="534" key="find.popup/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@1920.47.1786.986" timestamp="1620260235737" />
     <state x="2476" y="258" width="672" height="678" key="search.everywhere.popup" timestamp="1620050231848">

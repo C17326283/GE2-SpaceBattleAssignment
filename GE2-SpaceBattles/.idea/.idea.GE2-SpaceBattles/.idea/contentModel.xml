@@ -61,7 +61,6 @@
             <e p="ShipBehaviour1 1.txt" t="Include" />
             <e p="ShipBehaviour1.txt" t="Include" />
           </e>
-          <e p="CameraPointManager.cs" t="Include" />
           <e p="CameraTargeting.cs" t="Include" />
           <e p="Indiv" t="Include">
             <e p="Boid.cs" t="Include" />
@@ -76,6 +75,7 @@
           </e>
           <e p="Laser.cs" t="Include" />
           <e p="Life.cs" t="Include" />
+          <e p="PointManager.cs" t="Include" />
           <e p="Projectile.cs" t="Include" />
           <e p="RandomTarget.cs" t="Include" />
           <e p="Rocket.cs" t="Include" />

@@ -113,9 +113,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceToApply: {x: -0.90991277, y: -0.011531306, z: 1.78099}
   rb: {fileID: 1128173742498250210}
-  moveSpeed: 150
-  maxSpeed: 0
-  maxMag: 150
+  moveSpeed: 200
+  maxSpeed: 200
+  maxMag: 200
   bankingAmount: 0.1
   turnSpeed: 10
   mass: 30
@@ -242,6 +242,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &3916733189396082215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 7000
+  range: 8000
   radius: 800
   enemyTags: []
   debugTargeting: 0

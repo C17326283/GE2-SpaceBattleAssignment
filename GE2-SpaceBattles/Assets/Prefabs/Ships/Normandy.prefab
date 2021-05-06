@@ -54,6 +54,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &2703797226902095813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +126,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.01
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &3409705306727920584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,6 +158,7 @@ GameObject:
   - component: {fileID: 3545141898352421480}
   - component: {fileID: -5836465063412746568}
   - component: {fileID: -208593740023329874}
+  - component: {fileID: -8634398338965947423}
   m_Layer: 0
   m_Name: Normandy
   m_TagString: Friendly
@@ -296,6 +299,19 @@ MonoBehaviour:
   alive: 1
   explosionSize: 70
   timeToDespawnAfterDeath: 20
+--- !u!65 &-8634398338965947423
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655017480225913835}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!64 &5655017479426552974
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -305,7 +321,7 @@ MeshCollider:
   m_GameObject: {fileID: 9043042079469643125}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30

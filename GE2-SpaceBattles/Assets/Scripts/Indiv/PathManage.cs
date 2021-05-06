@@ -24,7 +24,7 @@ public class PathManage : MonoBehaviour {
     }
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         waypoints.Clear();
         int count = transform.childCount;
         for (int i = 0; i < count; i++)

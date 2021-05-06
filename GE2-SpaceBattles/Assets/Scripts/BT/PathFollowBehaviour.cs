@@ -9,8 +9,6 @@ public class PathFollowBehaviour : BaseShipBehaviour
 {
     public PathManage path;
 
-    Vector3 nextWaypoint;
-
     public float waypointDistance = 50;
 
     public string spawnedPathName;
@@ -47,7 +45,7 @@ public class PathFollowBehaviour : BaseShipBehaviour
     [Task]
     public void IsAtWaypointCondition()
     {
-        if (Vector3.Distance(transform.position, nextWaypoint) < waypointDistance)
+        if (Vector3.Distance(transform.position, path.NextWaypoint()) < waypointDistance)
         {
             Task.current.Succeed();
         }
@@ -62,8 +60,8 @@ public class PathFollowBehaviour : BaseShipBehaviour
     {
         print("get next checkpoint");
         path.AdvanceToNext();
-        nextWaypoint = path.NextWaypoint();
-        if(nextWaypoint!=null)
+        
+        if(path.NextWaypoint()!=null)
             Task.current.Succeed();
         else
             Task.current.Fail();
@@ -72,7 +70,7 @@ public class PathFollowBehaviour : BaseShipBehaviour
     [Task]
     public void SeekNextPoint()
     {
-        base.shipBoid.ArriveForce(nextWaypoint,2);
+        base.shipBoid.ArriveForce(path.NextWaypoint(),2);
         //Vector3 desired = nextWaypoint - transform.position;
         //desired.Normalize();
 

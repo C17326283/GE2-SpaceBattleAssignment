@@ -9,10 +9,12 @@ public class SequenceManager : MonoBehaviour
 {
     public float timeToWaitBeforeStarting = 2;
     public SpawnManager spawnManager;
-    public CameraPointManager camPointManager;
+    public PointManager camPointManager;
+    public PointManager triggerPointManager;
     public CameraTargeting camTargeting;
     public GameObject normandy;
 
+    //Having all the sequences in events lets you better manage and trigger them from anywhere or sequentially
     public UnityEvent[] events;
     public Vector3[] cameraOffsets;//for having cam a certain distance away 
     
@@ -56,35 +58,42 @@ public class SequenceManager : MonoBehaviour
     }
 
     
-    public void Seq1_1(float waitBeforeNext)
+    //sequences with a parameter play for that length and then trigger the next
+    //triggered from start invoke
+    public void Seq1_1(float TriggerNextSequenceTime)
     {
         Debug.Log("Seq1_1 Reapers arrive and camera follows them as they move toward citadel");
         spawnManager.SpawnNextGroup();//spawn reapers
-        SetCameraLook(camPointManager.GetPoint());
+        SetCameraLook(camPointManager.GetNextPoint());
         camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
         
         //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        StartCoroutine(NextSeq(TriggerNextSequenceTime));
     }
     
+    //triggered from previous
     public void Seq1_2()
     {
         Debug.Log("Seq1_2 Spawn Geth after reaper");
         spawnManager.SpawnNextGroup();
+        
+        triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
     
-    public void Seq1_3(float waitBeforeNext)
+    //triggered from TriggerSideViewReaper world trigger
+    public void Seq1_3()
     {
         Debug.Log("Seq1_3 Reaper Side view");
         camTargeting.transform.parent = null;
         camTargeting.transform.position = GetOffset(camTargeting.gameObjectToLookAt.transform);
         camTargeting.transform.parent = camTargeting.gameObjectToLookAt.transform;
         
-        //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
+        
     }
     
-    public void Seq2_1(float waitBeforeNext)
+    //triggered from TriggerRocketsFiringAtAscention world trigger
+    public void Seq2_1(float TriggerNextSequenceTime)
     {
         Debug.Log("Seq2_1 Destiny ascension tries to escape");
         GameObject ascension = GameObject.Find("Flagship");
@@ -94,21 +103,22 @@ public class SequenceManager : MonoBehaviour
         camTargeting.gameObjectToLookAt = ascension;
         
         //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        StartCoroutine(NextSeq(TriggerNextSequenceTime));
     }
     
-    public void Seq2_2(float waitBeforeNext)
+    //triggered from previous
+    public void Seq2_2()
     {
         Debug.Log("Seq2_2 Citadel Starts closing");
-        SetCameraLook(camPointManager.GetPoint());
+        SetCameraLook(camPointManager.GetNextPoint());
         citadelAnim.SetBool("Closing",true);
         //camTargeting.gameObjectToLookAt = GameObject.Find("CitadelDefencePoint");
         
-        //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
     
-    public void Seq2_3(float waitBeforeNext)
+    //triggered from ReaperRammingShips world trigger
+    public void Seq2_3()
     {
         Debug.Log("Seq2_3 Reaper ramming ships");
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
@@ -117,11 +127,11 @@ public class SequenceManager : MonoBehaviour
 
         camTargeting.gameObjectToLookAt = Reaper;
         
-        //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
     
-    public void Seq2_4(float waitBeforeNext)
+    //triggered from ReaperEnteringCitadel world trigger
+    public void Seq2_4()
     {
         Debug.Log("Seq2_4 Reaper entering citadel");
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
@@ -143,11 +153,11 @@ public class SequenceManager : MonoBehaviour
             }
         }
         
-        //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
     
-    public void Seq2_5(float waitBeforeNext)
+    //triggered from ReaperAttachingToSpire world trigger
+    public void Seq2_5(float TriggerNextSequenceTime)
     {
         Debug.Log("Seq2_5 Reaper attaching to spire");
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
@@ -157,20 +167,22 @@ public class SequenceManager : MonoBehaviour
         camTargeting.gameObjectToLookAt = Reaper;
         
         //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        StartCoroutine(NextSeq(TriggerNextSequenceTime));
     }
     
-    public void Seq3_1(float waitBeforeNext)
+    //triggered from previous
+    public void Seq3_1(float TriggerNextSequenceTime)
     {
         Debug.Log("Seq3_1 Focus on teleporter Arrives");
-        SetCameraLook(camPointManager.GetPoint());
+        SetCameraLook(camPointManager.GetNextPoint());
         camTargeting.gameObjectToLookAt = GameObject.Find("Teleporter");
         
         //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        StartCoroutine(NextSeq(TriggerNextSequenceTime));
     }
     
-    public void Seq3_2(float waitBeforeNext)
+    //triggered from previous
+    public void Seq3_2(float TriggerNextSequenceTime)
     {
         Debug.Log("Seq3_2 Normandy Arrives");
         
@@ -179,19 +191,20 @@ public class SequenceManager : MonoBehaviour
         camTargeting.gameObjectToLookAt = normandy;
         
         //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        StartCoroutine(NextSeq(TriggerNextSequenceTime));
     }
     
-    public void Seq3_3(float waitBeforeNext)
+    //triggered from previous
+    public void Seq3_3()
     {
         Debug.Log("Seq3_3 Alliance Arrives");
         spawnManager.SpawnNextGroup();//alliance ships
         
-        //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
     
-    public void Seq4_1(float waitBeforeNext)
+    //triggered from AllianceBlowingUpGeth world trigger
+    public void Seq4_1(float TriggerNextSequenceTime)
     {
         Debug.Log("Seq4_1 Watch geth around alliance blow up");
         
@@ -201,19 +214,22 @@ public class SequenceManager : MonoBehaviour
         camTargeting.gameObjectToLookAt = ascension;
         
         //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        StartCoroutine(NextSeq(TriggerNextSequenceTime));
     }
     
-    public void Seq4_2(float waitBeforeNext)
+    //triggered from previous
+    public void Seq4_2(float TriggerNextSequenceTime)
     {
         Debug.Log("Seq4_2 Alliance flies in through explosions");
         camTargeting.transform.parent = normandy.transform;
         camTargeting.transform.position = GetOffset(normandy.transform);
+        camTargeting.gameObjectToLookAt = normandy;
         //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        StartCoroutine(NextSeq(TriggerNextSequenceTime));
     }
     
-    public void Seq4_3(float waitBeforeNext)
+    //triggered from previous
+    public void Seq4_3(float TriggerNextSequenceTime)
     {
         Debug.Log("Seq4_3 Ascension starts leaving");
         
@@ -223,15 +239,17 @@ public class SequenceManager : MonoBehaviour
         camTargeting.gameObjectToLookAt = ascension;
         
         //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        StartCoroutine(NextSeq(TriggerNextSequenceTime));
     }
     
-    public void Seq5_1(float waitBeforeNext)
+    //triggered from previous
+    public void Seq5_1()
     {
         Debug.Log("Seq5_1 Citadel opens and ships move in");
         citadelAnim.SetBool("Closing",false);
         camTargeting.transform.parent = normandy.transform;
         camTargeting.transform.position = GetOffset(normandy.transform);
+        camTargeting.gameObjectToLookAt = normandy;
         
         //geth stop following reaper
         GameObject shipsHolder = GameObject.Find("-ActiveShips-");
@@ -251,11 +269,11 @@ public class SequenceManager : MonoBehaviour
         normandyFollowB.followObjName = "Reaper(Clone)";
         normandyFollowB.followObj = null;
         
-        //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
     
-    public void Seq5_2(float waitBeforeNext)
+    //triggered from Alliance&NormandyIsShootingReaper
+    public void Seq5_2(float TriggerNextSequenceTime)
     {
         Debug.Log("Seq5_2 Sovereign fights back as its getting attacked while attached");
         
@@ -266,10 +284,11 @@ public class SequenceManager : MonoBehaviour
         camTargeting.gameObjectToLookAt = Reaper;
         
         //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        StartCoroutine(NextSeq(TriggerNextSequenceTime));
     }
     
-    public void Seq5_3(float waitBeforeNext)
+    //triggered from previous
+    public void Seq5_3(float TriggerNextSequenceTime)
     {
         Debug.Log("Seq5_3 Sovereign shields down");
         
@@ -280,60 +299,62 @@ public class SequenceManager : MonoBehaviour
         camTargeting.gameObjectToLookAt = Reaper;
         
         //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        StartCoroutine(NextSeq(TriggerNextSequenceTime));
     }
     
-    public void Seq5_4(float waitBeforeNext)
+    //triggered from previous
+    public void Seq5_4()
     {
         Debug.Log("Seq5_4 Everyone starts firing");
-        SetCameraLook(camPointManager.GetPoint());
+        SetCameraLook(camPointManager.GetNextPoint());
         //todo look at alliance ship instead of reaper
         camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
         
-        //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
     
-    public void Seq6_1(float waitBeforeNext)
+    //triggered from NormandyReadyForBigAttack world trigger
+    public void Seq6_1()
     {
         Debug.Log("Seq6_1 Normandy dips for big attack");
-        SetCameraLook(camPointManager.GetPoint());
+        SetCameraLook(camPointManager.GetNextPoint());
         camTargeting.gameObjectToLookAt = normandy;
         
-        //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
     
-    public void Seq6_2(float waitBeforeNext)
+    //triggered from SuperRocketTargetingReaper world trigger
+    public void Seq6_2()
     {
         Debug.Log("Seq6_2 Normandy shoots big rocket");
-        SetCameraLook(camPointManager.GetPoint());
+        SetCameraLook(camPointManager.GetNextPoint());
         //look at normandy rocket
         camTargeting.gameObjectToLookAt = normandy;
         
         normandy.transform.Find("SuperGun").gameObject.SetActive(true);//turn on super weapon
         
-        //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
     
-    public void Seq6_3(float waitBeforeNext)
+    //triggered from SovereignExplodes world trigger
+    public void Seq6_3(float TriggerNextSequenceTime)
     {
         Debug.Log("Seq6_3 Sovereign explodes");
         
         camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
-        SetCameraLook(camPointManager.GetPoint());
+        SetCameraLook(camPointManager.GetNextPoint());
         
         //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
+        StartCoroutine(NextSeq(TriggerNextSequenceTime));
     }
     
+    //triggered from previous
     public void Seq7_1()
     {
         Debug.Log("Seq7_1 Normandy flys away");
         
         camTargeting.gameObjectToLookAt = normandy;
-        SetCameraLook(camPointManager.GetPoint());
+        SetCameraLook(camPointManager.GetNextPoint());
         
     }
     

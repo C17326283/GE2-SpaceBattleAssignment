@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5655017479815528008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 28.95}
+  m_LocalPosition: {x: 0, y: 0, z: 24.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5655017480225913834}
@@ -54,6 +54,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.01
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &2209502598603725214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,7 +532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
       propertyPath: m_LocalRotation.w
