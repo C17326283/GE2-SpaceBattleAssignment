@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+[RequireComponent(typeof(GunTargeting))]
 public class Shooting : MonoBehaviour
 {
     public GameObject prefab;
@@ -21,6 +22,8 @@ public class Shooting : MonoBehaviour
     public float maxAccuracyOffset = .1f;
 
     public CombatBehaviour combatBehaviours;//use combat behaviour target if it has one
+
+    public GunTargeting targeting;
     
     // Start is called before the first frame update
     void Start()
@@ -31,39 +34,10 @@ public class Shooting : MonoBehaviour
         {
             combatBehaviours = GetComponentInParent<CombatBehaviour>();
         }
+
+        targeting = GetComponent<GunTargeting>();
     }
     
-    public Transform GetTarget()
-    {
-        if (combatBehaviours != null && combatBehaviours.enemyTarget!=null)
-        {
-            target = combatBehaviours.enemyTarget;
-        }
-        else
-        {
-            target = null;
-        }
-
-        return target;
-    }
-
-
-
-    public float GetAngleToTarget()
-    {
-        if (GetTarget() != null && target.gameObject.activeInHierarchy)
-        {
-            toTarget = (target.transform.position-transform.position).normalized;
-            
-            float angleToTarget = Vector3.Angle(transform.forward, toTarget);
-            return angleToTarget;//returns value between 0 and 180 based on angle to sun
-        }
-        else
-        {
-            return Mathf.Infinity;//no target
-        }
-    }
-
     IEnumerator RepeatShooting()
     {
         while (true)
@@ -82,6 +56,9 @@ public class Shooting : MonoBehaviour
             yield return new WaitForSeconds(shootAttemptRate);
         }
     }
+    
+    
+    
 
     public void Shoot()
     {
@@ -96,12 +73,47 @@ public class Shooting : MonoBehaviour
         
         spawned.transform.forward = toTarget ;
         spawned.transform.position = this.transform.position;
-        spawned.transform.tag = transform.parent.tag;//tag the projectile to avoid hitting own ships
+        spawned.GetComponent<Projectile>().parentShipTag = transform.parent.tag;//tag the projectile to avoid hitting own ships
 
         if (spawned.GetComponent<SeekingRocket>())
             spawned.GetComponent<SeekingRocket>().target = target;
     }
 
+    
+
+
+    public float GetAngleToTarget()
+    {
+        if (GetTarget() != null && target.gameObject.activeInHierarchy)
+        {
+            toTarget = (target.transform.position-transform.position).normalized;
+            
+            float angleToTarget = Vector3.Angle(transform.forward, toTarget);
+            return angleToTarget;//returns value between 0 and 180 based on angle to sun
+        }
+        else
+        {
+            return Mathf.Infinity;//no target
+        }
+    }
+    
+    
+    public Transform GetTarget()
+    {
+        if (combatBehaviours != null)
+        {
+            target = targeting.GetTarget();
+        }
+        else
+        {
+            target = null;
+        }
+
+        return target;
+    }
+
+
+    
     IEnumerator Reload()
     {
         readyToShoot = false;

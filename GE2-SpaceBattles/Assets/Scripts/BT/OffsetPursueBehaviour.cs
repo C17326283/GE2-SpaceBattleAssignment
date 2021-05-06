@@ -15,6 +15,8 @@ public class OffsetPursueBehaviour : BaseShipBehaviour
     public Vector3 followOffset; 
     public float followOffsetDistance;
 
+    public float maxDistAway = 1000;
+
     [Task]
     public void GetTargetOffset()
     {
@@ -27,6 +29,19 @@ public class OffsetPursueBehaviour : BaseShipBehaviour
         else
         {
             Task.current.Fail();
+        }
+    }
+    
+    [Task]
+    public void WithinOriginDistanceCondition()
+    {
+        if (Vector3.Distance(followOffset,transform.position)>maxDistAway)
+        {
+            Task.current.Fail();
+        }
+        else
+        {
+            Task.current.Succeed();
         }
     }
 

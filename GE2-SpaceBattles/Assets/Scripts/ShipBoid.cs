@@ -13,9 +13,11 @@ public class ShipBoid : MonoBehaviour
     public float maxMag;
 
     private Vector3 force;
+    private Vector3 acceleration;
 
     public float bankingAmount = 0.1f;
     public float turnSpeed = 0.1f;
+    public float mass = 5;
     
     public void OnDrawGizmos()
     {
@@ -33,46 +35,51 @@ public class ShipBoid : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        CalculateForce();
         ApplyForce();
         AimAtMag();
+        
     }
 
+    //add to the force that needs to be added on the update but compound them together
     public void AddToForce(Vector3 forceToAdd,float multiplier)
     {
+        //forceToApply = forceToApply + (transform.InverseTransformDirection(forceToAdd)*multiplier);
         forceToApply = forceToApply + (forceToAdd*multiplier);
     }
 
+    //add the force based on the built up calculations
+    public void CalculateForce()
+    {
+        force = forceToApply.normalized * moveSpeed;
+        force = force * (Time.deltaTime * 100);
+        
+        forceToApply = Vector3.zero;//reset
+    }
+    
+    //add the force based on the built up calculations
     public void ApplyForce()
     {
+        Vector3 newAcceleration = force / mass;//1 is temp mass
+        acceleration = Vector3.Lerp(acceleration, newAcceleration, Time.deltaTime);
         
-        force = forceToApply.normalized * moveSpeed;
-        
-        
-        rb.AddForce(force * (Time.deltaTime * 100));
+        rb.AddForce(acceleration,ForceMode.VelocityChange);
         rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxMag);//clamp
 
-        forceToApply = Vector3.zero;//reset
     }
 
     public void AimAtMag()
     {
-        Vector3 velocity = rb.velocity;
-        Vector3 acceleration = force / 1;//1 is temp mass
-        
-        
-        if (velocity.magnitude > 0)
+        if (rb.velocity.magnitude > 0)
         {
-            //transform.forward = velocity.normalized;
-            Quaternion rotation = Quaternion.LookRotation(velocity, Vector3.up);
+            Vector3 tempUp = Vector3.Lerp(transform.up, Vector3.up + (acceleration * bankingAmount), Time.deltaTime * 3.0f);
+
+            transform.LookAt(transform.position+rb.velocity, tempUp);
+
+            //Quaternion rotation = Quaternion.LookRotation(rb.velocity, tempUp);
             //do it slowly over time
-            rb.transform.rotation = Quaternion.Slerp(transform.rotation, rotation, (turnSpeed)*Time.deltaTime);
+            //rb.transform.rotation = Quaternion.Slerp(transform.rotation, rotation, (turnSpeed)*Time.deltaTime);
 
-            //Vector3 tempUp = Vector3.Lerp(transform.up, Vector3.up + (acceleration * bankingAmount), Time.deltaTime * 3.0f);
-            //transform.LookAt(transform.position + velocity, tempUp);
-            //transform.LookAt(transform.position + velocity, transform.up);
-
-            //transform.position += velocity * Time.deltaTime;
-            //velocity *= (1.0f - (damping * Time.deltaTime));
         }
     }
 }

@@ -26,8 +26,9 @@ public class Projectile : MonoBehaviour
     {
         if (isActiveAndEnabled && Application.isPlaying)
         {
-            Gizmos.color = Color.red;
+            Gizmos.color = Color.green;
             Gizmos.DrawLine(transform.position, transform.position + (transform.forward*hitInFrontDistance));
+        
         }
     }
     
@@ -51,7 +52,7 @@ public class Projectile : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(lastPos, bulletDir, out hit, moveLen+hitInFrontDistance))
         {
-            if(!hit.transform.CompareTag(transform.tag))//dont hit self
+            if(!hit.transform.CompareTag(parentShipTag))//dont hit self
                 HitObj(hit.transform.gameObject);
         }
         lastPos = transform.position;
@@ -65,11 +66,11 @@ public class Projectile : MonoBehaviour
 
     public void HitObj(GameObject hitGameObject)
     {
-        print("hitobj: "+hitGameObject);
+//        print("hitobj: "+hitGameObject);
         //stop obj but let trail stay 
         rb.isKinematic = true;
         
-        print(transform.name+" hit "+hitGameObject.transform.name);
+//        print(transform.name+" hit "+hitGameObject.transform.name);
         GameObject explosion = GameObject.Instantiate(hitExplosion);
         explosion.transform.position = this.transform.position;
         GetComponentInChildren<MeshRenderer>().enabled = false;

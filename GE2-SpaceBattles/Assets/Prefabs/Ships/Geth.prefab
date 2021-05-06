@@ -113,10 +113,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceToApply: {x: -0.90991277, y: -0.011531306, z: 1.78099}
   rb: {fileID: 1128173742498250210}
-  moveSpeed: 100
-  maxMag: 100
-  bankingAmount: 5
-  turnSpeed: 1
+  moveSpeed: 150
+  maxMag: 150
+  bankingAmount: 0.1
+  turnSpeed: 10
+  mass: 10
 --- !u!114 &-709042884225375726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +137,7 @@ MonoBehaviour:
   enemyTags:
   - Alliance
   - Normandy
-  engagementDistance: 9000
+  engagementDistance: 1500
   divertDistance: 500
   arrivedDist: 150
 --- !u!114 &-129555161611945519
@@ -156,6 +157,7 @@ MonoBehaviour:
   followObj: {fileID: 0}
   followOffset: {x: 0, y: 0, z: 0}
   followOffsetDistance: 600
+  maxDistAway: 1000
 --- !u!54 &1128173742498250210
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -195,6 +197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1278990024921948092}
   - component: {fileID: 3841683785471769305}
+  - component: {fileID: 3916733189396082215}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Reaper
@@ -237,6 +240,24 @@ MonoBehaviour:
   toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0
   combatBehaviours: {fileID: 0}
+  targeting: {fileID: 0}
+--- !u!114 &3916733189396082215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7281579435692897985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkFrequency: 1
+  range: 7000
+  radius: 800
+  enemyTags: []
+  debugTargeting: 0
 --- !u!1001 &8206659494598449424
 PrefabInstance:
   m_ObjectHideFlags: 0
