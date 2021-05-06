@@ -30,7 +30,7 @@ public class GunTargeting : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(GetComponentInParent<CombatBehaviour>())
+        if(GetComponentInParent<CombatBehaviour>() && enemyTags == null)//is a fighter and no specific tags set
             enemyTags = GetComponentInParent<CombatBehaviour>().enemyTags;//get the same enemy tags as combat behav
     }
 

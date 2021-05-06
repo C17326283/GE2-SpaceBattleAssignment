@@ -2,5 +2,9 @@ tree("Root")
     fallback
         sequence
             IsAtWaypointCondition()
-            GetNextWaypoint()
+            fallback
+                sequence
+                    IsLastWaypoint()
+                    Stop()
+                GetNextWaypoint()
         SeekNextPoint()

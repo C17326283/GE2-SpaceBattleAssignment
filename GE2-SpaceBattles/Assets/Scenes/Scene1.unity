@@ -421,7 +421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -500,18 +499,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 7298936790569633178}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: Flagship
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -1802,6 +1789,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &87426844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1814,7 +1802,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -2613,22 +2600,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -3703,22 +3674,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Alliance
       objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
 --- !u!1 &234978380 stripped
@@ -3975,18 +3930,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 7298936790569633178}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: Flagship
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1945789529257809651, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -6172,6 +6115,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &467624315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6184,7 +6128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -6435,22 +6378,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -6766,6 +6693,37 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!1 &491709814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 491709815}
+  m_Layer: 0
+  m_Name: Triggers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &491709815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491709814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 641448686}
+  m_Father: {fileID: 1106740930}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &496065277 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5546747315237514756, guid: 48aa410255c04ab419009ae69c07a25b, type: 3}
@@ -9033,6 +8991,130 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
   m_PrefabInstance: {fileID: 1791844865}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &641448685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 641448686}
+  - component: {fileID: 641448690}
+  - component: {fileID: 641448689}
+  - component: {fileID: 641448688}
+  - component: {fileID: 641448687}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &641448686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641448685}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -348.49222, y: -40.070396, z: -1228.3875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 491709815}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &641448687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641448685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc22f4e6c3ebe40458e99fc103ec7b8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameOfTriggerObj: Reaper(Clone)
+  triggerEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &641448688
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641448685}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10000, y: 10000, z: 100}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &641448689
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641448685}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &641448690
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641448685}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &645513221
 GameObject:
   m_ObjectHideFlags: 0
@@ -9087,6 +9169,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &645513224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9099,7 +9182,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -14380,6 +14462,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 5655017480225913833, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
+      propertyPath: turnSpeed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5655017480225913834, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_RootOrder
       value: 27
@@ -14431,22 +14517,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -15181,7 +15251,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -20856,18 +20925,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Alliance
       objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 7298936790569633178}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: Flagship
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 1000
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
 --- !u!1001 &802350464
@@ -20940,22 +20997,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -21472,22 +21513,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Alliance
       objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
 --- !u!1 &823672511
@@ -21975,22 +22000,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Alliance
       objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
 --- !u!1 &856226503
@@ -22201,22 +22210,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -22495,6 +22488,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &878028716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22507,7 +22501,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -22582,22 +22575,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -23455,6 +23432,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &940892383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23467,7 +23445,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -23664,6 +23641,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &969757184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23676,7 +23654,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -24322,22 +24299,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -25159,6 +25120,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &1074768548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25171,7 +25133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -25448,6 +25409,7 @@ Transform:
   - {fileID: 556801587}
   - {fileID: 1230108224}
   - {fileID: 2106106352}
+  - {fileID: 491709815}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -25505,6 +25467,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &1114214735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25517,7 +25480,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -25576,6 +25538,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &1116131090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25588,7 +25551,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -26012,18 +25974,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Alliance
       objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 7298936790569633178}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: Flagship
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 1000
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
 --- !u!1 &1146133706
@@ -26294,6 +26244,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &1168674814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26306,7 +26257,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -26503,6 +26453,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &1177133976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26515,7 +26466,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -27600,6 +27550,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &1247058258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27612,7 +27563,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -27671,6 +27621,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &1248982852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27683,7 +27634,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -27758,22 +27708,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -28089,18 +28023,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 7298936790569633178}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: Flagship
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -28904,6 +28826,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &1346256128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28916,7 +28839,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -29896,6 +29818,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &1388433235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29908,7 +29831,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -29983,22 +29905,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -35627,18 +35533,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Alliance
       objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 7298936790569633178}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: Flagship
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 1000
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
 --- !u!1 &1436198033
@@ -36191,22 +36085,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -36964,6 +36842,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &1484797383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36976,7 +36855,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -43012,22 +42890,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Alliance
       objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 200
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
 --- !u!1 &1635312195 stripped
@@ -43129,22 +42991,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -45159,18 +45005,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Alliance
       objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 7298936790569633178}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: Flagship
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 1000
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1945789529257809651, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -45432,22 +45266,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -46260,18 +46078,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Alliance
       objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 7298936790569633178}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: Flagship
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 1000
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
 --- !u!1001 &1874934186
@@ -46344,22 +46150,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -46708,18 +46498,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Alliance
       objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 7298936790569633178}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: Flagship
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 1000
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
 --- !u!1 &1927117712
@@ -46806,6 +46584,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &1929563670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46818,7 +46597,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -47293,6 +47071,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &1957313644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47305,7 +47084,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -47870,22 +47648,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Alliance
       objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
 --- !u!1 &1975893175
@@ -48153,6 +47915,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &1981078414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48165,7 +47928,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -48264,22 +48026,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
@@ -48612,6 +48358,7 @@ MonoBehaviour:
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
+  enemyTags: []
 --- !u!114 &2024611252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48624,7 +48371,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkFrequency: 1
   range: 3000
   radius: 1000
   enemyTags: []
@@ -48978,18 +48724,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Alliance
       objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 7298936790569633178}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: Flagship
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 1000
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
 --- !u!1 &2078353104
@@ -49276,22 +49010,6 @@ PrefabInstance:
     - target: {fileID: 5655017480225913835, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
       propertyPath: m_TagString
       value: Alliance
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: defaultPosObj
-      value: 
-      objectReference: {fileID: 1887487508}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: followObjName
-      value: CitadelDefencePoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: engagementDistance
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5655017480225913838, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}
-      propertyPath: patrolOffsetDistance
-      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 463e6fcd9a9b4ef43a22a9a36dc79b94, type: 3}

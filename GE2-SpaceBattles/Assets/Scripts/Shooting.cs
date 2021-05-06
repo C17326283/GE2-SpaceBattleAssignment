@@ -25,6 +25,9 @@ public class Shooting : MonoBehaviour
 
     public GunTargeting targeting;
     
+    public String[] enemyTags;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +36,8 @@ public class Shooting : MonoBehaviour
         if (combatBehaviours == null && GetComponentInParent<CombatBehaviour>() != null)
         {
             combatBehaviours = GetComponentInParent<CombatBehaviour>();
+            
+            enemyTags = GetComponentInParent<CombatBehaviour>().enemyTags;
         }
 
         targeting = GetComponent<GunTargeting>();
@@ -73,7 +78,8 @@ public class Shooting : MonoBehaviour
         
         spawned.transform.forward = toTarget ;
         spawned.transform.position = this.transform.position;
-        spawned.GetComponent<Projectile>().parentShipTag = transform.parent.tag;//tag the projectile to avoid hitting own ships
+        spawned.GetComponent<Projectile>().enemyTags = enemyTags;
+        //spawned.GetComponent<Projectile>().parentShipTag = transform.parent.tag;//tag the projectile to avoid hitting own ships
 
         if (spawned.GetComponent<SeekingRocket>())
             spawned.GetComponent<SeekingRocket>().target = target;

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3523085584948924232}
   - component: {fileID: -2113252120300105726}
   m_Layer: 2
-  m_Name: SeekingRocket
+  m_Name: SuperSeekingRocket 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 690787040354296551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 200, y: 200, z: 200}
+  m_LocalScale: {x: 300, y: 300, z: 300}
   m_Children:
   - {fileID: 1016848531802727847}
   m_Father: {fileID: 0}
@@ -75,21 +75,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7264578fd445e8a6123cfc6267231c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitDamage: 300
+  hitDamage: 30000000
   hitInFrontDistance: 500
-  minDestroyTime: 15
-  maxDestroyTime: 20
+  minDestroyTime: 1000000
+  maxDestroyTime: 2000000
   rb: {fileID: 0}
   lastPos: {x: 0, y: 0, z: 0}
-  hitExplosion: {fileID: 6525372132480378010, guid: c1d6f3e10d689014788c4525fb46d2eb, type: 3}
+  hitExplosion: {fileID: 7170199903285590178, guid: 26af278b6a7a2984685a10043378302b, type: 3}
   startForce: 20
-  parentShipTag: 
-  continuousForce: 200
-  explosionSize: 25
-  maxVel: 500
+  parentShipTag: Alliance
+  enemyTags:
+  - Sovereign
+  continuousForce: 50
+  explosionSize: 50
+  maxVel: 100
   target: {fileID: 0}
-  maxSeekingAngle: 90
-  turnSpeed: 0.5
+  maxSeekingAngle: 180
+  turnSpeed: 200
 --- !u!1 &690787040962485325
 GameObject:
   m_ObjectHideFlags: 0

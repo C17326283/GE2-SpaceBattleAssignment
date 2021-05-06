@@ -226,16 +226,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49568f277bf29524ca594d3f2929bd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitDamage: 5
+  hitDamage: 30
   hitInFrontDistance: 500
-  destroyTime: 10
+  minDestroyTime: 9
+  maxDestroyTime: 11
   rb: {fileID: 0}
   lastPos: {x: 0, y: 0, z: 0}
   hitExplosion: {fileID: 6525372132480378010, guid: c1d6f3e10d689014788c4525fb46d2eb, type: 3}
-  projectileLayerToAvoid:
-    serializedVersion: 2
-    m_Bits: 64
   startForce: 50
+  parentShipTag: 
 --- !u!54 &7961098023568849934
 Rigidbody:
   m_ObjectHideFlags: 0

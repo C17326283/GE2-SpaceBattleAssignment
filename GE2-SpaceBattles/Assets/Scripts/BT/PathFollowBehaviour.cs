@@ -24,6 +24,27 @@ public class PathFollowBehaviour : BaseShipBehaviour
     }
     
     [Task]
+    public void IsLastWaypoint()
+    {
+        if (path.IsLast())
+        {
+            Task.current.Succeed();
+        }
+        else
+        {
+            Task.current.Fail();
+        }
+    }
+    
+    [Task]
+    public void Stop()
+    {
+        Task.current.Succeed();
+        GetComponent<Rigidbody>().isKinematic = true;
+        GetComponent<PandaBehaviour>().enabled = false;
+    }
+    
+    [Task]
     public void IsAtWaypointCondition()
     {
         if (Vector3.Distance(transform.position, nextWaypoint) < waypointDistance)

@@ -55,7 +55,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq1_1(float waitBeforeNext)
     {
-        Debug.Log("Reapers arrive and camera follows them as they move toward citadel");
+        Debug.Log("Seq1_1 Reapers arrive and camera follows them as they move toward citadel");
         spawnManager.SpawnNextGroup();//spawn reapers
         SetCameraLook(camPointManager.GetPoint());
         camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
@@ -66,7 +66,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq1_2(float waitBeforeNext)
     {
-        Debug.Log("Spawn Geth after reaper");
+        Debug.Log("Seq1_2 Spawn Geth after reaper");
         spawnManager.SpawnNextGroup();
         
         //continue to next event which trigger next seq
@@ -75,7 +75,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq1_3(float waitBeforeNext)
     {
-        Debug.Log("Reaper Side view");
+        Debug.Log("Seq1_3 Reaper Side view");
         camTargeting.transform.parent = null;
         camTargeting.transform.position = GetOffset(camTargeting.gameObjectToLookAt.transform);
         camTargeting.transform.parent = camTargeting.gameObjectToLookAt.transform;
@@ -86,7 +86,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq2_1(float waitBeforeNext)
     {
-        Debug.Log("Destiny ascension tries to escape");
+        Debug.Log("Seq2_1 Destiny ascension tries to escape");
         GameObject ascension = GameObject.Find("Flagship");
         camTargeting.transform.parent = null;
         camTargeting.transform.position = GetOffset(ascension.transform);
@@ -98,7 +98,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq2_2(float waitBeforeNext)
     {
-        Debug.Log("Citadel Starts closing");
+        Debug.Log("Seq2_2 Citadel Starts closing");
         SetCameraLook(camPointManager.GetPoint());
         //camTargeting.gameObjectToLookAt = GameObject.Find("CitadelDefencePoint");
         
@@ -108,7 +108,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq2_3(float waitBeforeNext)
     {
-        Debug.Log("Reaper ramming ships");
+        Debug.Log("Seq2_3 Reaper ramming ships");
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
         camTargeting.transform.parent = Reaper.transform;
         camTargeting.transform.position = GetOffset(Reaper.transform);
@@ -121,12 +121,25 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq2_4(float waitBeforeNext)
     {
-        Debug.Log("Reaper entering citadel");
+        Debug.Log("Seq2_4 Reaper entering citadel");
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
         camTargeting.transform.parent = Reaper.transform;
         camTargeting.transform.position = GetOffset(Reaper.transform);
         
         camTargeting.gameObjectToLookAt = Reaper;
+        
+        //geth stop following reaper
+        GameObject shipsHolder = GameObject.Find("-ActiveShips-");
+        foreach (Transform ship in shipsHolder.transform) //search all immediate children of shipholder
+        {
+            if (ship.transform.CompareTag("Reaper") && ship.GetComponent<OffsetPursueBehaviour>())
+            {
+                OffsetPursueBehaviour shipFollowB = ship.GetComponent<OffsetPursueBehaviour>();
+                //maybe send some after ascension?
+                shipFollowB.followObjName = "CitadelDefencePoint";
+                shipFollowB.followObj = null;
+            }
+        }
         
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(waitBeforeNext));
@@ -134,7 +147,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq2_5(float waitBeforeNext)
     {
-        Debug.Log("Reaper attaching to spire");
+        Debug.Log("Seq2_5 Reaper attaching to spire");
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
         camTargeting.transform.parent = Reaper.transform;
         camTargeting.transform.position = GetOffset(Reaper.transform);
@@ -147,7 +160,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq3_1(float waitBeforeNext)
     {
-        Debug.Log("Focus on teleporter Arrives");
+        Debug.Log("Seq3_1 Focus on teleporter Arrives");
         SetCameraLook(camPointManager.GetPoint());
         camTargeting.gameObjectToLookAt = GameObject.Find("Teleporter");
         
@@ -157,7 +170,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq3_2(float waitBeforeNext)
     {
-        Debug.Log("Normandy Arrives");
+        Debug.Log("Seq3_2 Normandy Arrives");
         
         spawnManager.SpawnNextGroup();//normandy
         normandy = GameObject.Find("Normandy(Clone)");
@@ -169,7 +182,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq3_3(float waitBeforeNext)
     {
-        Debug.Log("Alliance Arrives");
+        Debug.Log("Seq3_3 Alliance Arrives");
         spawnManager.SpawnNextGroup();//alliance ships
         
         //continue to next event which trigger next seq
@@ -178,7 +191,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq4_1(float waitBeforeNext)
     {
-        Debug.Log("Watch geth around alliance blow up");
+        Debug.Log("Seq4_1 Watch geth around alliance blow up");
         
         GameObject ascension = GameObject.Find("Flagship");
         camTargeting.transform.parent = null;
@@ -191,7 +204,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq4_2(float waitBeforeNext)
     {
-        Debug.Log("Alliance flies in through explosions");
+        Debug.Log("Seq4_2 Alliance flies in through explosions");
         camTargeting.transform.parent = normandy.transform;
         camTargeting.transform.position = GetOffset(normandy.transform);
         //continue to next event which trigger next seq
@@ -200,7 +213,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq4_3(float waitBeforeNext)
     {
-        Debug.Log("Ascension starts leaving");
+        Debug.Log("Seq4_3 Ascension starts leaving");
         
         GameObject ascension = GameObject.Find("Flagship");
         camTargeting.transform.parent = null;
@@ -213,9 +226,27 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq5_1(float waitBeforeNext)
     {
-        Debug.Log("Citadel opens and ships move in");
+        Debug.Log("Seq5_1 Citadel opens and ships move in");
         camTargeting.transform.parent = normandy.transform;
         camTargeting.transform.position = GetOffset(normandy.transform);
+        
+        //geth stop following reaper
+        GameObject shipsHolder = GameObject.Find("-ActiveShips-");
+        foreach (Transform ship in shipsHolder.transform) //search all immediate children of shipholder
+        {
+            if (ship.transform.CompareTag("Alliance") && ship.GetComponent<OffsetPursueBehaviour>())
+            {
+                OffsetPursueBehaviour shipFollowB = ship.GetComponent<OffsetPursueBehaviour>();
+                //maybe send some after ascension?
+                shipFollowB.followObjName = "Reaper(Clone)";
+                shipFollowB.followObj = null;
+            }
+        }
+        
+        OffsetPursueBehaviour normandyFollowB = normandy.GetComponent<OffsetPursueBehaviour>();
+        //maybe send some after ascension?
+        normandyFollowB.followObjName = "Reaper(Clone)";
+        normandyFollowB.followObj = null;
         
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(waitBeforeNext));
@@ -223,7 +254,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq5_2(float waitBeforeNext)
     {
-        Debug.Log("Sovereign fights back as its getting attacked while attached");
+        Debug.Log("Seq5_2 Sovereign fights back as its getting attacked while attached");
         
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
         camTargeting.transform.parent = Reaper.transform;
@@ -237,7 +268,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq5_3(float waitBeforeNext)
     {
-        Debug.Log("Sovereign shields down");
+        Debug.Log("Seq5_3 Sovereign shields down");
         
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
         camTargeting.transform.parent = Reaper.transform;
@@ -251,7 +282,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq5_4(float waitBeforeNext)
     {
-        Debug.Log("Everyone starts firing");
+        Debug.Log("Seq5_4 Everyone starts firing");
         SetCameraLook(camPointManager.GetPoint());
         //todo look at alliance ship instead of reaper
         camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
@@ -262,7 +293,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq6_1(float waitBeforeNext)
     {
-        Debug.Log("Normandy dips for big attack");
+        Debug.Log("Seq6_1 Normandy dips for big attack");
         SetCameraLook(camPointManager.GetPoint());
         camTargeting.gameObjectToLookAt = normandy;
         
@@ -272,10 +303,12 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq6_2(float waitBeforeNext)
     {
-        Debug.Log("Normandy shoots big rocket");
+        Debug.Log("Seq6_2 Normandy shoots big rocket");
         SetCameraLook(camPointManager.GetPoint());
         //look at normandy rocket
         camTargeting.gameObjectToLookAt = normandy;
+        
+        normandy.transform.Find("SuperGun").gameObject.SetActive(true);//turn on super weapon
         
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(waitBeforeNext));
@@ -283,7 +316,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq6_3(float waitBeforeNext)
     {
-        Debug.Log("Sovereign explodes");
+        Debug.Log("Seq6_3 Sovereign explodes");
         
         camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
         SetCameraLook(camPointManager.GetPoint());
@@ -294,7 +327,7 @@ public class SequenceManager : MonoBehaviour
     
     public void Seq7_1(float waitBeforeNext)
     {
-        Debug.Log("Normandy flys away");
+        Debug.Log("Seq7_1 Normandy flys away");
         
         camTargeting.gameObjectToLookAt = normandy;
         SetCameraLook(camPointManager.GetPoint());

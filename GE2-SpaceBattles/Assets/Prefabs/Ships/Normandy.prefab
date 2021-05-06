@@ -1,5 +1,76 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2384571840200220730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5106139415650442206}
+  - component: {fileID: 2875429440979959393}
+  - component: {fileID: 2703797226902095813}
+  m_Layer: 0
+  m_Name: SuperGun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &5106139415650442206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2384571840200220730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 7.9, z: 15.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5655017480225913834}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2875429440979959393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2384571840200220730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26399e4a9ce5f2f41815c823e505f174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 690787040354296551, guid: dd06bbcadb5b5d6459c44fe9e9a7b5c9, type: 3}
+  shootAttemptRate: 0.01
+  shotCooldown: 2000
+  shootAngle: 50
+  readyToShoot: 0
+  target: {fileID: 0}
+  toTarget: {x: 0, y: 0, z: 0}
+  maxAccuracyOffset: 0
+  combatBehaviours: {fileID: 0}
+  targeting: {fileID: 0}
+--- !u!114 &2703797226902095813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2384571840200220730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 3000
+  radius: 1000
+  enemyTags:
+  - Reaper
+  debugTargeting: 1
 --- !u!1 &5655017479815528008
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,6 +81,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5655017479815528015}
   - component: {fileID: 5655017479815528014}
+  - component: {fileID: 3409705306727920584}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -25,7 +97,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5655017479815528008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 12.95}
+  m_LocalPosition: {x: 0, y: 7.899994, z: 15.200001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5655017480225913834}
@@ -47,12 +119,28 @@ MonoBehaviour:
   shootAttemptRate: 0.01
   shotCooldown: 0.2
   shootAngle: 50
-  tagsToShoot: []
   readyToShoot: 0
-  aimingAtTarget: 0
   target: {fileID: 0}
-  rayDist: 1000
+  toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.01
+  combatBehaviours: {fileID: 0}
+  targeting: {fileID: 0}
+--- !u!114 &3409705306727920584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655017479815528008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 3000
+  radius: 1000
+  enemyTags: []
+  debugTargeting: 0
 --- !u!1 &5655017480225913835
 GameObject:
   m_ObjectHideFlags: 0
@@ -64,8 +152,10 @@ GameObject:
   - component: {fileID: 5655017480225913834}
   - component: {fileID: 5655017480225913832}
   - component: {fileID: 5655017480225913833}
-  - component: {fileID: 5655017480225913838}
   - component: {fileID: 5655017480225913839}
+  - component: {fileID: 3545141898352421480}
+  - component: {fileID: -5836465063412746568}
+  - component: {fileID: -208593740023329874}
   m_Layer: 0
   m_Name: Normandy
   m_TagString: Friendly
@@ -86,6 +176,7 @@ Transform:
   m_Children:
   - {fileID: 5327777132035003234}
   - {fileID: 5655017479815528015}
+  - {fileID: 5106139415650442206}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -97,7 +188,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5655017480225913835}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
@@ -119,38 +210,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceToApply: {x: 0, y: 0, z: 0}
   rb: {fileID: 0}
-  moveSpeed: 200
-  maxMag: 200
+  moveSpeed: 300
+  maxSpeed: 300
+  maxMag: 300
   bankingAmount: 0.1
   turnSpeed: 10
---- !u!114 &5655017480225913838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5655017480225913835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55b4cca13f12cea42a807a47bab280bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shipBoid: {fileID: 5655017480225913833}
-  target: {fileID: 0}
-  shipsHolder: {fileID: 0}
-  tagsToShoot:
-  - Reaper
-  - Sovereign
-  slowingDistance: 200
-  stoppingDistance: 200
-  engagementDistance: 10000
-  defaultPosObj: {fileID: 0}
-  path: {fileID: 0}
-  gun: {fileID: 5655017479815528014}
-  wanderPoint: {fileID: 0}
-  divertRadius: 600
-  patrolOffsetDistance: 800
-  followObjName: Reaper(Clone)
+  mass: 10
 --- !u!114 &5655017480225913839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scripts:
-  - {fileID: 4900000, guid: 4a86e57df98f46043a9ad5251efaf422, type: 3}
+  - {fileID: 4900000, guid: 86f8db1f4e15b4e4cbf6c1e607c34f62, type: 3}
   autoReset: 1
   tickOn: 0
   sourceInfos:
@@ -173,6 +238,64 @@ MonoBehaviour:
     breakPointStatuses: 
     collapsedLines: 
     btScript: 
+--- !u!114 &3545141898352421480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655017480225913835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad05ef8cba64680b5f33598ec1d9e81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipBoid: {fileID: 0}
+  enemyTarget: {fileID: 0}
+  divertTarget: {x: 0, y: 0, z: 0}
+  shipsHolder: {fileID: 0}
+  enemyTags:
+  - Reaper
+  - Sovereign
+  engagementDistance: 2000
+  divertDistance: 500
+  arrivedDist: 200
+--- !u!114 &-5836465063412746568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655017480225913835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e855596b3280480c8048d9a0606d7d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipBoid: {fileID: 0}
+  followObjName: CitadelDefencePoint
+  followObj: {fileID: 0}
+  followOffset: {x: 0, y: 0, z: 0}
+  followOffsetDistance: 600
+  maxDistAway: 1000
+--- !u!114 &-208593740023329874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655017480225913835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d181d075cff82e74bb6fdbe2279eb3c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5e+9
+  currentHealth: 5e+9
+  DeathExplosion: {fileID: 7170199903285590178, guid: 26af278b6a7a2984685a10043378302b, type: 3}
+  alive: 1
+  explosionSize: 70
+  timeToDespawnAfterDeath: 20
 --- !u!64 &5655017479426552974
 MeshCollider:
   m_ObjectHideFlags: 0

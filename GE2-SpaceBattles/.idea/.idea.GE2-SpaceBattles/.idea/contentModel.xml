@@ -95,6 +95,7 @@
             </e>
           </e>
         </e>
+        <e p="TriggerSequence.cs" t="Include" />
       </e>
       <e p="GE2-SpaceBattles.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

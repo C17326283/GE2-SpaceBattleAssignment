@@ -20,6 +20,8 @@ public class Projectile : MonoBehaviour
     //public LayerMask projectileLayerToAvoid;
 
     public String parentShipTag;
+    
+    public String[] enemyTags;
 
 
     public void OnDrawGizmos()
@@ -50,11 +52,15 @@ public class Projectile : MonoBehaviour
         float moveLen = Vector3.Distance(lastPos,transform.position);
         
         RaycastHit hit;
-        if (Physics.Raycast(lastPos, bulletDir, out hit, moveLen+hitInFrontDistance))
+        if (Physics.Raycast(lastPos, bulletDir, out hit, moveLen + hitInFrontDistance))
         {
-            if(!hit.transform.CompareTag(parentShipTag))//dont hit self
-                HitObj(hit.transform.gameObject);
+            foreach (var tag in enemyTags)
+            {
+                if (hit.transform.CompareTag(tag)) //dont hit self
+                    HitObj(hit.transform.gameObject);
+            }
         }
+
         lastPos = transform.position;
         
     }
