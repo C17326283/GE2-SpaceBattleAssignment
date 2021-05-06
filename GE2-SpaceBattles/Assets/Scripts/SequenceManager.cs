@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Panda;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -17,6 +18,8 @@ public class SequenceManager : MonoBehaviour
     
     public int curEvent = 0;
     public int curOffset = 0;
+
+    public Animator citadelAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -64,13 +67,10 @@ public class SequenceManager : MonoBehaviour
         StartCoroutine(NextSeq(waitBeforeNext));
     }
     
-    public void Seq1_2(float waitBeforeNext)
+    public void Seq1_2()
     {
         Debug.Log("Seq1_2 Spawn Geth after reaper");
         spawnManager.SpawnNextGroup();
-        
-        //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(waitBeforeNext));
     }
     
     public void Seq1_3(float waitBeforeNext)
@@ -88,6 +88,7 @@ public class SequenceManager : MonoBehaviour
     {
         Debug.Log("Seq2_1 Destiny ascension tries to escape");
         GameObject ascension = GameObject.Find("Flagship");
+        ascension.GetComponent<BehaviourTree>().enabled = true;
         camTargeting.transform.parent = null;
         camTargeting.transform.position = GetOffset(ascension.transform);
         camTargeting.gameObjectToLookAt = ascension;
@@ -100,6 +101,7 @@ public class SequenceManager : MonoBehaviour
     {
         Debug.Log("Seq2_2 Citadel Starts closing");
         SetCameraLook(camPointManager.GetPoint());
+        citadelAnim.SetBool("Closing",true);
         //camTargeting.gameObjectToLookAt = GameObject.Find("CitadelDefencePoint");
         
         //continue to next event which trigger next seq
@@ -227,6 +229,7 @@ public class SequenceManager : MonoBehaviour
     public void Seq5_1(float waitBeforeNext)
     {
         Debug.Log("Seq5_1 Citadel opens and ships move in");
+        citadelAnim.SetBool("Closing",false);
         camTargeting.transform.parent = normandy.transform;
         camTargeting.transform.position = GetOffset(normandy.transform);
         
@@ -325,7 +328,7 @@ public class SequenceManager : MonoBehaviour
         StartCoroutine(NextSeq(waitBeforeNext));
     }
     
-    public void Seq7_1(float waitBeforeNext)
+    public void Seq7_1()
     {
         Debug.Log("Seq7_1 Normandy flys away");
         
