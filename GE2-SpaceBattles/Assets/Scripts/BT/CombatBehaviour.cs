@@ -38,8 +38,15 @@ public class CombatBehaviour : BaseShipBehaviour
     }
     
     [Task]
-    public void PursueDivert()
+    public void Diverting()
     {
+        //does need to divert but no divert point so get one
+        if (divertTarget == Vector3.zero)
+        {
+            //get a point around enemy to fly back to
+            divertTarget = enemyTarget.position+(Random.onUnitSphere * (divertDistance*2));
+        }
+        
         if (Vector3.Distance(divertTarget, transform.position)>arrivedDist)
         {
             Vector3 desired = divertTarget - transform.position;
@@ -59,20 +66,12 @@ public class CombatBehaviour : BaseShipBehaviour
     }
     
     [Task]
-    public void NeedsToDivert()
+    public void NeedsToDivertCondition()
     {
-        
         //if too close to enemy or in the middle of a divert
         if (enemyTarget && Vector3.Distance(enemyTarget.position, transform.position) < divertDistance || divertTarget!=Vector3.zero)
         {
             Task.current.Succeed();
-
-            //does need to divert but no divert point so get one
-            if (divertTarget == Vector3.zero)
-            {
-                divertTarget = enemyTarget.position+(Random.onUnitSphere * (divertDistance*2));
-            }
-            
         }
         else
         {

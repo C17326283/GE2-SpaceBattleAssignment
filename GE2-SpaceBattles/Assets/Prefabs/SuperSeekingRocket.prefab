@@ -89,7 +89,7 @@ MonoBehaviour:
   - Sovereign
   continuousForce: 80
   explosionSize: 50
-  maxVel: 100
+  maxVel: 300
   target: {fileID: 0}
   maxSeekingAngle: 180
   turnSpeed: 200

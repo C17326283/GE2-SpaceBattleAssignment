@@ -343,7 +343,7 @@ MonoBehaviour:
   alive: 1
   explosionSize: 200
   timeToDespawnAfterDeath: 20
-  breakUpChildObjsOnDeath: 0
+  breakUpChildObjsOnDeath: 1
   debrisSpawner: {fileID: 3880433330496644809}
 --- !u!114 &4605445520946520389
 MonoBehaviour:
@@ -396,8 +396,8 @@ MonoBehaviour:
   - {fileID: 9058975810216856453, guid: 1dec4d06fefe82742bfb790af6cc721a, type: 3}
   - {fileID: 8686765910469606999, guid: 1413d03bae90ecc4bad3e8f8438b341a, type: 3}
   - {fileID: 1738421096611774081, guid: a566eea212ae53443a136e3f38b00ff5, type: 3}
-  minAmountOfDebrisToSpawn: 20
-  maxAmountOfDebrisToSpawn: 40
+  minAmountOfDebrisToSpawn: 30
+  maxAmountOfDebrisToSpawn: 60
   minScale: 6
   maxScale: 20
   maxForce: 40

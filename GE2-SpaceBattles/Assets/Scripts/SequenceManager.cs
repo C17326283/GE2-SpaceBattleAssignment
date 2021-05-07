@@ -363,6 +363,11 @@ public class SequenceManager : MonoBehaviour
         //todo look at alliance ship instead of reaper
         camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
         
+        Transform flankPoint = GameObject.Find("NormandyFlankPoint").transform;
+        
+        //Fly to flank position by setting a divert point which is considered before other behaviours
+        normandy.GetComponent<CombatBehaviour>().divertTarget = flankPoint.position;
+        
         triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
     
@@ -376,8 +381,7 @@ public class SequenceManager : MonoBehaviour
         
         audioManager.PlayNextVoice();//shields are down
 
-        normandy.GetComponent<CombatBehaviour>().divertTarget =
-            GameObject.Find("NormandyFlankPoint").transform.position;
+        normandy.transform.Find("SuperGun").gameObject.SetActive(true);//turn on super weapon
         
         triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
@@ -387,11 +391,15 @@ public class SequenceManager : MonoBehaviour
     {
         Debug.Log("Seq6_2 Normandy shoots big rocket");
         SetCameraLook(camPointManager.GetNextPoint());
+        
+        
         //look at normandy rocket
-        camTargeting.gameObjectToLookAt = GameObject.Find("SuperSeekingRocket(Clone)");
-        
-        normandy.transform.Find("SuperGun").gameObject.SetActive(true);//turn on super weapon
-        
+        GameObject SuperRocket = GameObject.Find("SuperSeekingRocket(Clone)");
+        camTargeting.gameObjectToLookAt = SuperRocket;
+        camTargeting.transform.parent = SuperRocket.transform;
+        camTargeting.transform.position = GetOffset(SuperRocket.transform);
+
+
         audioManager.PlayNextMusic();//victory
         
         triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger

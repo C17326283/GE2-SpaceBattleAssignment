@@ -1,20 +1,22 @@
 tree("Root")
     fallback
-        sequence
-            ShouldFightCondition()
-            tree("Combat")
+        tree("Dodge")
+        tree("Combat")
         tree("FollowOffset")
         
+        
 tree("Combat")
-    fallback
-        sequence
-            NeedsToDivert()
-            PursueDivert()    
-        sequence
-            GetEnemyTarget()
-            PursueEnemy()        
+    sequence
+        ShouldFightCondition() 
+        GetEnemyTarget()
+        PursueEnemy()       
 
 tree("FollowOffset")
     fallback
         OffsetPursuit()
         GetTargetOffset()
+
+tree("Dodge")
+    sequence
+        NeedsToDivertCondition()
+        Diverting()   

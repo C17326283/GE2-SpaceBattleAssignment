@@ -601,8 +601,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 24400344}
-  m_LocalRotation: {x: 0.0037546856, y: -0.93339044, z: -0.009804226, w: -0.3587088}
-  m_LocalPosition: {x: -46.555176, y: -99.20177, z: 16646.143}
+  m_LocalRotation: {x: 0.02006265, y: -0.7106591, z: -0.020233065, w: -0.7029593}
+  m_LocalPosition: {x: 234.0727, y: -36.89286, z: 14926.945}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2106106352}
@@ -2361,7 +2361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Reaper(Clone)
-  sequenceManager: {fileID: 1429017276}
+  sequenceManager: {fileID: 0}
   elementOfTriggerSequence: 9
 --- !u!65 &133441644
 BoxCollider:
@@ -3099,7 +3099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Reaper(Clone)
-  sequenceManager: {fileID: 1429017276}
+  sequenceManager: {fileID: 0}
   elementOfTriggerSequence: 7
 --- !u!65 &179919606
 BoxCollider:
@@ -4267,7 +4267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Reaper(Clone)
-  sequenceManager: {fileID: 1429017276}
+  sequenceManager: {fileID: 0}
   elementOfTriggerSequence: 8
 --- !u!65 &241692430
 BoxCollider:
@@ -6326,7 +6326,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_RenderPostProcessing: 1
-  m_Antialiasing: 0
+  m_Antialiasing: 1
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -6585,7 +6585,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: SuperSeekingRocket(Clone)
-  sequenceManager: {fileID: 1429017276}
+  sequenceManager: {fileID: 0}
   elementOfTriggerSequence: 21
 --- !u!65 &432318148
 BoxCollider:
@@ -10038,7 +10038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Reaper(Clone)
-  sequenceManager: {fileID: 1429017276}
+  sequenceManager: {fileID: 0}
   elementOfTriggerSequence: 2
 --- !u!65 &641448688
 BoxCollider:
@@ -16349,7 +16349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Reaper(Clone)
-  sequenceManager: {fileID: 1429017276}
+  sequenceManager: {fileID: 0}
   elementOfTriggerSequence: 6
 --- !u!65 &709553215
 BoxCollider:
@@ -16554,7 +16554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: SeekingRocket(Clone)
-  sequenceManager: {fileID: 1429017276}
+  sequenceManager: {fileID: 0}
   elementOfTriggerSequence: 3
 --- !u!65 &762440397
 BoxCollider:
@@ -25838,7 +25838,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1002104728}
   m_LocalRotation: {x: 0.00010956973, y: -0.99919945, z: -0.0029990377, w: -0.039893065}
-  m_LocalPosition: {x: 564.3358, y: -157.39714, z: 16359.049}
+  m_LocalPosition: {x: 781, y: -142, z: 13651}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2106106352}
@@ -30254,7 +30254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Reaper(Clone)
-  sequenceManager: {fileID: 1429017276}
+  sequenceManager: {fileID: 0}
   elementOfTriggerSequence: 4
 --- !u!65 &1281901235
 BoxCollider:
@@ -30661,7 +30661,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309570743}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -348.49222, y: -40.070396, z: 13769}
+  m_LocalPosition: {x: -348.49222, y: -40.070396, z: 15384}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491709815}
@@ -30680,7 +30680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Normandy(Clone)
-  sequenceManager: {fileID: 1429017276}
+  sequenceManager: {fileID: 0}
   elementOfTriggerSequence: 20
 --- !u!65 &1309570746
 BoxCollider:
@@ -37152,7 +37152,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1429017275}
-  - component: {fileID: 1429017276}
+  - component: {fileID: 1429017274}
   m_Layer: 0
   m_Name: Sequencemanager
   m_TagString: Untagged
@@ -37160,21 +37160,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1429017275
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429017273}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -302.41675, y: -182.34747, z: 665.9529}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 208425884}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1429017276
+--- !u!114 &1429017274
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37196,7 +37182,7 @@ MonoBehaviour:
   events:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq1_1
         m_Mode: 4
@@ -37210,7 +37196,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq1_2
         m_Mode: 1
@@ -37224,7 +37210,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq1_3
         m_Mode: 1
@@ -37238,7 +37224,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq2_1
         m_Mode: 1
@@ -37252,7 +37238,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq2_2
         m_Mode: 1
@@ -37266,7 +37252,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq2_3
         m_Mode: 1
@@ -37280,7 +37266,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq2_4
         m_Mode: 1
@@ -37294,7 +37280,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq2_5
         m_Mode: 1
@@ -37308,7 +37294,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq2_6
         m_Mode: 1
@@ -37322,7 +37308,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq2_7
         m_Mode: 4
@@ -37336,7 +37322,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq3_1
         m_Mode: 4
@@ -37350,7 +37336,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq3_2
         m_Mode: 4
@@ -37364,7 +37350,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq3_3
         m_Mode: 1
@@ -37378,7 +37364,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq4_1
         m_Mode: 4
@@ -37392,7 +37378,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq4_2
         m_Mode: 4
@@ -37406,7 +37392,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq4_3
         m_Mode: 4
@@ -37420,7 +37406,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq5_1
         m_Mode: 1
@@ -37434,7 +37420,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq5_2
         m_Mode: 4
@@ -37448,7 +37434,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq5_3
         m_Mode: 4
@@ -37462,7 +37448,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq5_4
         m_Mode: 1
@@ -37476,7 +37462,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq6_1
         m_Mode: 1
@@ -37490,7 +37476,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq6_2
         m_Mode: 1
@@ -37504,7 +37490,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq6_3
         m_Mode: 4
@@ -37518,7 +37504,7 @@ MonoBehaviour:
         m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429017276}
+      - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
         m_MethodName: Seq7_1
         m_Mode: 1
@@ -37531,7 +37517,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   cameraOffsets:
-  - {x: -2000, y: 0, z: 0}
+  - {x: -1500, y: 0, z: 0}
   - {x: 100, y: 50, z: 0}
   - {x: 0, y: 100, z: 400}
   - {x: -3000, y: 1000, z: 0}
@@ -37539,13 +37525,28 @@ MonoBehaviour:
   - {x: 500, y: 0, z: 0}
   - {x: 300, y: 150, z: 400}
   - {x: 0, y: 15, z: 50}
-  - {x: 0, y: -100, z: 500}
+  - {x: 0, y: 50, z: 200}
   - {x: 0, y: 15, z: -50}
   - {x: 0, y: 200, z: 700}
   - {x: 400, y: 0, z: 200}
-  curEvent: 0
-  curOffset: 0
+  - {x: 2, y: 0, z: 1}
+  curEvent: 22
+  curOffset: 13
   citadelAnim: {fileID: 2026072279}
+--- !u!4 &1429017275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429017273}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -302.41675, y: -182.34747, z: 665.9529}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 208425884}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1433232963
 GameObject:
   m_ObjectHideFlags: 0
@@ -41306,7 +41307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Reaper(Clone)
-  sequenceManager: {fileID: 1429017276}
+  sequenceManager: {fileID: 0}
   elementOfTriggerSequence: 5
 --- !u!65 &1608816313
 BoxCollider:
@@ -46701,7 +46702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Normandy(Clone)
-  sequenceManager: {fileID: 1429017276}
+  sequenceManager: {fileID: 0}
   elementOfTriggerSequence: 13
 --- !u!65 &1661752930
 BoxCollider:
@@ -49277,7 +49278,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1828750157}
   m_LocalRotation: {x: 0.0027115787, y: -0.018977169, z: 0.0015832229, w: -0.999815}
-  m_LocalPosition: {x: 516, y: -154, z: 8536}
+  m_LocalPosition: {x: 668, y: -133, z: 12542}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1230108224}
@@ -50266,7 +50267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: EnergyExplosion
-  sequenceManager: {fileID: 1429017276}
+  sequenceManager: {fileID: 0}
   elementOfTriggerSequence: 22
 --- !u!65 &1897670828
 BoxCollider:
@@ -54787,7 +54788,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2140824232}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -348.49222, y: -40.070396, z: 16198}
+  m_LocalPosition: {x: -348.49222, y: -40.070396, z: 16964}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 491709815}
@@ -54806,7 +54807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Normandy(Clone)
-  sequenceManager: {fileID: 1429017276}
+  sequenceManager: {fileID: 0}
   elementOfTriggerSequence: 17
 --- !u!65 &2140824235
 BoxCollider:
