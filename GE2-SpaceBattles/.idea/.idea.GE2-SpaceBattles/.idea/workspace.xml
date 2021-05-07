@@ -20,16 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SeekingRocket.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SeekingRocket.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Geth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Geth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Normandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Normandy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Old/Reaper 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Old/Reaper 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Ramming.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Ramming.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraTargeting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraTargeting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sound/Mass Effect - Battle for the Citadel - Paragon - 1080p.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sound/Mass Effect - Battle for the Citadel - Paragon - 1080p.mp3.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +46,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rocket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Laser.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.3.1/Runtime/ShadowUtils.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TriggerSequence.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DestroyAfterTime.cs" root0="FORCE_HIGHLIGHTING" />
@@ -98,12 +97,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Life.cs" />
         <option value="$PROJECT_DIR$/Assets/TriggerSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1 1.txt" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Ramming.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraTargeting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Ramming.cs" />
+        <option value="$PROJECT_DIR$/Assets/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
       </list>
     </option>
   </component>
@@ -164,7 +164,7 @@
       <workItem from="1620151417391" duration="14210000" />
       <workItem from="1620217793694" duration="23558000" />
       <workItem from="1620303971174" duration="23987000" />
-      <workItem from="1620387405796" duration="8342000" />
+      <workItem from="1620387405796" duration="14874000" />
     </task>
     <servers />
   </component>

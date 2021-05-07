@@ -7,10 +7,12 @@ public class Ramming : MonoBehaviour
 {
     
     public String[] enemyTags;
+
+    private Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -21,13 +23,17 @@ public class Ramming : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        foreach (var tag in enemyTags)
+        if (rb.velocity.magnitude > 0.1f) //is moving and not stationary
         {
-            if (other.transform.CompareTag(tag) && other.gameObject.GetComponent<Life>())
+            foreach (var tag in enemyTags)
             {
-                other.gameObject.GetComponent<Life>().currentHealth -= 1000;
+                if (other.transform.CompareTag(tag) && other.gameObject.GetComponent<Life>())
+                {
+                    other.gameObject.GetComponent<Life>().currentHealth -= 1000;
+                }
             }
         }
+        
         
     }
 }

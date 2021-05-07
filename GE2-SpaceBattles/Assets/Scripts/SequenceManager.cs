@@ -14,6 +14,8 @@ public class SequenceManager : MonoBehaviour
     public CameraTargeting camTargeting;
     public GameObject normandy;
 
+    public AudioManager audioManager;
+
     //Having all the sequences in events lets you better manage and trigger them from anywhere or sequentially
     public UnityEvent[] events;
     public Vector3[] cameraOffsets;//for having cam a certain distance away 
@@ -66,6 +68,8 @@ public class SequenceManager : MonoBehaviour
         spawnManager.SpawnNextGroup();//spawn reapers
         SetCameraLook(camPointManager.GetNextPoint());
         camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
+
+        audioManager.PlayNextMusic();//reaper entry music
         
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(TriggerNextSequenceTime));
@@ -102,6 +106,8 @@ public class SequenceManager : MonoBehaviour
         camTargeting.transform.position = GetOffset(ascension.transform);
         camTargeting.gameObjectToLookAt = ascension;
         
+        audioManager.PlayNextVoice();//evac council
+        
         triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
 
     }
@@ -113,6 +119,8 @@ public class SequenceManager : MonoBehaviour
         SetCameraLook(camPointManager.GetNextPoint());
         citadelAnim.SetBool("Closing",true);
         //camTargeting.gameObjectToLookAt = GameObject.Find("CitadelDefencePoint");
+        
+        audioManager.PlayNextVoice();//theyre sealing the station
         
         triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
@@ -126,6 +134,9 @@ public class SequenceManager : MonoBehaviour
         camTargeting.transform.position = GetOffset(Reaper.transform);
 
         camTargeting.gameObjectToLookAt = Reaper;
+        
+        
+        audioManager.PlayNextVoice();//dont let the enemy inside
         
         //geth stop following reaper
         GameObject shipsHolder = GameObject.Find("-ActiveShips-");
@@ -153,7 +164,7 @@ public class SequenceManager : MonoBehaviour
         
         camTargeting.gameObjectToLookAt = Reaper;
         
-        
+        audioManager.PlayNextMusic();//reaper in citadel
         
         triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
@@ -171,8 +182,20 @@ public class SequenceManager : MonoBehaviour
         triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
     
+    //triggered from WatchOutsideBattle world trigger
+    public void Seq2_6()
+    {
+        Debug.Log("Seq2_4 Watch battle outside citadel");
+        SetCameraLook(camPointManager.GetNextPoint());
+        camTargeting.gameObjectToLookAt = GameObject.Find("Normandy(Clone)");
+        
+        audioManager.PlayNextVoice();//caught the distress
+        
+        triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
+    }
+    
     //triggered from ReaperAttachingToSpire world trigger
-    public void Seq2_6(float TriggerNextSequenceTime)
+    public void Seq2_7(float TriggerNextSequenceTime)
     {
         Debug.Log("Seq2_5 Reaper attaching to spire");
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
@@ -180,6 +203,8 @@ public class SequenceManager : MonoBehaviour
         camTargeting.transform.position = GetOffset(Reaper.transform);
         
         camTargeting.gameObjectToLookAt = Reaper;
+        
+        audioManager.PlayNextVoice();//ive regained control
         
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(TriggerNextSequenceTime));
@@ -191,6 +216,8 @@ public class SequenceManager : MonoBehaviour
         Debug.Log("Seq3_1 Focus on teleporter Arrives");
         SetCameraLook(camPointManager.GetNextPoint());
         camTargeting.gameObjectToLookAt = GameObject.Find("Teleporter");
+        
+        audioManager.PlayNextMusic();//final battle
         
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(TriggerNextSequenceTime));
@@ -204,6 +231,8 @@ public class SequenceManager : MonoBehaviour
         spawnManager.SpawnNextGroup();//normandy
         normandy = GameObject.Find("Normandy(Clone)");
         camTargeting.gameObjectToLookAt = normandy;
+        
+        audioManager.PlayNextVoice();//picking up reinforcements
         
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(TriggerNextSequenceTime));
@@ -227,6 +256,8 @@ public class SequenceManager : MonoBehaviour
         camTargeting.transform.parent = null;
         camTargeting.transform.position = GetOffset(ascension.transform);
         camTargeting.gameObjectToLookAt = ascension;
+        
+        audioManager.PlayNextVoice();//alliance moves in
         
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(TriggerNextSequenceTime));
@@ -252,6 +283,8 @@ public class SequenceManager : MonoBehaviour
         camTargeting.transform.parent = null;
         camTargeting.transform.position = GetOffset(ascension.transform);
         camTargeting.gameObjectToLookAt = ascension;
+        
+        audioManager.PlayNextVoice();//ascension clear
         
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(TriggerNextSequenceTime));
@@ -299,6 +332,8 @@ public class SequenceManager : MonoBehaviour
         
         camTargeting.gameObjectToLookAt = Reaper;
         
+        audioManager.PlayNextVoice();//take that monster down
+        
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(TriggerNextSequenceTime));
     }
@@ -313,6 +348,8 @@ public class SequenceManager : MonoBehaviour
         camTargeting.transform.position = GetOffset(Reaper.transform);
         
         camTargeting.gameObjectToLookAt = Reaper;
+        
+        
         
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(TriggerNextSequenceTime));
@@ -336,6 +373,8 @@ public class SequenceManager : MonoBehaviour
         SetCameraLook(camPointManager.GetNextPoint());
         camTargeting.gameObjectToLookAt = normandy;
         normandy.GetComponent<OffsetPursueBehaviour>().maxDistAway = Mathf.Infinity;//allow normandy to move far for dive
+        
+        audioManager.PlayNextVoice();//shields are down
 
         normandy.GetComponent<CombatBehaviour>().divertTarget =
             GameObject.Find("NormandyFlankPoint").transform.position;
@@ -352,6 +391,8 @@ public class SequenceManager : MonoBehaviour
         camTargeting.gameObjectToLookAt = GameObject.Find("SuperSeekingRocket(Clone)");
         
         normandy.transform.Find("SuperGun").gameObject.SetActive(true);//turn on super weapon
+        
+        audioManager.PlayNextMusic();//victory
         
         triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
