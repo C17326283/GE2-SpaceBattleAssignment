@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -129555161611945519}
   - component: {fileID: 1128173742498250210}
   - component: {fileID: 7222630041932220408}
+  - component: {fileID: 4144053255930222854}
   m_Layer: 0
   m_Name: Geth
   m_TagString: Reaper
@@ -77,7 +78,9 @@ MonoBehaviour:
   DeathExplosion: {fileID: 7170199903285590178, guid: 26af278b6a7a2984685a10043378302b, type: 3}
   alive: 1
   explosionSize: 70
-  timeToDespawnAfterDeath: 20
+  timeToDespawnAfterDeath: 0
+  breakUpChildObjsOnDeath: 0
+  debrisSpawner: {fileID: 4144053255930222854}
 --- !u!114 &5311416907141372187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,6 +192,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 181, y: 151.4, z: 1041.28}
   m_Center: {x: 0, y: 0, z: 47.27}
+--- !u!114 &4144053255930222854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427803425292049769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a631b84762420e140aed27d2e4d58103, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debrisObjs:
+  - {fileID: 3817444675414640985, guid: 7a01a425bb672f645988e77c90417eb6, type: 3}
+  - {fileID: 9058975810216856453, guid: 1dec4d06fefe82742bfb790af6cc721a, type: 3}
+  - {fileID: 8686765910469606999, guid: 1413d03bae90ecc4bad3e8f8438b341a, type: 3}
+  - {fileID: 1738421096611774081, guid: a566eea212ae53443a136e3f38b00ff5, type: 3}
+  minAmountOfDebrisToSpawn: 5
+  maxAmountOfDebrisToSpawn: 20
+  minScale: 3
+  maxScale: 15
+  maxForce: 10
+  destroyAfter: 60
 --- !u!1 &7281579435692897985
 GameObject:
   m_ObjectHideFlags: 0

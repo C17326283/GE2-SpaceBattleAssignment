@@ -20,6 +20,9 @@ public class Life : MonoBehaviour
     public float explosionSize = 5f;
 
     public float timeToDespawnAfterDeath = 20f;
+
+    public bool breakUpChildObjsOnDeath = false;
+    public DebrisSpawner debrisSpawner;
     
     // Start is called before the first frame update
     void Start()
@@ -44,25 +47,30 @@ public class Life : MonoBehaviour
         explosion.transform.localScale = new Vector3(explosionSize,explosionSize,explosionSize);
         gameObject.GetComponent<ShipBoid>().enabled = false;
         ExplodeParts();
-//        print("Die"+transform.name);
+        
+        this.enabled = false;
+        Destroy(this.gameObject, timeToDespawnAfterDeath);
     }
     
     private void ExplodeParts()
     {
-        foreach (Transform tran in this.GetComponentsInChildren<Transform>())
+        if (breakUpChildObjsOnDeath)
         {
-            Rigidbody tranRb = tran.gameObject.GetComponent<Rigidbody>();
-            if (tranRb == null)
+            foreach (Transform tran in this.GetComponentsInChildren<Transform>())
             {
-                tranRb = tran.gameObject.AddComponent<Rigidbody>();
+                Rigidbody tranRb = tran.gameObject.GetComponent<Rigidbody>();
+                if (tranRb == null)
+                {
+                    tranRb = tran.gameObject.AddComponent<Rigidbody>();
+                }
+                tranRb.transform.SetParent(transform);
+                tranRb.velocity = new Vector3(Random.Range(-explosionForce, explosionForce), Random.Range(-explosionForce, explosionForce), Random.Range(-explosionForce, explosionForce));
+                
             }
-            tranRb.transform.SetParent(transform);
-            tranRb.velocity = new Vector3(Random.Range(-explosionForce, explosionForce), Random.Range(-explosionForce, explosionForce), Random.Range(-explosionForce, explosionForce));
-            
         }
-
-        this.enabled = false;
-        Destroy(this.gameObject, timeToDespawnAfterDeath);
-        //Destroy(transform.GetChild(0), 7);
+        
+        if(debrisSpawner)
+            debrisSpawner.SpawnDebris();
+        
     }
 }

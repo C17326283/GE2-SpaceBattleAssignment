@@ -235,6 +235,7 @@ GameObject:
   - component: {fileID: -5117070154002799038}
   - component: {fileID: 4605445520946520389}
   - component: {fileID: 7887602638127581548}
+  - component: {fileID: 3880433330496644809}
   m_Layer: 0
   m_Name: Reaper
   m_TagString: Sovereign
@@ -342,6 +343,8 @@ MonoBehaviour:
   alive: 1
   explosionSize: 200
   timeToDespawnAfterDeath: 20
+  breakUpChildObjsOnDeath: 0
+  debrisSpawner: {fileID: 3880433330496644809}
 --- !u!114 &4605445520946520389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -376,6 +379,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyTags:
   - Alliance
+--- !u!114 &3880433330496644809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7177627545569228145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a631b84762420e140aed27d2e4d58103, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debrisObjs:
+  - {fileID: 3817444675414640985, guid: 7a01a425bb672f645988e77c90417eb6, type: 3}
+  - {fileID: 9058975810216856453, guid: 1dec4d06fefe82742bfb790af6cc721a, type: 3}
+  - {fileID: 8686765910469606999, guid: 1413d03bae90ecc4bad3e8f8438b341a, type: 3}
+  - {fileID: 1738421096611774081, guid: a566eea212ae53443a136e3f38b00ff5, type: 3}
+  minAmountOfDebrisToSpawn: 20
+  maxAmountOfDebrisToSpawn: 40
+  minScale: 6
+  maxScale: 20
+  maxForce: 40
+  destroyAfter: 60
 --- !u!1001 &1588017130922765875
 PrefabInstance:
   m_ObjectHideFlags: 0

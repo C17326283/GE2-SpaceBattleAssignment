@@ -8,6 +8,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="AudioManager.cs" t="Include" />
+        <e p="DebrisSpawner.cs" t="Include" />
         <e p="DestroyAfterTime.cs" t="Include" />
         <e p="GunTargeting.cs" t="Include" />
         <e p="PandaBehaviour" t="Include">
