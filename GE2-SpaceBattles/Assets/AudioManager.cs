@@ -10,6 +10,8 @@ public class AudioManager : MonoBehaviour
 
     public int currVoiceClip = 0;
     public int currMusic = 0;
+
+    public float volumeLerpDuration = 2;
     public void PlayNextVoice()
     {
         PlayVoice(currVoiceClip);
@@ -23,14 +25,39 @@ public class AudioManager : MonoBehaviour
     
     public void PlayNextMusic()
     {
-        if(currMusic>0)
-            MusicClips[currMusic-1].Stop();
+        //fade out last music
+        if (currMusic > 0)
+        {
+            StartCoroutine(StartFade(MusicClips[currMusic-1], MusicClips[currMusic-1].volume, 0,false));
+        }
+            
         PlayMusic(currMusic);
         currMusic++;
     }
     
     public void PlayMusic(int elementNum)
     {
+        //fade in from 0 to whats set in editor
+        StartCoroutine(StartFade(MusicClips[elementNum], 0, MusicClips[elementNum].volume,false));
         MusicClips[elementNum].Play();
+    }
+    
+    //method modified from https://gamedevbeginner.com/how-to-fade-audio-in-unity-i-tested-every-method-this-ones-the-best/
+    IEnumerator StartFade(AudioSource audioSource, float startVolume, float targetVolume, bool stopAfter)
+    {
+        float currentTime = 0;
+        
+        while (currentTime < volumeLerpDuration)
+        {
+            currentTime += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(startVolume, targetVolume, currentTime / volumeLerpDuration);
+            yield return null;
+        }
+
+        if (stopAfter)
+        {
+            audioSource.Stop();
+        }
+        yield break;
     }
 }

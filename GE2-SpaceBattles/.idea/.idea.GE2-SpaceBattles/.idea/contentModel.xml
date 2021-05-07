@@ -50,6 +50,7 @@
         </e>
         <e p="Ramming.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="AudioVariance.cs" t="Include" />
           <e p="BigBoid.cs" t="Include" />
           <e p="BoidPath.cs" t="Include" />
           <e p="BT" t="Include">
