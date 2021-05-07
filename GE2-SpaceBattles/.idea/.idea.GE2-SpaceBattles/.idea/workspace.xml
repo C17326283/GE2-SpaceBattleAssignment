@@ -20,26 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Effects/EnergyExplosion (1).prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Effects/EnergyExplosion (1).prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GunTargeting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GunTargeting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/FogEffect.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/FogEffect.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/SMokeFog.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/SMokeFog.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SeekingRocket.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SeekingRocket.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/AllianceShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/AllianceShip.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Geth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Geth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Normandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Normandy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Old/Reaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Old/Reaper.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SuperSeekingRocket 1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SuperSeekingRocket 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SuperSeekingRocket.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SuperSeekingRocket.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/PathFollowBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/PathFollowBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraPointManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PointManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraPointManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PointManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Indiv/PathManage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Indiv/PathManage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Life.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Life.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1 1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1 1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TriggerSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TriggerSequence.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,8 +89,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Laser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SeekingRocket.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1 1.txt" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShipBoid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/CombatBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/FollowBehaviours.cs" />
@@ -110,7 +101,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraPointManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Life.cs" />
         <option value="$PROJECT_DIR$/Assets/TriggerSequence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BT/ShipBehaviour1 1.txt" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -170,7 +163,7 @@
       <workItem from="1620127392456" duration="14524000" />
       <workItem from="1620151417391" duration="14210000" />
       <workItem from="1620217793694" duration="23558000" />
-      <workItem from="1620303971174" duration="17285000" />
+      <workItem from="1620303971174" duration="23987000" />
     </task>
     <servers />
   </component>

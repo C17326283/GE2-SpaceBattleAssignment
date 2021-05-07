@@ -33,11 +33,19 @@ public class OffsetPursueBehaviour : BaseShipBehaviour
     }
     
     [Task]
-    public void WithinOriginDistanceCondition()
+    public void ShouldFightCondition()
     {
-        if (Vector3.Distance(followOffset,transform.position)>maxDistAway)
+        if (followObj)
         {
-            Task.current.Fail();
+            //WithinOriginDistanceCondition
+            if (Vector3.Distance(followOffset, transform.position) < followOffsetDistance * 1.5f)
+            {
+                Task.current.Succeed();
+            }
+            else
+            {
+                Task.current.Fail();
+            }
         }
         else
         {

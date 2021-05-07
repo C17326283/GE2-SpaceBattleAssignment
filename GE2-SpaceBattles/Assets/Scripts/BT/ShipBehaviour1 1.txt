@@ -1,7 +1,7 @@
 tree("Root")
     fallback
         sequence
-            WithinOriginDistanceCondition()
+            ShouldFightCondition()
             tree("Combat")
         tree("FollowOffset")
         

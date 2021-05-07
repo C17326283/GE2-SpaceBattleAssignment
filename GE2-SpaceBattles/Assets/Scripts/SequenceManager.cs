@@ -93,7 +93,7 @@ public class SequenceManager : MonoBehaviour
     }
     
     //triggered from TriggerRocketsFiringAtAscention world trigger
-    public void Seq2_1(float TriggerNextSequenceTime)
+    public void Seq2_1()
     {
         Debug.Log("Seq2_1 Destiny ascension tries to escape");
         GameObject ascension = GameObject.Find("Flagship");
@@ -102,11 +102,11 @@ public class SequenceManager : MonoBehaviour
         camTargeting.transform.position = GetOffset(ascension.transform);
         camTargeting.gameObjectToLookAt = ascension;
         
-        //continue to next event which trigger next seq
-        StartCoroutine(NextSeq(TriggerNextSequenceTime));
+        triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
+
     }
     
-    //triggered from previous
+    //triggered from CitadelStartsClosing world Trigger
     public void Seq2_2()
     {
         Debug.Log("Seq2_2 Citadel Starts closing");
@@ -127,19 +127,6 @@ public class SequenceManager : MonoBehaviour
 
         camTargeting.gameObjectToLookAt = Reaper;
         
-        triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
-    }
-    
-    //triggered from ReaperEnteringCitadel world trigger
-    public void Seq2_4()
-    {
-        Debug.Log("Seq2_4 Reaper entering citadel");
-        GameObject Reaper = GameObject.Find("Reaper(Clone)");
-        camTargeting.transform.parent = Reaper.transform;
-        camTargeting.transform.position = GetOffset(Reaper.transform);
-        
-        camTargeting.gameObjectToLookAt = Reaper;
-        
         //geth stop following reaper
         GameObject shipsHolder = GameObject.Find("-ActiveShips-");
         foreach (Transform ship in shipsHolder.transform) //search all immediate children of shipholder
@@ -156,8 +143,36 @@ public class SequenceManager : MonoBehaviour
         triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
     
+    //triggered from ReaperEnteringCitadel world trigger
+    public void Seq2_4()
+    {
+        Debug.Log("Seq2_4 Reaper entering citadel");
+        GameObject Reaper = GameObject.Find("Reaper(Clone)");
+        camTargeting.transform.parent = Reaper.transform;
+        camTargeting.transform.position = GetOffset(Reaper.transform);
+        
+        camTargeting.gameObjectToLookAt = Reaper;
+        
+        
+        
+        triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
+    }
+    
+    //triggered from ReaperInsideCitadel world trigger
+    public void Seq2_5()
+    {
+        Debug.Log("Seq2_4 Reaper inside citadel");
+        GameObject Reaper = GameObject.Find("Reaper(Clone)");
+        camTargeting.transform.parent = Reaper.transform;
+        camTargeting.transform.position = GetOffset(Reaper.transform);
+        
+        camTargeting.gameObjectToLookAt = Reaper;
+        
+        triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
+    }
+    
     //triggered from ReaperAttachingToSpire world trigger
-    public void Seq2_5(float TriggerNextSequenceTime)
+    public void Seq2_6(float TriggerNextSequenceTime)
     {
         Debug.Log("Seq2_5 Reaper attaching to spire");
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
@@ -319,6 +334,10 @@ public class SequenceManager : MonoBehaviour
         Debug.Log("Seq6_1 Normandy dips for big attack");
         SetCameraLook(camPointManager.GetNextPoint());
         camTargeting.gameObjectToLookAt = normandy;
+        normandy.GetComponent<OffsetPursueBehaviour>().maxDistAway = Mathf.Infinity;//allow normandy to move far for dive
+
+        normandy.GetComponent<CombatBehaviour>().divertTarget =
+            GameObject.Find("NormandyFlankPoint").transform.position;
         
         triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
@@ -329,7 +348,7 @@ public class SequenceManager : MonoBehaviour
         Debug.Log("Seq6_2 Normandy shoots big rocket");
         SetCameraLook(camPointManager.GetNextPoint());
         //look at normandy rocket
-        camTargeting.gameObjectToLookAt = normandy;
+        camTargeting.gameObjectToLookAt = GameObject.Find("SuperSeekingRocket(Clone)");
         
         normandy.transform.Find("SuperGun").gameObject.SetActive(true);//turn on super weapon
         

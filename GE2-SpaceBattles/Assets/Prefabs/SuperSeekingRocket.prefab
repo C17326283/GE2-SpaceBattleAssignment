@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3523085584948924232}
   - component: {fileID: -2113252120300105726}
   m_Layer: 2
-  m_Name: SuperSeekingRocket 1
+  m_Name: SuperSeekingRocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
   parentShipTag: Alliance
   enemyTags:
   - Sovereign
-  continuousForce: 50
+  continuousForce: 80
   explosionSize: 50
   maxVel: 100
   target: {fileID: 0}

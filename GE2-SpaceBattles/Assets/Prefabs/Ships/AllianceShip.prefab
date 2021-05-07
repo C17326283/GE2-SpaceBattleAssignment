@@ -46,8 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   shootAttemptRate: 0.01
-  shotCooldown: 0.5
-  shootAngle: 50
+  shotCooldown: 2
+  shootAngle: 80
   readyToShoot: 0
   target: {fileID: 0}
   toTarget: {x: 0, y: 0, z: 0}
