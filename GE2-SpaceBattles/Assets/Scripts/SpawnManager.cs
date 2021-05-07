@@ -5,11 +5,8 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    
     public TeleportSpawner[] spawnerGroupsInOrder;
-
     public int spawnedIndex = 0;
-
 
     public void SpawnNextGroup()
     {
@@ -17,5 +14,4 @@ public class SpawnManager : MonoBehaviour
 
         spawnedIndex += 1;
     }
-    
 }

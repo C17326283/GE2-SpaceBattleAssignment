@@ -19,6 +19,9 @@ public class TeleportSpawner : MonoBehaviour
 
     private float startDist = 2000f;
 
+    public float overlapSize = 30;
+    public int noOverlapSpawnAttempts = 10;
+
     public void TriggerSpawn()
     {
         StartCoroutine(SpawnGroup());
@@ -29,8 +32,24 @@ public class TeleportSpawner : MonoBehaviour
         for (int i = 0; i < amountToSpawn; i++)
         {
             Vector3 randPos = Random.insideUnitSphere * radiusToSpawn;//random in circle
-            Vector3 randSpawnPos = randPos + this.transform.position +spawnOffset;//around center of obj
 
+
+            Vector3 randSpawnPos = randPos + this.transform.position +spawnOffset;//around center of obj
+            
+            //try get a pos where the ship can spawn without overlap
+            int j = 0;
+            while (CheckOverlap(randSpawnPos) && j<noOverlapSpawnAttempts)
+            {
+//                print("overlap so try spawn again");
+                randSpawnPos = randPos + this.transform.position +spawnOffset;//around center of obj
+
+                j++;
+            }
+            //might timeout and spawn with an overlap if couldnt find a valid one
+            
+
+            
+            
             //Spawn ship far away
             GameObject spawnedObj = GameObject.Instantiate(shipToSpawn, randSpawnPos+(-transform.forward*startDist), this.transform.rotation);
             spawnedObj.transform.forward = this.transform.forward;
@@ -42,7 +61,9 @@ public class TeleportSpawner : MonoBehaviour
             spawnedTrail.GetComponent<TrailRenderer>().startWidth = spawnEffectScale*4;
             Destroy(spawnedTrail,.1f);
 
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(0.001f);
+            
+            
             //zoom to spawn pos
             spawnedObj.transform.position = randSpawnPos;
             //add spawn particle effect
@@ -53,6 +74,20 @@ public class TeleportSpawner : MonoBehaviour
             yield return new WaitForSeconds(timeBetweenSpawn);
 
         }
+    }
+    
+    public bool CheckOverlap(Vector3 spawnPos)
+    {
+//        print("CheckOverlap");
+        Vector3 overlapBox = new Vector3(overlapSize,overlapSize,overlapSize);
+        Collider[] collidersOverlapping = new Collider[1];
+        int numOfCollidersFound = Physics.OverlapBoxNonAlloc(spawnPos, overlapBox,collidersOverlapping,this.transform.rotation);
+
+//        print("numOfCollidersFound"+numOfCollidersFound);
+        if(numOfCollidersFound>0)
+            return true;
+        else
+            return false;
     }
 
     

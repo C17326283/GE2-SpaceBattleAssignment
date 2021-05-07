@@ -77,8 +77,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitDamage: 300
   hitInFrontDistance: 500
-  minDestroyTime: 20
-  maxDestroyTime: 25
+  minDestroyTime: 18
+  maxDestroyTime: 20
   rb: {fileID: 0}
   lastPos: {x: 0, y: 0, z: 0}
   hitExplosion: {fileID: 6525372132480378010, guid: c1d6f3e10d689014788c4525fb46d2eb, type: 3}
@@ -87,10 +87,10 @@ MonoBehaviour:
   enemyTags: []
   continuousForce: 200
   explosionSize: 25
-  maxVel: 700
+  maxVel: 600
   target: {fileID: 0}
   maxSeekingAngle: 90
-  turnSpeed: 0.5
+  turnSpeed: 1
 --- !u!1 &690787040962485325
 GameObject:
   m_ObjectHideFlags: 0

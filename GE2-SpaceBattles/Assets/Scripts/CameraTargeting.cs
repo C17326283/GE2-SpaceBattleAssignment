@@ -8,7 +8,7 @@ public class CameraTargeting : MonoBehaviour
     public float lerpSpeed = 2f;
     
     // Update is called once per frame
-    void FixedUpdate()
+    void LateUpdate()
     {
         if (gameObjectToLookAt != null)
         {
