@@ -46,6 +46,7 @@
           </e>
           <e p="README.txt" t="Include" />
         </e>
+        <e p="Ramming.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="BigBoid.cs" t="Include" />
           <e p="BoidPath.cs" t="Include" />

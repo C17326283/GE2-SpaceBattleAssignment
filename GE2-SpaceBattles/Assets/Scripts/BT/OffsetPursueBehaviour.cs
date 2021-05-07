@@ -8,10 +8,8 @@ using Random = UnityEngine.Random;
 public class OffsetPursueBehaviour : BaseShipBehaviour
 {
     public String followObjName;
-    [HideInInspector]
     public GameObject followObj;
 
-    [HideInInspector]
     public Vector3 followOffset; 
     public float followOffsetDistance;
 
@@ -38,7 +36,7 @@ public class OffsetPursueBehaviour : BaseShipBehaviour
         if (followObj)
         {
             //WithinOriginDistanceCondition
-            if (Vector3.Distance(followOffset, transform.position) < followOffsetDistance * 1.5f)
+            if (Vector3.Distance(followObj.transform.position, transform.position) < followOffsetDistance * 1.5f)
             {
                 Task.current.Succeed();
             }
@@ -49,7 +47,7 @@ public class OffsetPursueBehaviour : BaseShipBehaviour
         }
         else
         {
-            Task.current.Succeed();
+            Task.current.Fail();
         }
     }
 

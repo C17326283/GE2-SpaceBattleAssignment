@@ -263,8 +263,9 @@ GameObject:
   - component: {fileID: 4547968273663151589}
   - component: {fileID: -5117070154002799038}
   - component: {fileID: 4605445520946520389}
+  - component: {fileID: 1675678871454820567}
   m_Layer: 0
-  m_Name: Reaper
+  m_Name: Reaper 1
   m_TagString: Sovereign
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -370,8 +371,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 330.1, y: 185.4, z: 633}
-  m_Center: {x: 0, y: 0, z: -146.5}
+  m_Size: {x: 254.2, y: 191.38, z: 633}
+  m_Center: {x: 0, y: 42.3, z: -146.5}
 --- !u!114 &-5117070154002799038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,6 +411,19 @@ MonoBehaviour:
   bankingAmount: 0.34
   turnSpeed: 100
   mass: 5
+--- !u!114 &1675678871454820567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7177627545569228145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6afcc510ae67b544797907f19d21ef04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyTags: []
 --- !u!95 &7177627546067790900
 Animator:
   serializedVersion: 3

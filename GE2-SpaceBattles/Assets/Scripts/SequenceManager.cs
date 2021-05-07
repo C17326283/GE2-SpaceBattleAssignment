@@ -281,6 +281,7 @@ public class SequenceManager : MonoBehaviour
         
         OffsetPursueBehaviour normandyFollowB = normandy.GetComponent<OffsetPursueBehaviour>();
         //maybe send some after ascension?
+        //normandyFollowB.followOffsetDistance = Mathf.Infinity;
         normandyFollowB.followObjName = "Reaper(Clone)";
         normandyFollowB.followObj = null;
         

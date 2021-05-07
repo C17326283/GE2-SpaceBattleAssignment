@@ -67,10 +67,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 3000
-  radius: 1000
+  range: 5000
+  radius: 2000
   enemyTags:
-  - Reaper
+  - Sovereign
   debugTargeting: 1
 --- !u!1 &5655017479815528008
 GameObject:
