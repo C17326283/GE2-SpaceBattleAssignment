@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 8528936679688010712}
   - component: {fileID: 1194444818608500590}
   m_Layer: 0
-  m_Name: Gun (2)
+  m_Name: ReaperGun
   m_TagString: Sovereign
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9144495121928783991
 Transform:
   m_ObjectHideFlags: 0
@@ -26,11 +26,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084025382178114400}
   m_LocalRotation: {x: -0.00958943, y: 0.98700815, z: -0.0640506, w: -0.14703919}
-  m_LocalPosition: {x: 0.077552505, y: 0.036024496, z: -0.19751355}
-  m_LocalScale: {x: 0.009999994, y: 0.009999999, z: 0.009999999}
+  m_LocalPosition: {x: 0.07088584, y: -0.010642175, z: -0.16418022}
+  m_LocalScale: {x: 0.009999994, y: 0.009999998, z: 0.009999999}
   m_Children: []
-  m_Father: {fileID: 2227900824175979658}
-  m_RootOrder: 13
+  m_Father: {fileID: 2741869890132798186}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8528936679688010712
 MonoBehaviour:
@@ -53,7 +53,7 @@ MonoBehaviour:
   toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
-  targeting: {fileID: 0}
+  targeting: {fileID: 1194444818608500590}
   enemyTags: []
 --- !u!114 &1194444818608500590
 MonoBehaviour:
@@ -67,11 +67,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 3000
-  radius: 1000
+  range: 5000
+  radius: 1500
   enemyTags:
   - Alliance
-  - Normandy
   debugTargeting: 0
 --- !u!1 &1833520640662025917
 GameObject:
@@ -85,12 +84,12 @@ GameObject:
   - component: {fileID: 2312201148981082192}
   - component: {fileID: 1862021788206280002}
   m_Layer: 0
-  m_Name: Gun (1)
+  m_Name: ReaperGun
   m_TagString: Sovereign
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2359884545647162033
 Transform:
   m_ObjectHideFlags: 0
@@ -98,12 +97,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833520640662025917}
-  m_LocalRotation: {x: -0.0037049523, y: -0.9948469, z: -0.040007837, w: 0.093087904}
-  m_LocalPosition: {x: -0.0779758, y: 0.03607037, z: -0.1955061}
-  m_LocalScale: {x: 0.009999998, y: 0.01, z: 0.01}
+  m_LocalRotation: {x: -0.093087904, y: -0.040007792, z: 0.9948469, w: -0.0037049563}
+  m_LocalPosition: {x: 0.074234754, y: -0.014170656, z: -0.15705986}
+  m_LocalScale: {x: -0.009999998, y: -0.009999996, z: -0.01}
   m_Children: []
-  m_Father: {fileID: 2227900824175979658}
-  m_RootOrder: 12
+  m_Father: {fileID: 7089286111210908795}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2312201148981082192
 MonoBehaviour:
@@ -126,7 +125,7 @@ MonoBehaviour:
   toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
-  targeting: {fileID: 0}
+  targeting: {fileID: 1862021788206280002}
   enemyTags: []
 --- !u!114 &1862021788206280002
 MonoBehaviour:
@@ -140,11 +139,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 3000
-  radius: 1000
+  range: 5000
+  radius: 1500
   enemyTags:
   - Alliance
-  - Normandy
   debugTargeting: 0
 --- !u!1 &7177627544316803938
 GameObject:
@@ -158,7 +156,7 @@ GameObject:
   - component: {fileID: 7177627544316803940}
   - component: {fileID: 2583446173605563739}
   m_Layer: 0
-  m_Name: Gun
+  m_Name: ReaperGun
   m_TagString: Sovereign
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -171,12 +169,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7177627544316803938}
-  m_LocalRotation: {x: 0.00043230734, y: -0.99788153, z: 0.0062960098, w: 0.06475017}
-  m_LocalPosition: {x: -0.0048, y: 0.1084, z: -0.2026}
-  m_LocalScale: {x: 0.009999999, y: 0.010000001, z: 0.009999999}
+  m_LocalRotation: {x: 0.008313244, y: -0.9912232, z: -0.115255535, w: 0.06421575}
+  m_LocalPosition: {x: -0.004171623, y: 0.08197929, z: -0.141082}
+  m_LocalScale: {x: 0.009999996, y: 0.010000003, z: 0.009999997}
   m_Children: []
-  m_Father: {fileID: 2227900824175979658}
-  m_RootOrder: 11
+  m_Father: {fileID: 1159570253529760887}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!114 &7177627544316803940
 MonoBehaviour:
@@ -191,15 +189,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 4121520294649bc4cb077d3975f138e3, type: 3}
-  shootAttemptRate: 0.05
-  shotCooldown: 0.4
+  shootAttemptRate: 0.2
+  shotCooldown: 5
   shootAngle: 30
   readyToShoot: 0
   target: {fileID: 0}
   toTarget: {x: 0, y: 0, z: 0}
   maxAccuracyOffset: 0.1
   combatBehaviours: {fileID: 0}
-  targeting: {fileID: 0}
+  targeting: {fileID: 2583446173605563739}
   enemyTags: []
 --- !u!114 &2583446173605563739
 MonoBehaviour:
@@ -213,11 +211,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 3000
-  radius: 1000
+  range: 6000
+  radius: 1500
   enemyTags:
   - Alliance
-  - Normandy
   debugTargeting: 0
 --- !u!1 &7177627545569228145
 GameObject:
@@ -568,8 +565,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 98d63715a3ed5684bab5008932477666, type: 3}
   m_PrefabInstance: {fileID: 1588017130922765875}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2227900824175979658 stripped
+--- !u!4 &7089286111210908795 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -8583066130326895943, guid: 98d63715a3ed5684bab5008932477666, type: 3}
+  m_CorrespondingSourceObject: {fileID: -834308311159094712, guid: 98d63715a3ed5684bab5008932477666, type: 3}
+  m_PrefabInstance: {fileID: 1588017130922765875}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2741869890132798186 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5763251782577388327, guid: 98d63715a3ed5684bab5008932477666, type: 3}
+  m_PrefabInstance: {fileID: 1588017130922765875}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1159570253529760887 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8782483083600156092, guid: 98d63715a3ed5684bab5008932477666, type: 3}
   m_PrefabInstance: {fileID: 1588017130922765875}
   m_PrefabAsset: {fileID: 0}

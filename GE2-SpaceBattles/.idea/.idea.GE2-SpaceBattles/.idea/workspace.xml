@@ -20,15 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Textures/Props/Construction_Light/Materials/ConstructionLight_MetallicOcculusionSmoothness.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExampleAssets/Textures/Props/Construction_Light/Materials/ConstructionLight_MetallicOcculusionSmoothness.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Ascension.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Ascension.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Edited/test 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Edited/test 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Tele.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Tele.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/cITADEL.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/cITADEL.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ReaperBeam.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ReaperBeam.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +41,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GunTargeting.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioVariance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Rocket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DebrisSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BT/BaseBehaviours.cs" root0="FORCE_HIGHLIGHTING" />
@@ -58,7 +58,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/BigBoid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RandomTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/Wander.cs" />
         <option value="$PROJECT_DIR$/Assets/Projectile.cs" />
@@ -86,7 +85,6 @@
         <option value="$PROJECT_DIR$/Assets/DestroyAfterTime.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/FollowBehaviours.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/PathBehaviour.txt" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/PathManage.cs" />
         <option value="$PROJECT_DIR$/Assets/GunTargeting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraPointManager.cs" />
@@ -107,8 +105,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShipBoid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
         <option value="$PROJECT_DIR$/Assets/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
       </list>
     </option>
   </component>

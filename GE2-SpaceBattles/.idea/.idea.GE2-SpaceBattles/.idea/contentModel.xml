@@ -10,6 +10,7 @@
         <e p="AudioManager.cs" t="Include" />
         <e p="DebrisSpawner.cs" t="Include" />
         <e p="DestroyAfterTime.cs" t="Include" />
+        <e p="GameManager.cs" t="Include" />
         <e p="GunTargeting.cs" t="Include" />
         <e p="PandaBehaviour" t="Include">
           <e p="ChangeLog.txt" t="Include" />

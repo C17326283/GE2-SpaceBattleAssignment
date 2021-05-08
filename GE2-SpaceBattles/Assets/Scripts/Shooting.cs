@@ -106,7 +106,7 @@ public class Shooting : MonoBehaviour
     
     public Transform GetTarget()
     {
-        if (combatBehaviours != null)
+        if (targeting)
         {
             target = targeting.GetTarget();
         }

@@ -302,6 +302,12 @@ public class SequenceManager : MonoBehaviour
         camTargeting.SetCamFollow(Reaper.transform, 10);
         camTargeting.SetCamLookAt(Reaper.transform);
 
+        
+        foreach (var reaperWeapon in Reaper.GetComponentsInChildren<Shooting>())
+        {
+            reaperWeapon.enabled = true;
+        }
+
         audioManager.PlayNextVoice(); //take that monster down
 
         //continue to next event which trigger next seq
@@ -336,6 +342,7 @@ public class SequenceManager : MonoBehaviour
         //Fly to flank position by setting a divert point which is considered before other behaviours
         normandy.GetComponent<CombatBehaviour>().divertTarget = flankPoint.position;
         
+        audioManager.PlayNextVoice(); //shields are down
         audioManager.PlayNextMusic(); //victory
 
         triggerPointManager.GetNextPoint().gameObject.SetActive(true); //turn on next world trigger
@@ -349,7 +356,7 @@ public class SequenceManager : MonoBehaviour
         camTargeting.SetCamLookAt(normandy.transform);
         //normandy.GetComponent<OffsetPursueBehaviour>().maxDistAway = Mathf.Infinity;//allow normandy to move far for dive
 
-        audioManager.PlayNextVoice(); //shields are down
+        audioManager.PlayNextVoice(); //flank
 
         normandy.transform.Find("SuperGun").gameObject.SetActive(true); //turn on super weapon
 
@@ -386,7 +393,7 @@ public class SequenceManager : MonoBehaviour
     }
 
     //triggered from previous
-    public void Seq7_1()
+    public void Seq7_1(float TriggerNextSequenceTime)
     {
         Debug.Log("Seq7_1 Normandy flys away");
         
@@ -403,13 +410,23 @@ public class SequenceManager : MonoBehaviour
             }
         }
         
-        
+        audioManager.PlayNextVoice(); //final speach
 
         camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
         camTargeting.SetCamLookAt(normandy.transform);
         
         //normandy sets target to fly past camera
         normandy.GetComponent<OffsetPursueBehaviour>().followObj = GameObject.Find("EndFlyPoint").gameObject;
+        
+        //continue to next event which trigger next seq
+        StartCoroutine(NextSeq(TriggerNextSequenceTime));
+    }
+    
+    public void Seq7_2()
+    {
+        Debug.Log("Seq7_2 End");
+
+        GameObject.Find("GameManager").GetComponent<GameManager>().Quit();
 
     }
 }
