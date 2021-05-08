@@ -15,6 +15,7 @@ public class Projectile : MonoBehaviour
     public Vector3 lastPos;
 
     public GameObject hitExplosion;
+    public float hitExplosionSize = 10;
     
     public float startForce = 10;
     //public LayerMask projectileLayerToAvoid;
@@ -35,7 +36,7 @@ public class Projectile : MonoBehaviour
     }
     
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         rb = this.gameObject.GetComponent<Rigidbody>();
         //projectileLayerToAvoid = 1 << 6;//set to only avoid layer 5
@@ -79,6 +80,7 @@ public class Projectile : MonoBehaviour
 //        print(transform.name+" hit "+hitGameObject.transform.name);
         GameObject explosion = GameObject.Instantiate(hitExplosion);
         explosion.transform.position = this.transform.position;
+        explosion.transform.localScale = new Vector3(hitExplosionSize,hitExplosionSize,hitExplosionSize);
         GetComponentInChildren<MeshRenderer>().enabled = false;
         
         //try get a life script reference

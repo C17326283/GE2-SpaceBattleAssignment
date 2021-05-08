@@ -10,14 +10,20 @@ public class CameraTargeting : MonoBehaviour
     public float moveLerpSpeed = 2f;
     public float rotLerpSpeed = 2f;
     
+    public Vector3 panningAmount = new Vector3(0,0,0);
+    
     // Update is called once per frame
-    void FixedUpdate()
+    void LateUpdate()
     {
         if (gameObjectToFollow)
         {
             Vector3 toPos = gameObjectToFollow.position + gameObjectToFollow.TransformDirection(objectFollowOffset);
-
             transform.position = Vector3.Lerp(transform.position, toPos, Time.deltaTime * moveLerpSpeed);
+        }
+        else
+        {
+            Vector3 toPos = transform.position + transform.TransformDirection(panningAmount);
+            transform.position = Vector3.Slerp(transform.position, toPos, Time.deltaTime * moveLerpSpeed);
         }
         
         if (gameObjectToLookAt)
@@ -34,6 +40,7 @@ public class CameraTargeting : MonoBehaviour
         //transform.position = obj.transform.position+offset;
         print("obj"+obj.transform.position+",offset:"+offset+", with offset:"+(obj.transform.position+obj.transform.TransformPoint(offset)));
     }
+    
     public void SetCameraMatchPoint(Transform cameraPoint)
     {
         SetCamNotFollowing();

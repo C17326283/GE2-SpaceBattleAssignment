@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 4605445520946520389}
   - component: {fileID: 7887602638127581548}
   - component: {fileID: 3880433330496644809}
+  - component: {fileID: 1510314960}
   m_Layer: 0
   m_Name: Reaper
   m_TagString: Sovereign
@@ -305,8 +306,8 @@ Rigidbody:
   m_GameObject: {fileID: 7177627545569228145}
   serializedVersion: 2
   m_Mass: 50000
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 2
+  m_AngularDrag: 0.1
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -323,8 +324,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 330.1, y: 185.4, z: 633}
-  m_Center: {x: 0, y: 0, z: -146.5}
+  m_Size: {x: 235.61594, y: 166.42328, z: 598.0024}
+  m_Center: {x: -1.3214984, y: 50.817753, z: -129.00114}
 --- !u!114 &-5117070154002799038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,8 +338,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181d075cff82e74bb6fdbe2279eb3c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20000
-  currentHealth: 20000
+  maxHealth: 2000000
+  currentHealth: 2000000
   DeathExplosion: {fileID: 7170199903285590178, guid: 26af278b6a7a2984685a10043378302b, type: 3}
   alive: 1
   explosionSize: 200
@@ -359,9 +360,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceToApply: {x: 0, y: 0, z: 0}
   rb: {fileID: 675041803783481498}
-  moveSpeed: 150
-  maxSpeed: 150
-  maxMag: 150
+  moveSpeed: 160
+  maxSpeed: 160
+  maxMag: 160
   bankingAmount: 0.03
   turnSpeed: 50
   mass: 5
@@ -402,6 +403,25 @@ MonoBehaviour:
   maxScale: 20
   maxForce: 40
   destroyAfter: 60
+--- !u!95 &1510314960
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7177627545569228145}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d69369717e136974cae5c10f1fca629e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1588017130922765875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -409,6 +429,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7177627545569228144}
     m_Modifications:
+    - target: {fileID: -9026367285107284158, guid: 98d63715a3ed5684bab5008932477666, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14b103fe961e8ff4ebc8d78403da03d9, type: 2}
+    - target: {fileID: -8782483083600156092, guid: 98d63715a3ed5684bab5008932477666, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99255925
+      objectReference: {fileID: 0}
+    - target: {fileID: -8782483083600156092, guid: 98d63715a3ed5684bab5008932477666, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.12176264
+      objectReference: {fileID: 0}
+    - target: {fileID: -8782483083600156092, guid: 98d63715a3ed5684bab5008932477666, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -13.988
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 98d63715a3ed5684bab5008932477666, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -513,6 +549,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2555673373275218891, guid: 98d63715a3ed5684bab5008932477666, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 14b103fe961e8ff4ebc8d78403da03d9, type: 2}
     - target: {fileID: 2953599391405136175, guid: 98d63715a3ed5684bab5008932477666, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

@@ -8,7 +8,7 @@ public class Rocket : Projectile
     public float explosionSize =2;
     public float maxVel = 100;
     
-    void Start()
+    void Awake()
     {
         //rockets explode before death
         Invoke("Explode",Random.Range(minDestroyTime,maxDestroyTime));//explode before normal 

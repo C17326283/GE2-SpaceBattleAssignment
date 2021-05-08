@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Laser : Projectile
 {
-    void Start()
+    void Awake()
     {
         //rockets explode before death
         Invoke("DestroyObj",Random.Range(minDestroyTime,maxDestroyTime));//explode before normal 

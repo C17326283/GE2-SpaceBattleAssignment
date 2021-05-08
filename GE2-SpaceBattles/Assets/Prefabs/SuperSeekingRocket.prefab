@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7264578fd445e8a6123cfc6267231c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitDamage: 30000000
+  hitDamage: 1e+21
   hitInFrontDistance: 500
   minDestroyTime: 1000000
   maxDestroyTime: 2000000

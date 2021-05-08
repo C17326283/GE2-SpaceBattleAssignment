@@ -228,14 +228,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49568f277bf29524ca594d3f2929bd8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitDamage: 30
+  hitDamage: 25
   hitInFrontDistance: 500
-  minDestroyTime: 9
-  maxDestroyTime: 11
+  minDestroyTime: 7
+  maxDestroyTime: 10
   rb: {fileID: 0}
   lastPos: {x: 0, y: 0, z: 0}
   hitExplosion: {fileID: 6525372132480378010, guid: c1d6f3e10d689014788c4525fb46d2eb, type: 3}
-  startForce: 50
+  hitExplosionSize: 10
+  startForce: 80
   parentShipTag: 
   enemyTags: []
 --- !u!54 &7961098023568849934

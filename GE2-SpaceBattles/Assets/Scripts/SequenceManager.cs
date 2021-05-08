@@ -59,7 +59,7 @@ public class SequenceManager : MonoBehaviour
         Debug.Log("Seq1_1 Reapers arrive and camera follows them as they move toward citadel");
         spawnManager.SpawnNextGroup();//spawn reapers
         camTargeting.SetCamLookAt(GameObject.Find("Reaper(Clone)").transform);
-        camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
+        //camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());//dont need because you start at point
         
         audioManager.PlayNextMusic();//reaper entry music
         

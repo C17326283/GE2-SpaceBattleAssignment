@@ -9,8 +9,6 @@ public class SeekingRocket : Rocket
     public float turnSpeed = 10;
     public void FixedUpdate()
     {
-        
-        
         if (GetAngleToTarget() < maxSeekingAngle)
         {
             Quaternion toTarget = Quaternion.LookRotation((target.transform.position - transform.position).normalized);
@@ -19,8 +17,13 @@ public class SeekingRocket : Rocket
             transform.rotation = Quaternion.Slerp( transform.rotation, toTarget, Time.deltaTime * turnSpeed );
 
         }
-        base.rb.AddForce(transform.forward * (continuousForce * Time.deltaTime),ForceMode.Force);
-        rb.velocity = Vector3.ClampMagnitude(rb.velocity,maxVel);//prevent goinf too fast
+
+        if (rb)
+        {
+            base.rb.AddForce(transform.forward * (continuousForce * Time.deltaTime),ForceMode.Force);
+            rb.velocity = Vector3.ClampMagnitude(rb.velocity,maxVel);//prevent goinf too fast
+        }
+        
 
     }
 
