@@ -28,27 +28,19 @@ public class SequenceManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //StartCoroutine(Sequence());
-        //events[curEvent].Invoke();
+        curEvent = 0;
+        curOffset = 0;
         StartCoroutine(NextSeq(timeToWaitBeforeStarting));
     }
 
-    public void SetCameraLook(Transform cameraPoint)
-    {
-        camTargeting.transform.parent = null;
-        camTargeting.transform.position = cameraPoint.transform.position;
-        camTargeting.transform.rotation = cameraPoint.transform.rotation;
-    }
-    
-    public Vector3 GetOffset(Transform originObj)
+    public Vector3 GetOffset()
     {
         Vector3 selectedOffset = cameraOffsets[curOffset];
-        Debug.Log("Get offset: "+curOffset+", "+selectedOffset+originObj);
+        Debug.Log("Get offset: "+curOffset+", "+selectedOffset);
+        //Debug.Log("Get offset: "+curOffset+", "+selectedOffset+originObj);
         curOffset++;
         
-        //offset relative to originObj
-        Vector3 position = originObj.transform.TransformPoint(selectedOffset);
-        return position;
+        return selectedOffset;
     }
     
     IEnumerator NextSeq(float waitBeforeTrigger)
@@ -66,9 +58,9 @@ public class SequenceManager : MonoBehaviour
     {
         Debug.Log("Seq1_1 Reapers arrive and camera follows them as they move toward citadel");
         spawnManager.SpawnNextGroup();//spawn reapers
-        SetCameraLook(camPointManager.GetNextPoint());
-        camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
-
+        camTargeting.SetCamLookAt(GameObject.Find("Reaper(Clone)").transform);
+        camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
+        
         audioManager.PlayNextMusic();//reaper entry music
         
         //continue to next event which trigger next seq
@@ -88,9 +80,8 @@ public class SequenceManager : MonoBehaviour
     public void Seq1_3()
     {
         Debug.Log("Seq1_3 Reaper Side view");
-        camTargeting.transform.parent = null;
-        camTargeting.transform.position = GetOffset(camTargeting.gameObjectToLookAt.transform);
-        camTargeting.transform.parent = camTargeting.gameObjectToLookAt.transform;
+        //camTargeting.SetCameraWithRelativeOffset(camTargeting.gameObjectToLookAt.transform,GetOffset());
+        camTargeting.SetCamFollow(GameObject.Find("Reaper(Clone)").transform,GetOffset());
         
         triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
         
@@ -102,9 +93,8 @@ public class SequenceManager : MonoBehaviour
         Debug.Log("Seq2_1 Destiny ascension tries to escape");
         GameObject ascension = GameObject.Find("Flagship");
         ascension.GetComponent<BehaviourTree>().enabled = true;
-        camTargeting.transform.parent = null;
-        camTargeting.transform.position = GetOffset(ascension.transform);
-        camTargeting.gameObjectToLookAt = ascension;
+        camTargeting.SetCameraWithRelativeOffset(ascension.transform,GetOffset());
+        camTargeting.SetCamLookAt(ascension.transform);
         
         audioManager.PlayNextVoice();//evac council
         
@@ -116,7 +106,8 @@ public class SequenceManager : MonoBehaviour
     public void Seq2_2()
     {
         Debug.Log("Seq2_2 Citadel Starts closing");
-        SetCameraLook(camPointManager.GetNextPoint());
+        camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
+        
         citadelAnim.SetBool("Closing",true);
         //camTargeting.gameObjectToLookAt = GameObject.Find("CitadelDefencePoint");
         
@@ -130,11 +121,8 @@ public class SequenceManager : MonoBehaviour
     {
         Debug.Log("Seq2_3 Reaper ramming ships");
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
-        camTargeting.transform.parent = Reaper.transform;
-        camTargeting.transform.position = GetOffset(Reaper.transform);
-
-        camTargeting.gameObjectToLookAt = Reaper;
-        
+        camTargeting.SetCamFollow(Reaper.transform,GetOffset());
+        camTargeting.SetCamLookAt(Reaper.transform);
         
         audioManager.PlayNextVoice();//dont let the enemy inside
         
@@ -159,10 +147,9 @@ public class SequenceManager : MonoBehaviour
     {
         Debug.Log("Seq2_4 Reaper entering citadel");
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
-        camTargeting.transform.parent = Reaper.transform;
-        camTargeting.transform.position = GetOffset(Reaper.transform);
+        camTargeting.SetCamFollow(Reaper.transform,GetOffset());
+        camTargeting.SetCamLookAt(Reaper.transform);
         
-        camTargeting.gameObjectToLookAt = Reaper;
         
         audioManager.PlayNextMusic();//reaper in citadel
         
@@ -174,10 +161,8 @@ public class SequenceManager : MonoBehaviour
     {
         Debug.Log("Seq2_4 Reaper inside citadel");
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
-        camTargeting.transform.parent = Reaper.transform;
-        camTargeting.transform.position = GetOffset(Reaper.transform);
-        
-        camTargeting.gameObjectToLookAt = Reaper;
+        camTargeting.SetCamFollow(Reaper.transform,GetOffset());
+        camTargeting.SetCamLookAt(Reaper.transform);
         
         triggerPointManager.GetNextPoint().gameObject.SetActive(true);//turn on next world trigger
     }
@@ -186,8 +171,8 @@ public class SequenceManager : MonoBehaviour
     public void Seq2_6()
     {
         Debug.Log("Seq2_4 Watch battle outside citadel");
-        SetCameraLook(camPointManager.GetNextPoint());
-        camTargeting.gameObjectToLookAt = GameObject.Find("Normandy(Clone)");
+        camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
+        camTargeting.SetCamLookAt(GameObject.Find("CitadelDefencePoint").transform);
         
         audioManager.PlayNextVoice();//caught the distress
         
@@ -199,10 +184,8 @@ public class SequenceManager : MonoBehaviour
     {
         Debug.Log("Seq2_5 Reaper attaching to spire");
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
-        camTargeting.transform.parent = Reaper.transform;
-        camTargeting.transform.position = GetOffset(Reaper.transform);
-        
-        camTargeting.gameObjectToLookAt = Reaper;
+        camTargeting.SetCamFollow(Reaper.transform,GetOffset());
+        camTargeting.SetCamLookAt(Reaper.transform);
         
         audioManager.PlayNextVoice();//ive regained control
         
@@ -214,8 +197,8 @@ public class SequenceManager : MonoBehaviour
     public void Seq3_1(float TriggerNextSequenceTime)
     {
         Debug.Log("Seq3_1 Focus on teleporter Arrives");
-        SetCameraLook(camPointManager.GetNextPoint());
-        camTargeting.gameObjectToLookAt = GameObject.Find("Teleporter");
+        camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
+        camTargeting.SetCamLookAt(GameObject.Find("Teleporter").transform);
         
         audioManager.PlayNextMusic();//final battle
         
@@ -230,7 +213,8 @@ public class SequenceManager : MonoBehaviour
         
         spawnManager.SpawnNextGroup();//normandy
         normandy = GameObject.Find("Normandy(Clone)");
-        camTargeting.gameObjectToLookAt = normandy;
+        
+        camTargeting.SetCamLookAt(normandy.transform);
         
         audioManager.PlayNextVoice();//picking up reinforcements
         
@@ -253,9 +237,8 @@ public class SequenceManager : MonoBehaviour
         Debug.Log("Seq4_1 Watch geth around alliance blow up");
         
         GameObject ascension = GameObject.Find("Flagship");
-        camTargeting.transform.parent = null;
-        camTargeting.transform.position = GetOffset(ascension.transform);
-        camTargeting.gameObjectToLookAt = ascension;
+        camTargeting.SetCamFollow(ascension.transform,GetOffset());
+        camTargeting.SetCamLookAt(ascension.transform);
         
         audioManager.PlayNextVoice();//alliance moves in
         
@@ -267,9 +250,9 @@ public class SequenceManager : MonoBehaviour
     public void Seq4_2(float TriggerNextSequenceTime)
     {
         Debug.Log("Seq4_2 Alliance flies in through explosions");
-        camTargeting.transform.parent = normandy.transform;
-        camTargeting.transform.position = GetOffset(normandy.transform);
-        camTargeting.gameObjectToLookAt = normandy;
+        camTargeting.SetCamFollow(normandy.transform,GetOffset());
+        camTargeting.SetCamLookAt(normandy.transform);
+        
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(TriggerNextSequenceTime));
     }
@@ -280,9 +263,8 @@ public class SequenceManager : MonoBehaviour
         Debug.Log("Seq4_3 Ascension starts leaving");
         
         GameObject ascension = GameObject.Find("Flagship");
-        camTargeting.transform.parent = null;
-        camTargeting.transform.position = GetOffset(ascension.transform);
-        camTargeting.gameObjectToLookAt = ascension;
+        camTargeting.SetCamFollow(ascension.transform,GetOffset());
+        camTargeting.SetCamLookAt(ascension.transform);
         
         audioManager.PlayNextVoice();//ascension clear
         
@@ -295,9 +277,8 @@ public class SequenceManager : MonoBehaviour
     {
         Debug.Log("Seq5_1 Citadel opens and ships move in");
         citadelAnim.SetBool("Closing",false);
-        camTargeting.transform.parent = normandy.transform;
-        camTargeting.transform.position = GetOffset(normandy.transform);
-        camTargeting.gameObjectToLookAt = normandy;
+        camTargeting.SetCamFollow(normandy.transform,GetOffset());
+        camTargeting.SetCamLookAt(normandy.transform);
         
         //geth stop following reaper
         GameObject shipsHolder = GameObject.Find("-ActiveShips-");
@@ -327,10 +308,8 @@ public class SequenceManager : MonoBehaviour
         Debug.Log("Seq5_2 Sovereign fights back as its getting attacked while attached");
         
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
-        camTargeting.transform.parent = Reaper.transform;
-        camTargeting.transform.position = GetOffset(Reaper.transform);
-        
-        camTargeting.gameObjectToLookAt = Reaper;
+        camTargeting.SetCamFollow(Reaper.transform,GetOffset());
+        camTargeting.SetCamLookAt(Reaper.transform);
         
         audioManager.PlayNextVoice();//take that monster down
         
@@ -344,10 +323,8 @@ public class SequenceManager : MonoBehaviour
         Debug.Log("Seq5_3 Sovereign shields down");
         
         GameObject Reaper = GameObject.Find("Reaper(Clone)");
-        camTargeting.transform.parent = Reaper.transform;
-        camTargeting.transform.position = GetOffset(Reaper.transform);
-        
-        camTargeting.gameObjectToLookAt = Reaper;
+        camTargeting.SetCamFollow(Reaper.transform,GetOffset());
+        camTargeting.SetCamLookAt(Reaper.transform);
         
         
         
@@ -359,9 +336,9 @@ public class SequenceManager : MonoBehaviour
     public void Seq5_4()
     {
         Debug.Log("Seq5_4 Everyone starts firing");
-        SetCameraLook(camPointManager.GetNextPoint());
+        camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
+        camTargeting.SetCamLookAt(GameObject.Find("Reaper(Clone)").transform);
         //todo look at alliance ship instead of reaper
-        camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
         
         Transform flankPoint = GameObject.Find("NormandyFlankPoint").transform;
         
@@ -375,9 +352,9 @@ public class SequenceManager : MonoBehaviour
     public void Seq6_1()
     {
         Debug.Log("Seq6_1 Normandy dips for big attack");
-        SetCameraLook(camPointManager.GetNextPoint());
-        camTargeting.gameObjectToLookAt = normandy;
-        normandy.GetComponent<OffsetPursueBehaviour>().maxDistAway = Mathf.Infinity;//allow normandy to move far for dive
+        camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
+        camTargeting.SetCamLookAt(normandy.transform);
+        //normandy.GetComponent<OffsetPursueBehaviour>().maxDistAway = Mathf.Infinity;//allow normandy to move far for dive
         
         audioManager.PlayNextVoice();//shields are down
 
@@ -390,14 +367,12 @@ public class SequenceManager : MonoBehaviour
     public void Seq6_2()
     {
         Debug.Log("Seq6_2 Normandy shoots big rocket");
-        SetCameraLook(camPointManager.GetNextPoint());
+        camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
         
         
         //look at normandy rocket
-        GameObject SuperRocket = GameObject.Find("SuperSeekingRocket(Clone)");
-        camTargeting.gameObjectToLookAt = SuperRocket;
-        camTargeting.transform.parent = SuperRocket.transform;
-        camTargeting.transform.position = GetOffset(SuperRocket.transform);
+        Transform SuperRocket = GameObject.Find("SuperSeekingRocket(Clone)").transform;
+        camTargeting.SetCamFollowAndLook(SuperRocket,GetOffset());
 
 
         audioManager.PlayNextMusic();//victory
@@ -410,8 +385,8 @@ public class SequenceManager : MonoBehaviour
     {
         Debug.Log("Seq6_3 Sovereign explodes");
         
-        camTargeting.gameObjectToLookAt = GameObject.Find("Reaper(Clone)");
-        SetCameraLook(camPointManager.GetNextPoint());
+        camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
+        camTargeting.SetCamLookAt(GameObject.Find("Reaper(Clone)").transform);
         
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(TriggerNextSequenceTime));
@@ -422,8 +397,8 @@ public class SequenceManager : MonoBehaviour
     {
         Debug.Log("Seq7_1 Normandy flys away");
         
-        camTargeting.gameObjectToLookAt = normandy;
-        SetCameraLook(camPointManager.GetNextPoint());
+        camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
+        camTargeting.SetCamLookAt(normandy.transform);
         
     }
     

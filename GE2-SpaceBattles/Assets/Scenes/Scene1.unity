@@ -2361,7 +2361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Reaper(Clone)
-  sequenceManager: {fileID: 0}
+  sequenceManager: {fileID: 1429017274}
   elementOfTriggerSequence: 9
 --- !u!65 &133441644
 BoxCollider:
@@ -3099,7 +3099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Reaper(Clone)
-  sequenceManager: {fileID: 0}
+  sequenceManager: {fileID: 1429017274}
   elementOfTriggerSequence: 7
 --- !u!65 &179919606
 BoxCollider:
@@ -4267,7 +4267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Reaper(Clone)
-  sequenceManager: {fileID: 0}
+  sequenceManager: {fileID: 1429017274}
   elementOfTriggerSequence: 8
 --- !u!65 &241692430
 BoxCollider:
@@ -6399,7 +6399,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectToLookAt: {fileID: 0}
-  lerpSpeed: 2
+  gameObjectToFollow: {fileID: 0}
+  objectFollowOffset: {x: 0, y: 0, z: 0}
+  moveLerpSpeed: 2
+  rotLerpSpeed: 2
 --- !u!1 &426001825
 GameObject:
   m_ObjectHideFlags: 0
@@ -6585,7 +6588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: SuperSeekingRocket(Clone)
-  sequenceManager: {fileID: 0}
+  sequenceManager: {fileID: 1429017274}
   elementOfTriggerSequence: 21
 --- !u!65 &432318148
 BoxCollider:
@@ -10038,7 +10041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Reaper(Clone)
-  sequenceManager: {fileID: 0}
+  sequenceManager: {fileID: 1429017274}
   elementOfTriggerSequence: 2
 --- !u!65 &641448688
 BoxCollider:
@@ -16349,7 +16352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Reaper(Clone)
-  sequenceManager: {fileID: 0}
+  sequenceManager: {fileID: 1429017274}
   elementOfTriggerSequence: 6
 --- !u!65 &709553215
 BoxCollider:
@@ -16554,7 +16557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: SeekingRocket(Clone)
-  sequenceManager: {fileID: 0}
+  sequenceManager: {fileID: 1429017274}
   elementOfTriggerSequence: 3
 --- !u!65 &762440397
 BoxCollider:
@@ -30254,7 +30257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Reaper(Clone)
-  sequenceManager: {fileID: 0}
+  sequenceManager: {fileID: 1429017274}
   elementOfTriggerSequence: 4
 --- !u!65 &1281901235
 BoxCollider:
@@ -30680,7 +30683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Normandy(Clone)
-  sequenceManager: {fileID: 0}
+  sequenceManager: {fileID: 1429017274}
   elementOfTriggerSequence: 20
 --- !u!65 &1309570746
 BoxCollider:
@@ -37525,13 +37528,13 @@ MonoBehaviour:
   - {x: 500, y: 0, z: 0}
   - {x: 300, y: 150, z: 400}
   - {x: 0, y: 15, z: 50}
-  - {x: 0, y: 50, z: 200}
+  - {x: -200, y: 50, z: 0}
   - {x: 0, y: 15, z: -50}
   - {x: 0, y: 200, z: 700}
   - {x: 400, y: 0, z: 200}
   - {x: 2, y: 0, z: 1}
-  curEvent: 22
-  curOffset: 13
+  curEvent: 0
+  curOffset: 0
   citadelAnim: {fileID: 2026072279}
 --- !u!4 &1429017275
 Transform:
@@ -41307,7 +41310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Reaper(Clone)
-  sequenceManager: {fileID: 0}
+  sequenceManager: {fileID: 1429017274}
   elementOfTriggerSequence: 5
 --- !u!65 &1608816313
 BoxCollider:
@@ -46702,7 +46705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Normandy(Clone)
-  sequenceManager: {fileID: 0}
+  sequenceManager: {fileID: 1429017274}
   elementOfTriggerSequence: 13
 --- !u!65 &1661752930
 BoxCollider:
@@ -50146,15 +50149,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cb79040858ef03c459ad5c11e881d8b1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 4.488158
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cb79040858ef03c459ad5c11e881d8b1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 4.488158
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cb79040858ef03c459ad5c11e881d8b1, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 4.488158
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cb79040858ef03c459ad5c11e881d8b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50266,8 +50269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc22f4e6c3ebe40458e99fc103ec7b8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameOfTriggerObj: EnergyExplosion
-  sequenceManager: {fileID: 0}
+  nameOfTriggerObj: BigExplosion
+  sequenceManager: {fileID: 1429017274}
   elementOfTriggerSequence: 22
 --- !u!65 &1897670828
 BoxCollider:
@@ -54807,7 +54810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfTriggerObj: Normandy(Clone)
-  sequenceManager: {fileID: 0}
+  sequenceManager: {fileID: 1429017274}
   elementOfTriggerSequence: 17
 --- !u!65 &2140824235
 BoxCollider:
@@ -56894,7 +56897,7 @@ Transform:
   m_GameObject: {fileID: 7298936790569633178}
   m_LocalRotation: {x: 0.007711347, y: -0.99857956, z: 0.01226838, w: 0.051273312}
   m_LocalPosition: {x: -503, y: 370, z: 4536}
-  m_LocalScale: {x: 4.488158, y: 4.488158, z: 4.488158}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1889480912}
   - {fileID: 7116163687757854136}

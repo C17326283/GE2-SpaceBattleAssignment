@@ -58,7 +58,7 @@ public class PathFollowBehaviour : BaseShipBehaviour
     [Task]
     public void GetNextWaypoint()
     {
-        print("get next checkpoint");
+//        print("get next checkpoint");
         path.AdvanceToNext();
         
         if(path.NextWaypoint()!=null)
