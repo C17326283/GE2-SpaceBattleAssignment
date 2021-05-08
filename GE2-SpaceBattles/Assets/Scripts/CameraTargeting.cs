@@ -18,23 +18,34 @@ public class CameraTargeting : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (gameObjectToFollow)
+        float magIncrease = 0;
+        if (gameObjectToLookAt && gameObjectToLookAt.GetComponent<Rigidbody>())
+        {
+            magIncrease = gameObjectToLookAt.GetComponent<Rigidbody>().velocity.magnitude;
+        }
+            
+            
+        
+        if (gameObjectToFollow !=null)
         {
             Vector3 toPos = gameObjectToFollow.position + gameObjectToFollow.TransformDirection(objectFollowOffset);
-            transform.position = Vector3.Lerp(transform.position, toPos, Time.deltaTime * moveLerpSpeed);
+            //lerp but do it faster if following a ship to keep up with it
+            transform.position = Vector3.Lerp(transform.position, toPos, Time.deltaTime * (moveLerpSpeed+magIncrease));
         }
         else
         {
             Vector3 toPos = transform.position + transform.TransformDirection(panningAmount);
-            transform.position = Vector3.Slerp(transform.position, toPos, Time.deltaTime * moveLerpSpeed);
+            transform.position = Vector3.Lerp(transform.position, toPos, Time.deltaTime * moveLerpSpeed);
         }
+        
         
         if (gameObjectToLookAt)
         {
             Vector3 relativePos = gameObjectToLookAt.transform.position - transform.position;
             Quaternion toRotation = Quaternion.LookRotation(relativePos);
-            transform.rotation = Quaternion.Lerp( transform.rotation, toRotation, rotLerpSpeed * Time.deltaTime );
+            transform.rotation = Quaternion.Slerp( transform.rotation, toRotation, Time.deltaTime * (rotLerpSpeed+magIncrease) );
         }
+        
     }
     public void SetCameraWithRelativeOffset(Transform obj,int offsetIndex)
     {
@@ -80,6 +91,7 @@ public class CameraTargeting : MonoBehaviour
     {
         Vector3 selectedOffset = cameraOffsets[index];
         curOffsetIndex = index + 1;
+        Debug.Log("Get offset: " + curOffsetIndex + ", " + selectedOffset);
 
         return selectedOffset;
     }
@@ -89,7 +101,7 @@ public class CameraTargeting : MonoBehaviour
 
         Vector3 selectedOffset = GetOffset(curOffsetIndex);
 
-        Debug.Log("Get offset: " + curOffsetIndex + ", " + selectedOffset);
+        
         curOffsetIndex++;
 
         return selectedOffset;

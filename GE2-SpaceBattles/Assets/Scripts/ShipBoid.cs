@@ -20,7 +20,7 @@ public class ShipBoid : MonoBehaviour
     public float bankingAmount = 0.1f;
     public float turnSpeed = 3f;
     public float mass = 5;
-    
+
     public void OnDrawGizmos()
     {
         //Gizmos.color = Color.green;
@@ -54,18 +54,19 @@ public class ShipBoid : MonoBehaviour
 
     public void ArriveForce(Vector3 target, float slowingDistance = 100.0f)
     {
+//        print("arrive force");
         Vector3 toTarget = target - transform.position;
 
-        float distance = Vector3.Distance(target,transform.position);
+        float distance = toTarget.magnitude;
         
         if (distance > slowingDistance/100)//dont apply if super close
         {        
-            float ramped = 500 * (distance / slowingDistance);
+            float ramped = maxMag * (distance / slowingDistance);
 
-            float clamped = Mathf.Min(ramped, 500);
+            float clamped = Mathf.Min(ramped, maxMag);
             Vector3 desired = clamped * (toTarget / distance);
 
-            AddToForce(desired,2);
+            AddToForce(desired,1);
         }  
     }
 

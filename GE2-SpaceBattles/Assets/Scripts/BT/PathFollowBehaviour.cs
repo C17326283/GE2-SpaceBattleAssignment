@@ -10,6 +10,7 @@ public class PathFollowBehaviour : BaseShipBehaviour
     public PathManage path;
 
     public float waypointDistance = 50;
+    public float arriveSlowDist = 200f;
 
     public string spawnedPathName;
     
@@ -70,7 +71,16 @@ public class PathFollowBehaviour : BaseShipBehaviour
     [Task]
     public void SeekNextPoint()
     {
-        base.shipBoid.ArriveForce(path.NextWaypoint(),2);
+        if (path.IsLast())
+        {
+            base.shipBoid.SeekForce(path.NextWaypoint());
+        }
+        else
+        {
+            base.shipBoid.ArriveForce(path.NextWaypoint(),arriveSlowDist+waypointDistance);
+        }
+        
+        
         //Vector3 desired = nextWaypoint - transform.position;
         //desired.Normalize();
 

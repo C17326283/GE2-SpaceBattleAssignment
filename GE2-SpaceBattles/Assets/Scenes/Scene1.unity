@@ -1858,6 +1858,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &87426844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6608,23 +6609,24 @@ MonoBehaviour:
   gameObjectToLookAt: {fileID: 0}
   gameObjectToFollow: {fileID: 0}
   objectFollowOffset: {x: 0, y: 0, z: 0}
-  moveLerpSpeed: 2
-  rotLerpSpeed: 2
+  moveLerpSpeed: 3
+  rotLerpSpeed: 3
   panningAmount: {x: 15, y: 0, z: 0}
   cameraOffsets:
   - {x: -1500, y: 0, z: 0}
-  - {x: 200, y: 200, z: 50}
+  - {x: 600, y: 400, z: 150}
   - {x: 0, y: 100, z: 400}
   - {x: -3000, y: 1000, z: 0}
   - {x: 0, y: 0, z: 700}
   - {x: 500, y: 0, z: 0}
   - {x: 300, y: 150, z: 400}
-  - {x: 0, y: 10, z: 30}
+  - {x: 0, y: 10, z: -35}
   - {x: -200, y: 50, z: 0}
-  - {x: 0, y: 10, z: -30}
+  - {x: 0, y: 10, z: -35}
   - {x: 0, y: 150, z: 400}
   - {x: 300, y: 0, z: 150}
   - {x: 100, y: 0, z: 50}
+  - {x: 0, y: 0, z: 35}
   curOffsetIndex: 0
 --- !u!1 &426001825
 GameObject:
@@ -7279,6 +7281,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &467624315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10553,6 +10556,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &645513224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23876,7 +23880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSpeedX: 0
   rotateSpeedY: 0
-  rotateSpeedZ: 500
+  rotateSpeedZ: 800
 --- !u!1 &856226503
 GameObject:
   m_ObjectHideFlags: 0
@@ -24402,6 +24406,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &878028716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25522,6 +25527,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &940892383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25731,6 +25737,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &969757184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27167,6 +27174,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &1074768548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27615,6 +27623,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &1114214735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27686,6 +27695,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &1116131090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28502,6 +28512,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &1168674814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28711,6 +28722,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &1177133976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29820,6 +29832,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &1247058258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29891,6 +29904,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &1248982852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30578,7 +30592,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268974454}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 600, y: 0, z: 2000}
+  m_LocalPosition: {x: 100, y: 0, z: 8000}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 424232495}
@@ -31244,7 +31258,7 @@ AudioSource:
   m_GameObject: {fileID: 1303086163}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
   m_audioClip: {fileID: 8300000, guid: 187cdabc54bd7c94fa1544f70ae3df09, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.55
@@ -31340,7 +31354,7 @@ AudioSource:
   m_GameObject: {fileID: 1303086163}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
   m_audioClip: {fileID: 8300000, guid: 412fd319614d00b4fb6cce58e874c8db, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.55
@@ -31436,7 +31450,7 @@ AudioSource:
   m_GameObject: {fileID: 1303086163}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
   m_audioClip: {fileID: 8300000, guid: 8a512cd71a8f59449be6960b401065d9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.45
@@ -31532,7 +31546,7 @@ AudioSource:
   m_GameObject: {fileID: 1303086163}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
   m_audioClip: {fileID: 8300000, guid: aab6597c33a505f40a6e7c8a7d7efc9d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.45
@@ -31628,7 +31642,7 @@ AudioSource:
   m_GameObject: {fileID: 1303086163}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
   m_audioClip: {fileID: 8300000, guid: a50e7c3cca714fe4c8adcfed6ed5f22a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.55
@@ -31724,7 +31738,7 @@ AudioSource:
   m_GameObject: {fileID: 1303086163}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
   m_audioClip: {fileID: 8300000, guid: 36bc6dd767d854c45ae0cc8b05f58d8e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.7
@@ -31820,7 +31834,7 @@ AudioSource:
   m_GameObject: {fileID: 1303086163}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
   m_audioClip: {fileID: 8300000, guid: 0cea86697da77304983c4476f4e9f83a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.55
@@ -31916,7 +31930,7 @@ AudioSource:
   m_GameObject: {fileID: 1303086163}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
   m_audioClip: {fileID: 8300000, guid: 94075e54fcdf7bc418c4a7cafa7ef799, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.55
@@ -32012,7 +32026,7 @@ AudioSource:
   m_GameObject: {fileID: 1303086163}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
   m_audioClip: {fileID: 8300000, guid: 63b53de81d4d2484a834b983901e56fc, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.55
@@ -32108,7 +32122,7 @@ AudioSource:
   m_GameObject: {fileID: 1303086163}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
   m_audioClip: {fileID: 8300000, guid: a2c1677dbb380cb42b4515f8a19d8324, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.55
@@ -32204,7 +32218,7 @@ AudioSource:
   m_GameObject: {fileID: 1303086163}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
   m_audioClip: {fileID: 8300000, guid: d80e8bd7f6b0bf0419e4d918b857dbdb, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.55
@@ -32300,7 +32314,7 @@ AudioSource:
   m_GameObject: {fileID: 1303086163}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
   m_audioClip: {fileID: 8300000, guid: a771a5bccbdfd944daaa2869586a31aa, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.55
@@ -32681,6 +32695,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &1346256128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33643,6 +33658,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &1388433235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39171,7 +39187,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1429017274}
         m_TargetAssemblyTypeName: SequenceManager, Assembly-CSharp
-        m_MethodName: Seq7_1
+        m_MethodName: Seq7_2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -40634,6 +40650,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &1484797383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47664,10 +47681,10 @@ AudioSource:
   m_GameObject: {fileID: 1722398968}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
   m_audioClip: {fileID: 8300000, guid: 037eae30c146ef74ebc4c3b07b18a1bb, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -47760,10 +47777,10 @@ AudioSource:
   m_GameObject: {fileID: 1722398968}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
   m_audioClip: {fileID: 8300000, guid: a9f291da2f06d2d419c887e4815ce1d9, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -47856,10 +47873,10 @@ AudioSource:
   m_GameObject: {fileID: 1722398968}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
   m_audioClip: {fileID: 8300000, guid: df279df737ea8df46bd463b286b441bb, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -47952,10 +47969,10 @@ AudioSource:
   m_GameObject: {fileID: 1722398968}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
   m_audioClip: {fileID: 8300000, guid: 9703feb8cd56c7c45aefb952655f8b92, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.3
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -49816,6 +49833,7 @@ MonoBehaviour:
   shipBoid: {fileID: 0}
   path: {fileID: 2092571439}
   waypointDistance: 200
+  arriveSlowDist: 200
   spawnedPathName: AscensionEscapePath
 --- !u!114 &1793162406
 MonoBehaviour:
@@ -51228,6 +51246,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &1929563670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51262,7 +51281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeedX: 0
-  rotateSpeedY: 500
+  rotateSpeedY: 800
   rotateSpeedZ: 0
 --- !u!4 &1930034200 stripped
 Transform:
@@ -51835,6 +51854,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &1957313644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52768,6 +52788,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &1981078414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52956,7 +52977,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018940005}
   m_LocalRotation: {x: -0.0119951, y: 0.0070223263, z: 0.000001147244, w: 0.99990344}
-  m_LocalPosition: {x: 514.132, y: -26.333237, z: 17611.7}
+  m_LocalPosition: {x: 524, y: -10, z: 18313}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1230108224}
@@ -53231,6 +53252,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
+  shootingSfx: {fileID: 0}
 --- !u!114 &2024611252
 MonoBehaviour:
   m_ObjectHideFlags: 0

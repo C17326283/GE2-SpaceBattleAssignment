@@ -27,7 +27,7 @@ public class CombatBehaviour : BaseShipBehaviour
     [Task]
     public void PursueEnemy()
     {
-        base.shipBoid.ArriveForce(enemyTarget.position,2);
+        base.shipBoid.ArriveForce(enemyTarget.position,divertDistance+arrivedDist);
         //Vector3 desired = enemyTarget.position - transform.position;
         //desired.Normalize();
         //desired *= maxSpeed;

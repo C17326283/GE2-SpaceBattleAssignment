@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7009688408695380802}
   - component: {fileID: 8087033640634677938}
   - component: {fileID: -3747384021695683662}
+  - component: {fileID: 7691117565911188489}
   m_Layer: 0
   m_Name: BigExplosion
   m_TagString: Untagged
@@ -4939,7 +4940,7 @@ AudioSource:
   m_GameObject: {fileID: 7170199903285590178}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
   m_audioClip: {fileID: 8300000, guid: 925d794e0c76d654c9307908a962b3dd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -5026,6 +5027,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7691117565911188489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7170199903285590178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b729f80b321789a44abd7a06e9a2af49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: -3747384021695683662}
+  minPitch: 0.8
+  maxPitch: 1.1
 --- !u!1 &7170201949182312440
 GameObject:
   m_ObjectHideFlags: 0

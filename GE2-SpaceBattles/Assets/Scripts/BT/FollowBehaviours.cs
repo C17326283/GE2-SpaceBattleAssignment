@@ -12,7 +12,6 @@ public class FollowBehaviours : BaseBehaviours
     
     public String[] tagsToShoot;
 
-    public float slowingDistance = 40.0f;
     public float stoppingDistance = 20.0f;
     
     // Start is called before the first frame update
@@ -80,7 +79,7 @@ public class FollowBehaviours : BaseBehaviours
     [Task]
     public void SeekTarget()
     {
-        base.shipBoid.ArriveForce(target.position,2);
+        base.shipBoid.ArriveForce(target.position,stoppingDistance*2);
         
         //Vector3 desired = target.position - transform.position;
         //desired.Normalize();

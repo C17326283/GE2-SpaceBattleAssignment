@@ -27,6 +27,8 @@ public class Shooting : MonoBehaviour
     
     public String[] enemyTags;
 
+    public AudioSource shootingSfx;
+
     
     // Start is called before the first frame update
     void Start()
@@ -39,6 +41,9 @@ public class Shooting : MonoBehaviour
             
             enemyTags = GetComponentInParent<CombatBehaviour>().enemyTags;
         }
+
+        if (shootingSfx == null)
+            shootingSfx = GetComponent<AudioSource>();
 
         targeting = GetComponent<GunTargeting>();
     }
@@ -67,6 +72,8 @@ public class Shooting : MonoBehaviour
 
     public void Shoot()
     {
+        shootingSfx.pitch = Random.Range(shootingSfx.pitch-.2f, shootingSfx.pitch+.1f);//add variance to shooting noise
+        shootingSfx.Play();
         Vector3 toTarget = (target.transform.position-transform.position).normalized;
         
         float randX = Random.Range(-maxAccuracyOffset, maxAccuracyOffset);

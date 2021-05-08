@@ -5,6 +5,7 @@ using Random = UnityEngine.Random;
 
 public class AudioVariance : MonoBehaviour
 {
+    //for allowing explosions to have audio pitch variance
     public AudioSource audio;
     public float minPitch = .8f;
     public float maxPitch = 1.1f;
@@ -16,10 +17,5 @@ public class AudioVariance : MonoBehaviour
         audio.pitch = Random.Range(minPitch, maxPitch);
         audio.Play();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

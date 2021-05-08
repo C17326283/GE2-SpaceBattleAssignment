@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9144495121928783991}
   - component: {fileID: 8528936679688010712}
   - component: {fileID: 1194444818608500590}
+  - component: {fileID: 6387960834682902674}
   m_Layer: 0
   m_Name: ReaperGun
   m_TagString: Sovereign
@@ -46,8 +47,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 4121520294649bc4cb077d3975f138e3, type: 3}
   shootAttemptRate: 0.05
-  shotCooldown: 0.4
-  shootAngle: 30
+  shotCooldown: 3
+  shootAngle: 90
   readyToShoot: 0
   target: {fileID: 0}
   toTarget: {x: 0, y: 0, z: 0}
@@ -55,6 +56,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 1194444818608500590}
   enemyTags: []
+  shootingSfx: {fileID: 6387960834682902674}
 --- !u!114 &1194444818608500590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,10 +70,106 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 5000
-  radius: 1500
+  radius: 6000
   enemyTags:
   - Alliance
   debugTargeting: 0
+--- !u!82 &6387960834682902674
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1084025382178114400}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
+  m_audioClip: {fileID: 8300000, guid: c16189b0be127e44d980971bf8fb349e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 30
+  MaxDistance: 1500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1833520640662025917
 GameObject:
   m_ObjectHideFlags: 0
@@ -83,6 +181,7 @@ GameObject:
   - component: {fileID: 2359884545647162033}
   - component: {fileID: 2312201148981082192}
   - component: {fileID: 1862021788206280002}
+  - component: {fileID: 5399875433269540726}
   m_Layer: 0
   m_Name: ReaperGun
   m_TagString: Sovereign
@@ -118,8 +217,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 4121520294649bc4cb077d3975f138e3, type: 3}
   shootAttemptRate: 0.05
-  shotCooldown: 0.4
-  shootAngle: 30
+  shotCooldown: 3
+  shootAngle: 90
   readyToShoot: 0
   target: {fileID: 0}
   toTarget: {x: 0, y: 0, z: 0}
@@ -127,6 +226,7 @@ MonoBehaviour:
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 1862021788206280002}
   enemyTags: []
+  shootingSfx: {fileID: 5399875433269540726}
 --- !u!114 &1862021788206280002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,10 +240,106 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 5000
-  radius: 1500
+  radius: 6000
   enemyTags:
   - Alliance
   debugTargeting: 0
+--- !u!82 &5399875433269540726
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833520640662025917}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
+  m_audioClip: {fileID: 8300000, guid: c16189b0be127e44d980971bf8fb349e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 30
+  MaxDistance: 1500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7177627544316803938
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,6 +351,7 @@ GameObject:
   - component: {fileID: 7177627544316803941}
   - component: {fileID: 7177627544316803940}
   - component: {fileID: 2583446173605563739}
+  - component: {fileID: 1002744368952027260}
   m_Layer: 0
   m_Name: ReaperGun
   m_TagString: Sovereign
@@ -170,7 +367,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7177627544316803938}
   m_LocalRotation: {x: 0.008313244, y: -0.9912232, z: -0.115255535, w: 0.06421575}
-  m_LocalPosition: {x: -0.004171623, y: 0.08197929, z: -0.141082}
+  m_LocalPosition: {x: -0.0046, y: 0.0513, z: -0.1522}
   m_LocalScale: {x: 0.009999996, y: 0.010000003, z: 0.009999997}
   m_Children: []
   m_Father: {fileID: 1159570253529760887}
@@ -190,15 +387,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 4121520294649bc4cb077d3975f138e3, type: 3}
   shootAttemptRate: 0.2
-  shotCooldown: 5
-  shootAngle: 30
+  shotCooldown: 10
+  shootAngle: 60
   readyToShoot: 0
   target: {fileID: 0}
   toTarget: {x: 0, y: 0, z: 0}
-  maxAccuracyOffset: 0.1
+  maxAccuracyOffset: 0
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 2583446173605563739}
   enemyTags: []
+  shootingSfx: {fileID: 1002744368952027260}
 --- !u!114 &2583446173605563739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,11 +409,107 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 6000
+  range: 7000
   radius: 1500
   enemyTags:
   - Alliance
   debugTargeting: 0
+--- !u!82 &1002744368952027260
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7177627544316803938}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: ebfa9547dd0b8ef4bb77e2d2058d12ed, type: 2}
+  m_audioClip: {fileID: 8300000, guid: c16189b0be127e44d980971bf8fb349e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 30
+  MaxDistance: 1500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7177627545569228145
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,6 +528,7 @@ GameObject:
   - component: {fileID: 3880433330496644809}
   - component: {fileID: 1510314960}
   - component: {fileID: 6285549943980955483}
+  - component: {fileID: 5732610561213596182}
   m_Layer: 0
   m_Name: Reaper
   m_TagString: Sovereign
@@ -292,7 +587,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shipBoid: {fileID: 0}
   path: {fileID: 0}
-  waypointDistance: 200
+  waypointDistance: 250
+  arriveSlowDist: 200
   spawnedPathName: ReaperPath
 --- !u!54 &675041803783481498
 Rigidbody:
@@ -302,13 +598,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7177627545569228145}
   serializedVersion: 2
-  m_Mass: 50000
+  m_Mass: 10
   m_Drag: 10
   m_AngularDrag: 0.1
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &-5117070154002799038
 MonoBehaviour:
@@ -346,8 +642,8 @@ MonoBehaviour:
   rb: {fileID: 675041803783481498}
   moveSpeed: 400
   maxMag: 160
-  bankingAmount: 0.03
-  turnSpeed: 10
+  bankingAmount: 0.06
+  turnSpeed: 1
   mass: 5
 --- !u!114 &7887602638127581548
 MonoBehaviour:
@@ -419,6 +715,22 @@ CapsuleCollider:
   m_Height: 600.83
   m_Direction: 2
   m_Center: {x: 0, y: 37.1, z: -193.12}
+--- !u!114 &5732610561213596182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7177627545569228145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42444126a35644f4899def7204737a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponObjs:
+  - {fileID: 1833520640662025917}
+  - {fileID: 1084025382178114400}
+  - {fileID: 7177627544316803938}
 --- !u!1001 &1588017130922765875
 PrefabInstance:
   m_ObjectHideFlags: 0

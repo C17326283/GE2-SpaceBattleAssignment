@@ -22,6 +22,7 @@ public class SequenceManager : MonoBehaviour
     public int curEvent = 0;
 
     public Animator citadelAnim;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -49,7 +50,6 @@ public class SequenceManager : MonoBehaviour
         spawnManager.SpawnNextGroup(); //spawn reapers
         camTargeting.SetCamLookAt(GameObject.Find("Reaper(Clone)").transform);
         //camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());//dont need because you start at point
-
         audioManager.PlayNextMusic(); //reaper entry music
 
         //continue to next event which trigger next seq
@@ -203,7 +203,7 @@ public class SequenceManager : MonoBehaviour
         spawnManager.SpawnNextGroup(); //normandy
         normandy = GameObject.Find("Normandy(Clone)");
 
-        camTargeting.SetCamLookAt(normandy.transform);
+        camTargeting.SetCamFollowAndLook(normandy.transform,13);//13 because i added after
 
         audioManager.PlayNextVoice(); //picking up reinforcements
 
@@ -216,7 +216,8 @@ public class SequenceManager : MonoBehaviour
     {
         Debug.Log("Seq3_3 Alliance Arrives");
         spawnManager.SpawnNextGroup(); //alliance ships
-
+        //camTargeting.moveLerpSpeed = 100;//really fast to keep up with the normandy
+        
         triggerPointManager.GetNextPoint().gameObject.SetActive(true); //turn on next world trigger
     }
 
@@ -302,11 +303,8 @@ public class SequenceManager : MonoBehaviour
         camTargeting.SetCamFollow(Reaper.transform, 10);
         camTargeting.SetCamLookAt(Reaper.transform);
 
-        
-        foreach (var reaperWeapon in Reaper.GetComponentsInChildren<Shooting>())
-        {
-            reaperWeapon.enabled = true;
-        }
+        //enable side weapons
+        Reaper.GetComponent<ReaperWeaponManager>().EnableWeapons();
 
         audioManager.PlayNextVoice(); //take that monster down
 
@@ -385,6 +383,10 @@ public class SequenceManager : MonoBehaviour
     {
         Debug.Log("Seq6_3 Sovereign explodes");
 
+        //disable weapons
+        GameObject Reaper = GameObject.Find("Reaper(Clone)");
+        Reaper.GetComponent<ReaperWeaponManager>().DisableWeapons();
+        
         camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
         //camTargeting.SetCamLookAt(GameObject.Find("Normandy(Clone)").transform);
 
@@ -405,7 +407,7 @@ public class SequenceManager : MonoBehaviour
             {
                 OffsetPursueBehaviour shipFollowB = ship.GetComponent<OffsetPursueBehaviour>();
                 //maybe send some after ascension?
-                shipFollowB.followObjName = "Reaper(Clone)";
+                shipFollowB.followObjName = "CitadelDefencePoint";
                 shipFollowB.followObj = null;
             }
         }
@@ -413,10 +415,12 @@ public class SequenceManager : MonoBehaviour
         audioManager.PlayNextVoice(); //final speach
 
         camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
-        camTargeting.SetCamLookAt(normandy.transform);
         
         //normandy sets target to fly past camera
         normandy.GetComponent<OffsetPursueBehaviour>().followObj = GameObject.Find("EndFlyPoint").gameObject;
+        //make normandy super fast so it can fly by camera
+        normandy.GetComponent<ShipBoid>().moveSpeed = 1200;
+        normandy.GetComponent<ShipBoid>().maxMag = 1200;
         
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(TriggerNextSequenceTime));
