@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,14 +7,23 @@ public class AudioManager : MonoBehaviour
 {
     public AudioSource[] voiceClips;
     public AudioSource[] MusicClips;
+
+    public GameObject parentOfVoiceClips;
+    public GameObject parentOfMusicClips;
     
 
     public int currVoiceClip = 0;
     public int currMusic = 0;
 
     public float volumeLerpDuration = 2;
-    
-    
+
+    private void Start()
+    {
+        voiceClips = parentOfVoiceClips.GetComponents<AudioSource>();
+        MusicClips = parentOfMusicClips.GetComponents<AudioSource>();
+    }
+
+
     public void PlayNextVoice()
     {
         PlayVoice(currVoiceClip);

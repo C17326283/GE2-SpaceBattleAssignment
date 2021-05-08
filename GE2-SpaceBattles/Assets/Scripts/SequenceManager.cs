@@ -409,7 +409,7 @@ public class SequenceManager : MonoBehaviour
         camTargeting.SetCamLookAt(normandy.transform);
         
         //normandy sets target to fly past camera
-        normandy.GetComponent<CombatBehaviour>().divertTarget = camTargeting.transform.position+(camTargeting.transform.forward*1000+camTargeting.transform.right*100);
+        normandy.GetComponent<OffsetPursueBehaviour>().followObj = GameObject.Find("EndFlyPoint").gameObject;
 
     }
 }
