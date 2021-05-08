@@ -12,6 +12,8 @@ public class AudioManager : MonoBehaviour
     public int currMusic = 0;
 
     public float volumeLerpDuration = 2;
+    
+    
     public void PlayNextVoice()
     {
         PlayVoice(currVoiceClip);
@@ -21,6 +23,11 @@ public class AudioManager : MonoBehaviour
     public void PlayVoice(int elementNum)
     {
         voiceClips[elementNum].Play();
+    }
+    
+    public void PlayNextVoiceDelay(float delay)
+    {
+        Invoke("PlayNextVoice",delay);
     }
     
     public void PlayNextMusic()
@@ -34,6 +41,9 @@ public class AudioManager : MonoBehaviour
         PlayMusic(currMusic);
         currMusic++;
     }
+    
+    
+    
     
     public void PlayMusic(int elementNum)
     {

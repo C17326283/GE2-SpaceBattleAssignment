@@ -86,8 +86,8 @@ GameObject:
   - component: {fileID: 1758275684227767876}
   - component: {fileID: -6579382620608616288}
   - component: {fileID: 4452117245609018859}
-  - component: {fileID: 285387355290647551}
   - component: {fileID: -6743529366314030150}
+  - component: {fileID: 506347549784053304}
   m_Layer: 0
   m_Name: AllianceShip
   m_TagString: Alliance
@@ -229,19 +229,6 @@ MonoBehaviour:
   timeToDespawnAfterDeath: 0
   breakUpChildObjsOnDeath: 0
   debrisSpawner: {fileID: -6743529366314030150}
---- !u!65 &285387355290647551
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5655017480225913835}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 16.48, y: 8.410038, z: 55.341602}
-  m_Center: {x: 0, y: -0.95955515, z: -4.6860166}
 --- !u!114 &-6743529366314030150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +252,20 @@ MonoBehaviour:
   maxScale: 12
   maxForce: 15
   destroyAfter: 120
+--- !u!136 &506347549784053304
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655017480225913835}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 6.08
+  m_Height: 55
+  m_Direction: 2
+  m_Center: {x: 0, y: -1, z: -3.01}
 --- !u!1001 &2071497278720752895
 PrefabInstance:
   m_ObjectHideFlags: 0

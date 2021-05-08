@@ -46,17 +46,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d8d0a0d7059164ea2795c4da9ff1bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitDamage: 300
+  hitDamage: 200
   hitInFrontDistance: 500
-  destroyTime: 8
+  minDestroyTime: 7
+  maxDestroyTime: 9
   rb: {fileID: 0}
   lastPos: {x: 0, y: 0, z: 0}
   hitExplosion: {fileID: 6525372132480378010, guid: c1d6f3e10d689014788c4525fb46d2eb, type: 3}
-  projectileLayerToAvoid:
-    serializedVersion: 2
-    m_Bits: 64
+  hitExplosionSize: 10
+  startForce: 10
+  parentShipTag: 
+  enemyTags: []
   continuousForce: 5
   explosionSize: 20
+  maxVel: 100
 --- !u!54 &8974859291869625079
 Rigidbody:
   m_ObjectHideFlags: 0

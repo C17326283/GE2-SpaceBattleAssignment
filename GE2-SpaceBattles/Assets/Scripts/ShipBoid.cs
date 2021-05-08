@@ -11,14 +11,14 @@ public class ShipBoid : MonoBehaviour
 
     public float moveSpeed;
     
-    public float maxSpeed;
+    //public float maxSpeed;
     public float maxMag;
 
     private Vector3 force;
     private Vector3 acceleration;
 
     public float bankingAmount = 0.1f;
-    public float turnSpeed = 0.1f;
+    public float turnSpeed = 3f;
     public float mass = 5;
     
     public void OnDrawGizmos()
@@ -60,9 +60,9 @@ public class ShipBoid : MonoBehaviour
         
         if (distance > slowingDistance/100)//dont apply if super close
         {        
-            float ramped = maxSpeed * (distance / slowingDistance);
+            float ramped = 500 * (distance / slowingDistance);
 
-            float clamped = Mathf.Min(ramped, maxSpeed);
+            float clamped = Mathf.Min(ramped, 500);
             Vector3 desired = clamped * (toTarget / distance);
 
             AddToForce(desired,2);
@@ -99,7 +99,7 @@ public class ShipBoid : MonoBehaviour
     {
         if (rb.velocity.magnitude > 0)
         {
-            Vector3 tempUp = Vector3.Lerp(transform.up, Vector3.up + (acceleration * bankingAmount), Time.deltaTime * 3.0f);
+            Vector3 tempUp = Vector3.Lerp(transform.up, Vector3.up + (acceleration * bankingAmount), Time.deltaTime * turnSpeed);
 
             transform.LookAt(transform.position+rb.velocity, tempUp);
         }

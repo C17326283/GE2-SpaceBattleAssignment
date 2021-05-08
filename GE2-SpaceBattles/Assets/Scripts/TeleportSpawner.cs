@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Panda;
 using UnityEngine;
 
 public class TeleportSpawner : MonoBehaviour
@@ -51,25 +52,26 @@ public class TeleportSpawner : MonoBehaviour
             
             
             //Spawn ship far away
-            GameObject spawnedObj = GameObject.Instantiate(shipToSpawn, randSpawnPos+(-transform.forward*startDist), this.transform.rotation);
+            GameObject spawnedObj = GameObject.Instantiate(shipToSpawn, randSpawnPos, this.transform.rotation);
             spawnedObj.transform.forward = this.transform.forward;
             spawnedObj.transform.SetParent(activeShipsHolder.transform);
 
-            //add trail
-            GameObject spawnedTrail = GameObject.Instantiate(spawnTrail, spawnedObj.transform.position, this.transform.rotation,spawnedObj.transform);
-            spawnedTrail.GetComponent<TrailRenderer>().startWidth = spawnEffectScale*4;
-            spawnedTrail.GetComponent<TrailRenderer>().startWidth = spawnEffectScale*4;
+            //add trail but spawn it very far behind so it can zoom to pos for teleport effect
+            GameObject spawnedTrail = GameObject.Instantiate(spawnTrail, spawnedObj.transform.position+(-transform.forward*startDist), this.transform.rotation,spawnedObj.transform);
+            TrailRenderer trail = spawnedTrail.GetComponent<TrailRenderer>();//only call expensive method once
+            trail.startWidth = spawnEffectScale*4;
+            trail.startWidth = spawnEffectScale*4;
             Destroy(spawnedTrail,.1f);
-
+            
             yield return new WaitForSeconds(0.001f);
-            
-            
-            //zoom to spawn pos
-            spawnedObj.transform.position = randSpawnPos;
+
+            //zoom trail to spawn pos
+            spawnedTrail.transform.position = spawnedObj.transform.position;
             //add spawn particle effect
             GameObject spawnedSfx = GameObject.Instantiate(spawnEffect, spawnedObj.transform.position, this.transform.rotation);
             spawnedSfx.transform.localScale = new Vector3(spawnEffectScale,spawnEffectScale,spawnEffectScale);
             Destroy(spawnedSfx,2);
+            
             
             yield return new WaitForSeconds(timeBetweenSpawn);
 

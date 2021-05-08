@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: -709042884225375726}
   - component: {fileID: -129555161611945519}
   - component: {fileID: 1128173742498250210}
-  - component: {fileID: 7222630041932220408}
   - component: {fileID: 4144053255930222854}
+  - component: {fileID: 6274561136193776057}
   m_Layer: 0
   m_Name: Geth
   m_TagString: Reaper
@@ -117,12 +117,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceToApply: {x: -0.90991277, y: -0.011531306, z: 1.78099}
   rb: {fileID: 1128173742498250210}
-  moveSpeed: 250
-  maxSpeed: 250
+  moveSpeed: 350
   maxMag: 250
-  bankingAmount: 0.1
-  turnSpeed: 10
-  mass: 60
+  bankingAmount: 0.2
+  turnSpeed: 5
+  mass: 70
 --- !u!114 &-709042884225375726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,6 +162,7 @@ MonoBehaviour:
   followOffset: {x: 0, y: 0, z: 0}
   followOffsetDistance: 600
   maxDistAway: 1500
+  keepFirstTeleportOffset: 1
 --- !u!54 &1128173742498250210
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -172,26 +172,13 @@ Rigidbody:
   m_GameObject: {fileID: 1427803425292049769}
   serializedVersion: 2
   m_Mass: 100
-  m_Drag: 0.1
+  m_Drag: 0.2
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &7222630041932220408
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427803425292049769}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 181, y: 151.4, z: 1041.28}
-  m_Center: {x: 0, y: 0, z: 47.27}
 --- !u!114 &4144053255930222854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,6 +202,20 @@ MonoBehaviour:
   maxScale: 20
   maxForce: 10
   destroyAfter: 120
+--- !u!136 &6274561136193776057
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427803425292049769}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 97
+  m_Height: 1085.81
+  m_Direction: 2
+  m_Center: {x: 0, y: -35.89, z: -64.9}
 --- !u!1 &7281579435692897985
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ad9bc5ad7e77fe41af2cb11bc9c30da, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ad9bc5ad7e77fe41af2cb11bc9c30da, type: 3}
       propertyPath: m_LocalPosition.y
@@ -319,7 +320,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ad9bc5ad7e77fe41af2cb11bc9c30da, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -92
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6ad9bc5ad7e77fe41af2cb11bc9c30da, type: 3}
       propertyPath: m_LocalRotation.w

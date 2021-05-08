@@ -15,13 +15,27 @@ public class OffsetPursueBehaviour : BaseShipBehaviour
 
     public float maxDistAway = 1000;
 
+    public bool keepFirstTeleportOffset = true;
+
     [Task]
     public void GetTargetOffset()
     {
         if (GameObject.Find(followObjName))
         {
-            followObj = GameObject.Find(followObjName);
-            followOffset = Random.onUnitSphere * followOffsetDistance;
+            if (keepFirstTeleportOffset)
+            {
+                followObj = GameObject.Find(followObjName);
+                float forwardOffset = 50;//needs to be slightly in front to avoid being at point and turning at spawn
+                followOffset = followObj.transform.InverseTransformPoint(transform.position+(followObj.transform.forward*forwardOffset));//get current pos relative to folowObj
+                
+                //followOffset = followObj.transform.position - transform.position;
+                keepFirstTeleportOffset = false;//prevent from triggering again
+            }
+            else
+            {
+                followObj = GameObject.Find(followObjName);
+                followOffset = Random.onUnitSphere * followOffsetDistance;
+            }
             Task.current.Succeed();
         }
         else

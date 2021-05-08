@@ -158,7 +158,7 @@ GameObject:
   - component: {fileID: 3545141898352421480}
   - component: {fileID: -5836465063412746568}
   - component: {fileID: -208593740023329874}
-  - component: {fileID: -8634398338965947423}
+  - component: {fileID: 2011622609425309723}
   m_Layer: 0
   m_Name: Normandy
   m_TagString: Friendly
@@ -214,7 +214,6 @@ MonoBehaviour:
   forceToApply: {x: 0, y: 0, z: 0}
   rb: {fileID: 0}
   moveSpeed: 300
-  maxSpeed: 300
   maxMag: 300
   bankingAmount: 0.1
   turnSpeed: 10
@@ -281,6 +280,7 @@ MonoBehaviour:
   followOffset: {x: 0, y: 0, z: 0}
   followOffsetDistance: 600
   maxDistAway: 1000
+  keepFirstTeleportOffset: 0
 --- !u!114 &-208593740023329874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,8 +301,8 @@ MonoBehaviour:
   timeToDespawnAfterDeath: 20
   breakUpChildObjsOnDeath: 0
   debrisSpawner: {fileID: 0}
---- !u!65 &-8634398338965947423
-BoxCollider:
+--- !u!136 &2011622609425309723
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -311,9 +311,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 2.8
+  m_Height: 52.39
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.56, z: -1.83}
 --- !u!64 &5655017479426552974
 MeshCollider:
   m_ObjectHideFlags: 0

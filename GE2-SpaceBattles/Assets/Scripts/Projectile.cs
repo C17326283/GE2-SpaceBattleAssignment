@@ -58,7 +58,7 @@ public class Projectile : MonoBehaviour
             foreach (var tag in enemyTags)
             {
                 if (hit.transform.CompareTag(tag)) //dont hit self
-                    HitObj(hit.transform.gameObject);
+                    HitObj(hit.transform.gameObject, hit.transform.position);
             }
         }
 
@@ -71,7 +71,7 @@ public class Projectile : MonoBehaviour
         //HitObj(other.transform.gameObject);
     }
 
-    public void HitObj(GameObject hitGameObject)
+    public void HitObj(GameObject hitGameObject, Vector3 hitPos)
     {
 //        print("hitobj: "+hitGameObject);
         //stop obj but let trail stay 

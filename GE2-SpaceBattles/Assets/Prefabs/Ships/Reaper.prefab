@@ -231,12 +231,12 @@ GameObject:
   - component: {fileID: 3502001195277928889}
   - component: {fileID: 3123565453611352080}
   - component: {fileID: 675041803783481498}
-  - component: {fileID: 4547968273663151589}
   - component: {fileID: -5117070154002799038}
   - component: {fileID: 4605445520946520389}
   - component: {fileID: 7887602638127581548}
   - component: {fileID: 3880433330496644809}
   - component: {fileID: 1510314960}
+  - component: {fileID: 6285549943980955483}
   m_Layer: 0
   m_Name: Reaper
   m_TagString: Sovereign
@@ -306,26 +306,13 @@ Rigidbody:
   m_GameObject: {fileID: 7177627545569228145}
   serializedVersion: 2
   m_Mass: 50000
-  m_Drag: 2
+  m_Drag: 10
   m_AngularDrag: 0.1
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &4547968273663151589
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7177627545569228145}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 235.61594, y: 166.42328, z: 598.0024}
-  m_Center: {x: -1.3214984, y: 50.817753, z: -129.00114}
 --- !u!114 &-5117070154002799038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,11 +347,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceToApply: {x: 0, y: 0, z: 0}
   rb: {fileID: 675041803783481498}
-  moveSpeed: 160
-  maxSpeed: 160
+  moveSpeed: 400
   maxMag: 160
   bankingAmount: 0.03
-  turnSpeed: 50
+  turnSpeed: 10
   mass: 5
 --- !u!114 &7887602638127581548
 MonoBehaviour:
@@ -422,6 +408,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &6285549943980955483
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7177627545569228145}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 100.29
+  m_Height: 600.83
+  m_Direction: 2
+  m_Center: {x: 0, y: 37.1, z: -193.12}
 --- !u!1001 &1588017130922765875
 PrefabInstance:
   m_ObjectHideFlags: 0
