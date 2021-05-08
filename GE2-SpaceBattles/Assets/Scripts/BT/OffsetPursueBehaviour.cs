@@ -68,7 +68,7 @@ public class OffsetPursueBehaviour : BaseShipBehaviour
     [Task]
     public void OffsetPursuit()
     {
-        if (followObj)
+        if (followObj!=null)
         {
             Vector3 targetOffset = followObj.transform.position + followObj.transform.InverseTransformDirection(followOffset);
             Vector3 desired = targetOffset - transform.position;

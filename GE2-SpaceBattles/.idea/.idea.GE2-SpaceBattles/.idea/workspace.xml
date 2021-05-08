@@ -21,20 +21,24 @@
   <component name="ChangeListManager">
     <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Effects/BigExplosion.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Effects/BigExplosion.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Rocket.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Rocket.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExampleAssets/Textures/Props/Construction_Light/Materials/ConstructionLight_MetallicOcculusionSmoothness.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExampleAssets/Textures/Props/Construction_Light/Materials/ConstructionLight_MetallicOcculusionSmoothness.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Edited/ConstructionLight_Albedo 2.tif.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Edited/ConstructionLight_Albedo 2.tif.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Edited/test 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Edited/test 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Normandy.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Normandy.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Reaper 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Reaper 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Reaper.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Reaper.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Tele.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Tele.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/cITADEL.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/cITADEL.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Downloaded/Ascension1.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Downloaded/Ascension1.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Downloaded/Geth1.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Downloaded/Geth1.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Downloaded/Reaper2.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Downloaded/Reaper2.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Downloaded/TeleportRelay.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Downloaded/TeleportRelay.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/citadel14.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/citadel14.fbx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/AllianceShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/AllianceShip.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Geth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Geth.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Normandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Normandy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraTargeting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraTargeting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShipBoid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShipBoid.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,10 +116,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraTargeting.cs" />
         <option value="$PROJECT_DIR$/Assets/AudioManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShipBoid.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
       </list>
     </option>
   </component>

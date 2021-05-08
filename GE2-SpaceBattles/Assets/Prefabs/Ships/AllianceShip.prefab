@@ -142,7 +142,6 @@ MonoBehaviour:
   forceToApply: {x: 0, y: 0, z: 0}
   rb: {fileID: 0}
   moveSpeed: 300
-  maxSpeed: 300
   maxMag: 300
   bankingAmount: 0.1
   turnSpeed: 10
@@ -189,7 +188,7 @@ MonoBehaviour:
   - Reaper
   - Sovereign
   engagementDistance: 2000
-  divertDistance: 100
+  divertDistance: 200
   arrivedDist: 100
 --- !u!114 &-6579382620608616288
 MonoBehaviour:
@@ -209,6 +208,7 @@ MonoBehaviour:
   followOffset: {x: 0, y: 0, z: 0}
   followOffsetDistance: 600
   maxDistAway: 1500
+  keepFirstTeleportOffset: 1
 --- !u!114 &4452117245609018859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,7 +600,7 @@ PrefabInstance:
     - target: {fileID: -4718040791104185828, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4f97dd108eee5c54d834609a0d4b5f90, type: 2}
+      objectReference: {fileID: 2100000, guid: 6b48e784975305146997014154a1e019, type: 2}
     - target: {fileID: -4714817154256824709, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
       propertyPath: m_TagString
       value: Alliance

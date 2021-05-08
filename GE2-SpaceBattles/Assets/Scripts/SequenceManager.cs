@@ -163,7 +163,7 @@ public class SequenceManager : MonoBehaviour
         camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
         camTargeting.SetCamLookAt(GameObject.Find("CitadelDefencePoint").transform);
 
-        audioManager.PlayNextVoiceDelay(6); //caught the distress
+        audioManager.PlayNextVoiceDelay(12); //caught the distress
 
         triggerPointManager.GetNextPoint().gameObject.SetActive(true); //turn on next world trigger
     }
@@ -277,15 +277,17 @@ public class SequenceManager : MonoBehaviour
             {
                 OffsetPursueBehaviour shipFollowB = ship.GetComponent<OffsetPursueBehaviour>();
                 //maybe send some after ascension?
-                shipFollowB.followObjName = "Reaper(Clone)";
+                shipFollowB.followObjName = "ReaperAttackPoint";
                 shipFollowB.followObj = null;
+
+                ship.GetComponent<CombatBehaviour>().divertDistance = 600;// reaper is big so dont get as close
             }
         }
 
         OffsetPursueBehaviour normandyFollowB = normandy.GetComponent<OffsetPursueBehaviour>();
         //maybe send some after ascension?
         //normandyFollowB.followOffsetDistance = Mathf.Infinity;
-        normandyFollowB.followObjName = "Reaper(Clone)";
+        normandyFollowB.followObjName = "ReaperAttackPoint";
         normandyFollowB.followObj = null;
 
         triggerPointManager.GetNextPoint().gameObject.SetActive(true); //turn on next world trigger
@@ -333,6 +335,8 @@ public class SequenceManager : MonoBehaviour
 
         //Fly to flank position by setting a divert point which is considered before other behaviours
         normandy.GetComponent<CombatBehaviour>().divertTarget = flankPoint.position;
+        
+        audioManager.PlayNextMusic(); //victory
 
         triggerPointManager.GetNextPoint().gameObject.SetActive(true); //turn on next world trigger
     }
@@ -364,8 +368,7 @@ public class SequenceManager : MonoBehaviour
         camTargeting.SetCamFollowAndLook(SuperRocket, 12);
         camTargeting.moveLerpSpeed = 100; //move a lot faster to keep up with rocket
 
-
-        audioManager.PlayNextMusic(); //victory
+        
 
         triggerPointManager.GetNextPoint().gameObject.SetActive(true); //turn on next world trigger
     }
@@ -386,9 +389,27 @@ public class SequenceManager : MonoBehaviour
     public void Seq7_1()
     {
         Debug.Log("Seq7_1 Normandy flys away");
+        
+        //make ships fly back out
+        GameObject shipsHolder = GameObject.Find("-ActiveShips-");
+        foreach (Transform ship in shipsHolder.transform) //search all immediate children of shipholder
+        {
+            if (ship.transform.CompareTag("Alliance") && ship.GetComponent<OffsetPursueBehaviour>())
+            {
+                OffsetPursueBehaviour shipFollowB = ship.GetComponent<OffsetPursueBehaviour>();
+                //maybe send some after ascension?
+                shipFollowB.followObjName = "Reaper(Clone)";
+                shipFollowB.followObj = null;
+            }
+        }
+        
+        
 
         camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
         camTargeting.SetCamLookAt(normandy.transform);
+        
+        //normandy sets target to fly past camera
+        normandy.GetComponent<CombatBehaviour>().divertTarget = camTargeting.transform.position+(camTargeting.transform.forward*1000+camTargeting.transform.right*100);
 
     }
 }
