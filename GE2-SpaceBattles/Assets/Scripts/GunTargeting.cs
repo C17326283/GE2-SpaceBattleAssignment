@@ -34,11 +34,6 @@ public class GunTargeting : MonoBehaviour
             enemyTags = GetComponentInParent<CombatBehaviour>().enemyTags;//get the same enemy tags as combat behav
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     public List<Collider> GetCollidersInArea()
     {
         centerOfStartSphere = transform.position+ (transform.forward * radius);
@@ -51,7 +46,7 @@ public class GunTargeting : MonoBehaviour
         {
             foreach (var tag in enemyTags)
             {
-                if (collider.transform.CompareTag(tag))
+                if (collider.transform.CompareTag(tag) && collider.GetComponent<Life>())
                 {
                     validTargetList.Add(collider);
                 }

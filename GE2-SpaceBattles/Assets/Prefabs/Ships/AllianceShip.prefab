@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 988b93062a24391428c5dbe7b27266f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 9000
+  range: 7000
   radius: 800
   enemyTags: []
   debugTargeting: 0
