@@ -27,7 +27,6 @@ public class OffsetPursueBehaviour : BaseShipBehaviour
     [Task]
     public void GetTargetOffset()
     {
-        //todo stop spinning around spot if target isnt moving
         if (GameObject.Find(followObjName))
         {
             if (keepFirstTeleportOffset)

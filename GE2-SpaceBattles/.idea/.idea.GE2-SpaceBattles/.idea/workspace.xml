@@ -19,7 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="" />
+    <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Imported/ExampleAssets/Textures/Props/Construction_Light/Materials/ConstructionLight_MetallicOcculusionSmoothness.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imported/ExampleAssets/Textures/Props/Construction_Light/Materials/ConstructionLight_MetallicOcculusionSmoothness.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/CombatBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/CombatBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,18 +86,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Rotator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SeekingRocket.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ShipBoid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TriggerSequence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/BaseShipBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BT/CombatBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/HarmonicSwayBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/ObstacleAvoidBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/PathFollowBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BT/CombatBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
       </list>
     </option>
   </component>
@@ -263,11 +270,11 @@
       <screen x="1920" y="47" width="1786" height="986" />
     </state>
     <state x="2096" y="230" width="1409" height="974" key="dock-window-2/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@1920.47.1786.986" timestamp="1619306563244" />
-    <state x="2513" y="287" width="666" height="534" key="find.popup" timestamp="1620577262103">
-      <screen x="1920" y="47" width="1786" height="986" />
+    <state x="638" y="253" width="1232" height="534" key="find.popup" timestamp="1620581538039">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="754" y="236" width="716" height="592" key="find.popup/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@-1920.86.1920.1040" timestamp="1620509533586" />
-    <state x="638" y="253" width="644" height="534" key="find.popup/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@0.0.1920.1040" timestamp="1618755969848" />
+    <state x="638" y="253" width="1232" height="534" key="find.popup/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@0.0.1920.1040" timestamp="1620581538039" />
     <state x="2513" y="287" width="666" height="534" key="find.popup/0.0.1920.1040/1920.47.1786.986/-1920.86.1920.1040@1920.47.1786.986" timestamp="1620577262103" />
     <state x="2476" y="258" width="672" height="678" key="search.everywhere.popup" timestamp="1620050231848">
       <screen x="1920" y="47" width="1786" height="986" />

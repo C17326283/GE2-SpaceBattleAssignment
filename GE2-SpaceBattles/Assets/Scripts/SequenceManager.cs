@@ -338,7 +338,6 @@ public class SequenceManager : MonoBehaviour
         Debug.Log("Seq5_4 Everyone starts firing");
         camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
         camTargeting.SetCamLookAt(GameObject.Find("Reaper(Clone)").transform);
-        //todo look at alliance ship instead of reaper
 
         Transform flankPoint = GameObject.Find("NormandyFlankPoint").transform;
 

@@ -11,7 +11,7 @@ public class CombatBehaviour : BaseShipBehaviour
     public Transform enemyTarget;
     public Vector3 divertTarget = Vector3.zero;
     [HideInInspector]
-    public GameObject shipsHolder;//Object holding all ships for easy searching//todo increase performance by checking ships in collider?
+    public GameObject shipsHolder;//Object holding all ships for easy searching
     
     public String[] enemyTags;
     public float engagementDistance = 200.0f;

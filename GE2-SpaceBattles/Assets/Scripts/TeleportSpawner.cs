@@ -11,8 +11,8 @@ public class TeleportSpawner : MonoBehaviour
     public float radiusToSpawn = 50;
 
     public float amountToSpawn = 3;
-    public GameObject spawnEffect;//todo
-    public GameObject spawnTrail;//todo
+    public GameObject spawnEffect;
+    public GameObject spawnTrail;
     public float timeBetweenSpawn = .2f;
     public float spawnEffectScale = 2f;
 
