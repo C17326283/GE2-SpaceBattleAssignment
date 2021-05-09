@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4517613805756978207}
   - component: {fileID: 4517613805756978209}
   - component: {fileID: 4517613805756978210}
-  - component: {fileID: 4517613805756978211}
   - component: {fileID: 4517613805756978206}
   - component: {fileID: 4517613805756978212}
+  - component: {fileID: 3651906085070954067}
   m_Layer: 0
   m_Name: Flagship
   m_TagString: Alliance
@@ -86,25 +86,12 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 500
   m_Drag: 1
-  m_AngularDrag: 0.05
+  m_AngularDrag: 1
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
---- !u!65 &4517613805756978211
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4517613805756978213}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4517613805756978206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,8 +104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181d075cff82e74bb6fdbe2279eb3c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20000
-  currentHealth: 20000
+  maxHealth: 200000
+  currentHealth: 200000
   DeathExplosion: {fileID: 7170199903285590178, guid: 26af278b6a7a2984685a10043378302b, type: 3}
   alive: 1
   explosionSize: 200
@@ -139,13 +126,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceToApply: {x: 0, y: 0, z: 0}
   rb: {fileID: 4517613805756978210}
-  moveSpeed: 20
-  maxMag: 20
+  moveSpeed: 80
+  maxMag: 80
   bankingAmount: 0.1
   turnSpeed: 10
   mass: 5
-  swaySpeed: 0
-  swayAmount: 0
+--- !u!136 &3651906085070954067
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4517613805756978213}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 78
+  m_Height: 295.4
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &6627822577328480624
 PrefabInstance:
   m_ObjectHideFlags: 0

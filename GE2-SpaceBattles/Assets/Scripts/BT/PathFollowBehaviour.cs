@@ -73,11 +73,11 @@ public class PathFollowBehaviour : BaseShipBehaviour
     {
         if (path.IsLast())
         {
-            base.shipBoid.SeekForce(path.NextWaypoint());
+            base.shipBoid.ArriveForce(path.NextWaypoint(),arriveSlowDist,waypointDistance);
         }
         else
         {
-            base.shipBoid.ArriveForce(path.NextWaypoint(),arriveSlowDist+waypointDistance);
+            base.shipBoid.SeekForce(path.NextWaypoint());
         }
         
         

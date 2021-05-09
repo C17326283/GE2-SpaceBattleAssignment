@@ -19,8 +19,10 @@ tree("Combat")
 
 tree("FollowOffset")
     fallback
+        sequence
+            NeedNewTargetCondition()
+            GetTargetOffset()
         OffsetPursuit()
-        GetTargetOffset()
 
 tree("Dodge")
     sequence
