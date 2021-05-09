@@ -9,8 +9,11 @@
 
 # Videos:
 Video Demo:
-[![Source](https://img.youtube.com/vi/o8OacDj2oX8/0.jpg)](https://youtu.be/o8OacDj2oX8)
+
+  [![Source](https://img.youtube.com/vi/o8OacDj2oX8/0.jpg)](https://youtu.be/o8OacDj2oX8)
+  
 Source scene: Mass Effect 1 - Battle for the citadel - Paragon
+
 [![Source](https://img.youtube.com/vi/bNnd6oUEQ2I/0.jpg)](https://youtu.be/bNnd6oUEQ2I)
 
 # Most proud of
