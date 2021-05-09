@@ -8,8 +8,11 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="OldOrDeprecated" t="Include">
+          <e p="BaseBehaviours.cs" t="Include" />
+          <e p="BaseBehaviours2.cs" t="Include" />
           <e p="BigBoid.cs" t="Include" />
           <e p="BoidPath.cs" t="Include" />
+          <e p="FollowBehaviours.cs" t="Include" />
           <e p="Indiv" t="Include">
             <e p="Boid.cs" t="Include" />
             <e p="Flee.cs" t="Include" />
@@ -22,6 +25,7 @@
             <e p="Wander.cs" t="Include" />
           </e>
           <e p="RandomTarget.cs" t="Include" />
+          <e p="ShipBehaviour1.txt" t="Include" />
           <e p="SimpleCameraController.cs" t="Include" />
         </e>
         <e p="PandaBehaviour" t="Include">
@@ -65,16 +69,14 @@
           <e p="AudioManager.cs" t="Include" />
           <e p="AudioVariance.cs" t="Include" />
           <e p="BT" t="Include">
-            <e p="BaseBehaviours.cs" t="Include" />
-            <e p="BaseBehaviours2.cs" t="Include" />
             <e p="BaseShipBehaviour.cs" t="Include" />
             <e p="CombatBehaviour.cs" t="Include" />
-            <e p="FollowBehaviours.cs" t="Include" />
+            <e p="FighterShip.txt" t="Include" />
+            <e p="HarmonicSwayBehaviour.cs" t="Include" />
+            <e p="ObstacleAvoidBehaviour.cs" t="Include" />
             <e p="OffsetPursueBehaviour.cs" t="Include" />
-            <e p="PathBehaviour.txt" t="Include" />
             <e p="PathFollowBehaviour.cs" t="Include" />
-            <e p="ShipBehaviour1 1.txt" t="Include" />
-            <e p="ShipBehaviour1.txt" t="Include" />
+            <e p="PathingShip.txt" t="Include" />
           </e>
           <e p="CameraTargeting.cs" t="Include" />
           <e p="DebrisSpawner.cs" t="Include" />

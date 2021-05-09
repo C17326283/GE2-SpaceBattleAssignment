@@ -186,6 +186,8 @@ GameObject:
   - component: {fileID: 4452117245609018859}
   - component: {fileID: -6743529366314030150}
   - component: {fileID: 506347549784053304}
+  - component: {fileID: 2409840513535503096}
+  - component: {fileID: 6355064326642364526}
   m_Layer: 0
   m_Name: AllianceShip
   m_TagString: Alliance
@@ -218,8 +220,8 @@ Rigidbody:
   m_GameObject: {fileID: 5655017480225913835}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.1
-  m_AngularDrag: 0.05
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -363,7 +365,38 @@ CapsuleCollider:
   m_Radius: 6.08
   m_Height: 55
   m_Direction: 2
-  m_Center: {x: 0, y: -1, z: -3.01}
+  m_Center: {x: 0, y: -1, z: -17.05}
+--- !u!114 &2409840513535503096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655017480225913835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b21c97a2a66480baed38c9858b7f53b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipBoid: {fileID: 5655017480225913833}
+  feelerLength: 50
+  rayAngle: 45
+  strengthMultiplier: 2
+--- !u!114 &6355064326642364526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5655017480225913835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35122cf436b74931be1a32fee64f6703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shipBoid: {fileID: 0}
+  swaySpeed: 0.5
+  swayAmount: 0.1
 --- !u!1001 &2071497278720752895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -657,7 +690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -12.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
       propertyPath: m_LocalRotation.w

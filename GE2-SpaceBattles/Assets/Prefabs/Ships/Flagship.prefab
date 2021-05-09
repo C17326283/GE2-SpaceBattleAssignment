@@ -74,6 +74,7 @@ MonoBehaviour:
   shipBoid: {fileID: 0}
   path: {fileID: 0}
   waypointDistance: 200
+  arriveSlowDist: 200
   spawnedPathName: AscensionEscapePath
 --- !u!54 &4517613805756978210
 Rigidbody:
@@ -143,6 +144,8 @@ MonoBehaviour:
   bankingAmount: 0.1
   turnSpeed: 10
   mass: 5
+  swaySpeed: 0
+  swayAmount: 0
 --- !u!1001 &6627822577328480624
 PrefabInstance:
   m_ObjectHideFlags: 0

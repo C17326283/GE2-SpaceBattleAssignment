@@ -1,9 +1,15 @@
 tree("Root")
-    fallback
-        tree("Dodge")
-        tree("Combat")
-        tree("FollowOffset")
-        
+    sequence
+        tree("AdditionalMovement")
+        fallback
+            tree("Dodge")
+            tree("Combat")
+            tree("FollowOffset")
+  
+tree("AdditionalMovement")
+    sequence
+        AttemptAvoidance()  
+        AddSway        
         
 tree("Combat")
     sequence
