@@ -281,6 +281,7 @@ public class SequenceManager : MonoBehaviour
                 shipFollowB.followObjName = "ReaperAttackPoint";
                 shipFollowB.followObj = null;
 
+                ship.GetComponent<CombatBehaviour>().arrivedDist = 300;
                 ship.GetComponent<CombatBehaviour>().divertDistance = 600;// reaper is big so dont get as close
             }
         }
@@ -415,17 +416,6 @@ public class SequenceManager : MonoBehaviour
         audioManager.PlayNextVoice(); //final speach
 
         camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
-        
-        //normandy sets target to fly past camera
-        OffsetPursueBehaviour normandyFollowB = normandy.GetComponent<OffsetPursueBehaviour>();
-        //maybe send some after ascension?
-        normandyFollowB.followObjName = "EndFlyPoint";
-        normandyFollowB.followObj = null;
-        
-        //make normandy super fast so it can fly by camera
-        normandy.GetComponent<ShipBoid>().moveSpeed = 1800;
-        normandy.GetComponent<ShipBoid>().maxMag = 1800;
-        
         
         
         //continue to next event which trigger next seq

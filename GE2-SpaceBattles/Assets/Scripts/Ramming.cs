@@ -23,6 +23,14 @@ public class Ramming : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        foreach (var tag in enemyTags)
+        {
+            if (other.transform.CompareTag(tag) && other.gameObject.GetComponent<Life>())
+            {
+                other.gameObject.GetComponent<Life>().currentHealth -= 1000;
+            }
+        }
+        /*
         if (rb.velocity.magnitude > 0.1f) //is moving and not stationary
         {
             foreach (var tag in enemyTags)
@@ -33,6 +41,7 @@ public class Ramming : MonoBehaviour
                 }
             }
         }
+        */
         
         
     }

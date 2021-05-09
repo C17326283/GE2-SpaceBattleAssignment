@@ -287,9 +287,9 @@ MonoBehaviour:
   enemyTags:
   - Reaper
   - Sovereign
-  engagementDistance: 2500
-  divertDistance: 200
-  arrivedDist: 100
+  engagementDistance: 1200
+  divertDistance: 300
+  arrivedDist: 150
 --- !u!114 &-6579382620608616288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,8 +306,8 @@ MonoBehaviour:
   followObjName: Normandy(Clone)
   followObj: {fileID: 0}
   followOffset: {x: 0, y: 0, z: 0}
-  followOffsetDistance: 800
-  arriveDist: 100
+  followOffsetDistance: 1000
+  arriveDist: 150
   maxDistAway: 1500
   keepFirstTeleportOffset: 1
   followObjLastPos: {x: 0, y: 0, z: 0}

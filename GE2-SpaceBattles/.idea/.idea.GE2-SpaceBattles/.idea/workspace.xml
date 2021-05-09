@@ -22,19 +22,13 @@
     <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/AllianceShip.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/AllianceShip.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Flagship.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Flagship.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Geth.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Geth.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Normandy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Normandy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SuperSeekingRocket.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SuperSeekingRocket.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/ObstacleAvoidBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/ObstacleAvoidBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/PathFollowBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/PathFollowBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraTargeting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraTargeting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ramming.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ramming.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShipBoid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShipBoid.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Starfield Skybox/Skybox.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Starfield Skybox/Skybox.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/PathManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Indiv/OffsetPursue.cs" />
         <option value="$PROJECT_DIR$/Assets/CameraTargeting.cs" />
         <option value="$PROJECT_DIR$/Assets/CameraPointManager.cs" />
@@ -103,12 +96,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/CombatBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/OldOrDeprecated/FollowBehaviours.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraTargeting.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ShipBoid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/ObstacleAvoidBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BT/PathFollowBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ShipBoid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ramming.cs" />
       </list>
     </option>
   </component>
@@ -126,6 +120,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/OneDrive/Desktop/GE-Assign2Builds/B1\GE2-SpaceBattles.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\ryand\OneDrive\Desktop\GE-Assign2Builds\B1" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -170,7 +172,7 @@
       <workItem from="1620217793694" duration="23558000" />
       <workItem from="1620303971174" duration="23987000" />
       <workItem from="1620387405796" duration="35348000" />
-      <workItem from="1620556134186" duration="8905000" />
+      <workItem from="1620556134186" duration="12725000" />
     </task>
     <servers />
   </component>

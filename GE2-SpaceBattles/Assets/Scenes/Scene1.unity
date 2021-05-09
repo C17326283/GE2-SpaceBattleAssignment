@@ -49230,7 +49230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shipToSpawn: {fileID: 1427803425292049769, guid: e4568c51a983e054e80f9ef56202f489, type: 3}
   radiusToSpawn: 700
-  amountToSpawn: 30
+  amountToSpawn: 37
   spawnEffect: {fileID: 4829772502669444026, guid: 7994fc1c1e89bd540936a1e47150a308, type: 3}
   spawnTrail: {fileID: 783880243997590592, guid: 6dd86da8ed67e714495fc189acf077a5, type: 3}
   timeBetweenSpawn: 0.05
