@@ -588,7 +588,7 @@ MonoBehaviour:
   shipBoid: {fileID: 0}
   path: {fileID: 0}
   waypointDistance: 250
-  arriveSlowDist: 200
+  arriveSlowDist: 500
   spawnedPathName: ReaperPath
 --- !u!54 &675041803783481498
 Rigidbody:
@@ -645,8 +645,6 @@ MonoBehaviour:
   bankingAmount: 0.06
   turnSpeed: 1
   mass: 5
-  swaySpeed: 0
-  swayAmount: 0
 --- !u!114 &7887602638127581548
 MonoBehaviour:
   m_ObjectHideFlags: 0

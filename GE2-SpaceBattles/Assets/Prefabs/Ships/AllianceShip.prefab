@@ -306,9 +306,11 @@ MonoBehaviour:
   followObjName: Normandy(Clone)
   followObj: {fileID: 0}
   followOffset: {x: 0, y: 0, z: 0}
-  followOffsetDistance: 600
+  followOffsetDistance: 800
+  arriveDist: 100
   maxDistAway: 1500
   keepFirstTeleportOffset: 1
+  followObjLastPos: {x: 0, y: 0, z: 0}
 --- !u!114 &4452117245609018859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,7 +381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipBoid: {fileID: 5655017480225913833}
-  feelerLength: 50
+  feelerLength: 150
   rayAngle: 45
   strengthMultiplier: 2
 --- !u!114 &6355064326642364526

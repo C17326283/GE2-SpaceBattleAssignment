@@ -30,6 +30,8 @@ public class ObstacleAvoidBehaviour : BaseShipBehaviour
     [Task]
     public void AttemptAvoidance()
     {
+        
+        ShootRay(0, transform.up, -transform.forward, feelerLength);
         ShootRay(-rayAngle, transform.up, transform.right, feelerLength);
         ShootRay(rayAngle, transform.up, -transform.right, feelerLength);
         ShootRay(-rayAngle, transform.right, -transform.up, feelerLength);
@@ -52,9 +54,11 @@ public class ObstacleAvoidBehaviour : BaseShipBehaviour
         if (Physics.Raycast(transform.position, rayDir, out hit, length))
         {
             //Debug.DrawRay(transform.position, rayDir, Color.red,length);
+            //Debug.DrawLine(transform.position, hit.point, Color.red,5);
             
             shipBoid.AddToForce(forceToAddDirection*shipBoid.moveSpeed,strengthMultiplier);
 
+            //print("avoiding object"+forceToAddDirection*shipBoid.moveSpeed);
         }
         
     }

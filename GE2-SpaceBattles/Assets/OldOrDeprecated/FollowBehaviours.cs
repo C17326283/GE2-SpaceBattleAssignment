@@ -79,7 +79,7 @@ public class FollowBehaviours : BaseBehaviours
     [Task]
     public void SeekTarget()
     {
-        base.shipBoid.ArriveForce(target.position,stoppingDistance*2);
+        base.shipBoid.ArriveForce(target.position,stoppingDistance*2,stoppingDistance*2);
         
         //Vector3 desired = target.position - transform.position;
         //desired.Normalize();

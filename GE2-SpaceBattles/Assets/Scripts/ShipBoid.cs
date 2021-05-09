@@ -31,6 +31,7 @@ public class ShipBoid : MonoBehaviour
     {
         if (!rb)
             rb = GetComponentInChildren<Rigidbody>();
+        rb.AddForce(transform.forward);//add tiny bit force forward on start so it doesnt spin
     }
 
 
@@ -52,21 +53,21 @@ public class ShipBoid : MonoBehaviour
         AddToForce(desired,2);
     }
 
-    public void ArriveForce(Vector3 target, float slowingDistance = 100.0f)
+    public void ArriveForce(Vector3 target, float slowingDistance, float stoppingDist)
     {
 //        print("arrive force");
         Vector3 toTarget = target - transform.position;
 
-        float distance = toTarget.magnitude;
+        float distance = toTarget.magnitude-stoppingDist;//account for dist they actually stop at
         
-        if (distance > slowingDistance/100)//dont apply if super close
+        if (distance > 0)
         {        
             float ramped = maxMag * (distance / slowingDistance);
 
             float clamped = Mathf.Min(ramped, maxMag);
             Vector3 desired = clamped * (toTarget / distance);
 
-            AddToForce(desired,1);
+            AddToForce(desired-rb.velocity,2);
         }  
     }
 

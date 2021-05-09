@@ -477,8 +477,10 @@ MonoBehaviour:
   followObj: {fileID: 0}
   followOffset: {x: 0, y: 0, z: 0}
   followOffsetDistance: 600
+  arriveDist: 100
   maxDistAway: 1000
   keepFirstTeleportOffset: 0
+  followObjLastPos: {x: 0, y: 0, z: 0}
 --- !u!114 &-208593740023329874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,8 +543,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipBoid: {fileID: 0}
-  feelerLength: 300
-  rayAngle: 45
+  feelerLength: 200
+  rayAngle: 30
   strengthMultiplier: 2
 --- !u!64 &5655017479426552974
 MeshCollider:

@@ -12,10 +12,15 @@ public class OffsetPursueBehaviour : BaseShipBehaviour
 
     public Vector3 followOffset; 
     public float followOffsetDistance;
+    public float arriveDist = 100;
 
     public float maxDistAway = 1000;
 
     public bool keepFirstTeleportOffset = true;
+
+    public Vector3 followObjLastPos;
+
+    private Vector3 targetWorldPos;
 
     [Task]
     public void GetTargetOffset()
@@ -65,23 +70,48 @@ public class OffsetPursueBehaviour : BaseShipBehaviour
             Task.current.Fail();
         }
     }
-
+    
     [Task]
     public void OffsetPursuit()
     {
-        if (followObj!=null)
+        if (followObj)
         {
-            Vector3 targetOffset = followObj.transform.position + followObj.transform.InverseTransformDirection(followOffset);
-            Vector3 desired = targetOffset - transform.position;
+            targetWorldPos = followObj.transform.position + followObj.transform.InverseTransformDirection(followOffset);
+            Vector3 desired = targetWorldPos - transform.position;
             desired.Normalize();
             //desired *= maxSpeed;
 
+            //base.shipBoid.ArriveForce(targetWorldPos, arriveDist * 2, arriveDist);
+
             shipBoid.AddToForce(desired, 2);
+
             Task.current.Succeed();
         }
         else
         {
             Task.current.Fail();
+        }
+    }
+
+    [Task]
+    public void NeedNewTargetCondition()
+    {
+        if (followObj==null)
+        {
+            Task.current.Succeed();
+        }
+        else
+        {
+            //has arrived, check that the target is moving, if its not then it should be getting new points instead of flipping around one spot
+            if (Vector3.Distance(targetWorldPos, transform.position)< arriveDist && followObjLastPos != followObj.transform.position)
+            {
+                Task.current.Succeed();
+            }
+            else
+            {
+                Task.current.Fail();
+            }
+            
         }
     }
 }
