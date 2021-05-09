@@ -105,4 +105,5 @@ public class ShipBoid : MonoBehaviour
             transform.LookAt(transform.position+rb.velocity, tempUp);
         }
     }
+    
 }

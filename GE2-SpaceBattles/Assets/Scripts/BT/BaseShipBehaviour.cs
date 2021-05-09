@@ -5,6 +5,7 @@ using Panda;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+[RequireComponent(typeof(ShipBoid))]
 public class BaseShipBehaviour : MonoBehaviour
 {
     [HideInInspector]
