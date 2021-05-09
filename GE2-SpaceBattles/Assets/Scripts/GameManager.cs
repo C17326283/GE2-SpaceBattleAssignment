@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/* Control core things like closing game*/
 public class GameManager : MonoBehaviour
 {
     

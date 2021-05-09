@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Panda;
 using UnityEngine;
 
+/* handles the spawning of groups without overlap and teleporting trail & spawn effect. */
 public class TeleportSpawner : MonoBehaviour
 {
     public GameObject shipToSpawn;
@@ -34,21 +35,17 @@ public class TeleportSpawner : MonoBehaviour
         {
             Vector3 randPos = Random.insideUnitSphere * radiusToSpawn;//random in circle
 
-
             Vector3 randSpawnPos = randPos + this.transform.position +spawnOffset;//around center of obj
             
             //try get a pos where the ship can spawn without overlap
             int j = 0;
             while (CheckOverlap(randSpawnPos) && j<noOverlapSpawnAttempts)
             {
-//                print("overlap so try spawn again");
                 randSpawnPos = randPos + this.transform.position +spawnOffset;//around center of obj
 
                 j++;
             }
             //might timeout and spawn with an overlap if couldnt find a valid one
-            
-
             
             
             //Spawn ship far away

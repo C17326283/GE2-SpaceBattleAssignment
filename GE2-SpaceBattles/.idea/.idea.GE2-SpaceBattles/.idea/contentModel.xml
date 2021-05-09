@@ -48,7 +48,6 @@
           <e p="GunTargeting.cs" t="Include" />
           <e p="Laser.cs" t="Include" />
           <e p="Life.cs" t="Include" />
-          <e p="PathManage.cs" t="Include" />
           <e p="PointManager.cs" t="Include" />
           <e p="Projectile.cs" t="Include" />
           <e p="Ramming.cs" t="Include" />

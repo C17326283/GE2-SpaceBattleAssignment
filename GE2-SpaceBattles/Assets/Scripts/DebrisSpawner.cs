@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+/*The debris script spawns a random number of debris items in a set random scale range when a ship dies.*/
 public class DebrisSpawner : MonoBehaviour
 {
     public GameObject[] debrisObjs;

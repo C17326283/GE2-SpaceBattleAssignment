@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/* The point manager is used for paths, trigger and camera points which allows access to cycling through or selecting individual objects from the lists.*/
 public class PointManager : MonoBehaviour
 {
     
@@ -19,6 +20,13 @@ public class PointManager : MonoBehaviour
         }
     }
     
+    public Transform GetCurrentPoint()
+    {
+        Transform pointToReturn = points[current];
+        return pointToReturn;//the one before advanced
+    }
+    
+    
     public Transform GetNextPoint()
     {
         Transform pointToReturn = points[current];
@@ -33,5 +41,10 @@ public class PointManager : MonoBehaviour
         {
             current++;
         }
+    }
+    
+    public bool IsLast()
+    {
+        return current == points.Count - 1;
     }
 }

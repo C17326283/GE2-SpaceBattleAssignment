@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/* thsi works same as the rocket but turns towards its target*/
 public class SeekingRocket : Rocket
 {
     public Transform target;

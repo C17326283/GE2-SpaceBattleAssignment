@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+/* For changing pitch on instantiated gameobjects, ie explosions*/
 public class AudioVariance : MonoBehaviour
 {
     //for allowing explosions to have audio pitch variance

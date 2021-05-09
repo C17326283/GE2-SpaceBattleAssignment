@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*  There are multiple projectiles that act differently that all pull from the projectile class */
 public class Projectile : MonoBehaviour
 {
     
@@ -18,8 +19,6 @@ public class Projectile : MonoBehaviour
     public float hitExplosionSize = 10;
     
     public float startForce = 10;
-    //public LayerMask projectileLayerToAvoid;
-
     public String parentShipTag;
     
     public String[] enemyTags;
@@ -39,8 +38,6 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         rb = this.gameObject.GetComponent<Rigidbody>();
-        //projectileLayerToAvoid = 1 << 6;//set to only avoid layer 5
-        
         //lasers have initial force
         rb.AddForce(transform.forward*startForce,ForceMode.Impulse);
     }
@@ -66,14 +63,9 @@ public class Projectile : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        //HitObj(other.transform.gameObject);
-    }
-
+    /* actual hit */
     public void HitObj(GameObject hitGameObject, Vector3 hitPos)
     {
-//        print("hitobj: "+hitGameObject);
         //stop obj but let trail stay 
         rb.isKinematic = true;
         

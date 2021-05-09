@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/* The audio manager triggers the correct voice lines and music to play when the sequence manager needs them.
+ This can be done in a cycle or for specific lines. Voice lines can be triggered with a delay and music has
+  a volume fade on start and end.*/
 public class AudioManager : MonoBehaviour
 {
     public AudioSource[] voiceClips;
@@ -24,6 +27,7 @@ public class AudioManager : MonoBehaviour
     }
 
 
+    //Different functions to trigger audio in specific ways
     public void PlayNextVoice()
     {
         PlayVoice(currVoiceClip);
@@ -62,7 +66,7 @@ public class AudioManager : MonoBehaviour
         MusicClips[elementNum].Play();
     }
     
-    //method modified from https://gamedevbeginner.com/how-to-fade-audio-in-unity-i-tested-every-method-this-ones-the-best/
+    // fade audio in/out, method modified from https://gamedevbeginner.com/how-to-fade-audio-in-unity-i-tested-every-method-this-ones-the-best/
     IEnumerator StartFade(AudioSource audioSource, float startVolume, float targetVolume, bool stopAfter)
     {
         float currentTime = 0;

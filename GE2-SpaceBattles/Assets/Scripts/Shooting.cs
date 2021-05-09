@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+/* If the ship can get a target it will fire a shot in the direction of the enemy. */
 [RequireComponent(typeof(GunTargeting))]
 public class Shooting : MonoBehaviour
 {
@@ -48,6 +49,7 @@ public class Shooting : MonoBehaviour
         targeting = GetComponent<GunTargeting>();
     }
     
+    /* repeat firing and try to get target*/
     IEnumerator RepeatShooting()
     {
         while (true)
@@ -68,8 +70,7 @@ public class Shooting : MonoBehaviour
     }
     
     
-    
-
+    /* fire at the targets direction*/
     public void Shoot()
     {
         shootingSfx.pitch = Random.Range(shootingSfx.pitch-.2f, shootingSfx.pitch+.1f);//add variance to shooting noise
@@ -92,9 +93,7 @@ public class Shooting : MonoBehaviour
             spawned.GetComponent<SeekingRocket>().target = target;
     }
 
-    
-
-
+    /* find if the target is within the firing range angle*/
     public float GetAngleToTarget()
     {
         if (GetTarget() != null && target.gameObject.activeInHierarchy)
@@ -110,7 +109,7 @@ public class Shooting : MonoBehaviour
         }
     }
     
-    
+    /* get the target from the targeting system*/
     public Transform GetTarget()
     {
         if (targeting)
@@ -126,7 +125,7 @@ public class Shooting : MonoBehaviour
     }
 
 
-    
+    /* disable weapon and renable after reload time*/
     IEnumerator Reload()
     {
         readyToShoot = false;

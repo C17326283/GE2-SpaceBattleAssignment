@@ -3,7 +3,6 @@
 
 # Video:
 Source scene: Mass Effect 1 - Battle for the citadel - Paragon
-[![YouTube](https://www.youtube.com/static?gl=GB&template=terms)](https://youtu.be/bNnd6oUEQ2I)
 [![Source](https://img.youtube.com/vi/bNnd6oUEQ2I/0.jpg)](https://youtu.be/bNnd6oUEQ2I)
 
 
@@ -18,12 +17,21 @@ Im most proud of the sequencing managers that is easy to add to and can seemless
 
 
 # How it works
+
+## Sequence
+* There is a sequence manager that has a method for each individual sequence section. They are stored and triggered from an array of unity events allowing them to be triggered from anywhere such as in world triggers or sequentially after a time.
+* Triggering: There are world triggers that can cause specific sequences to start when the desired object hits it. Sequences can also trigger the following sequence once its done.
+* The point manager is used for paths, trigger and camera points which allows access to cycling through or selecting individual objects from the lists.
+* Spawn manager: The spawn manager triggers the specific teleporting group when the sequence manager needs it, which also handles the teleporting trail & spawn effect.
+* Audio manager: All the voice and music is managed with the audio manager. More detail below
+* Camera Targetting: the camera targetting script has a lot of methods and behaviours for controlling camera such as moving/aligning to fixed point, panning, look obj, follow object pos with offset.
+
 ## AI
 * The AI is handled with a behaviour tree which controls the flow of the ships ai and will trigger functions in the specific behaviour scripts.
 * The behaviours add forces to the ship boid script which handles applying the actual forces that are applied to the rigidbody as well as the turning & banking.
 * There are multiple abstracted behaviour scripts for handling specific behaviours but they all pull from the BaseShipBehaviour abstract class. Some behaviours are listed below.
 * There are multiple behaviour tree structure for different functions like the fighter behaviour tree and the scene ship path following behaviour tree.
-* There is also a life class which handles the turning off of ai and the explosions on death.
+* There is also a life class which handles the health, turning off of ai and the explosions on death.
 
 ## Behaviours:
   * Path Following: Cycle through path waypoints and seek the next point.
@@ -44,14 +52,7 @@ Im most proud of the sequencing managers that is easy to add to and can seemless
     * SeekingRocket: Pulls from rocket base class. This will move forward but also turn towards its target as it moves to ensure more accuracy.
 * These all have a trail renderer to visually show the lasers or display the moving trajectory of the rockets.
 * There are multiple explosion effects for the different ships and weapons.
-    
-
-## Sequence
-* There is a sequence manager that has a method for each individual sequence section. They are stored and triggered from an array of unity events allowing them to be triggered from anywhere such as in world triggers or sequentially after a time.
-* Triggering: There are world triggers that can cause specific sequences to start when the desired object hits it. Sequences can also trigger the following sequence once its done.
-* The point manager is used for paths, trigger and camera points which allows access to cycling through or selecting individual objects from the lists.
-* Spawn manager: The spawn manager triggers the specific teleporting group when the sequence manager needs it, which also handles the teleporting trail & spawn effect.
-* Audio manager: All the voice and music is managed with the audio manager. More detail below
+* The reaper also has multiple weapons that are controlled from the reaperweapon manageement script. The normandy also has a super weapon thats enabled when it flanks.
 
 ## Design
 * Particle system: There are multiple particle systems used for filling the scene with a fog/smoke effect and adding space particles.
@@ -69,7 +70,6 @@ Im most proud of the sequencing managers that is easy to add to and can seemless
 * There are sound effects triggered for firing weapons and explosions such as a laser, beam and rocket fire sound effect.
 * There is also a sound for ships teleporting in and a repeating sound on the relay station.
 
-
 ## Animations
 * I made animations for the reaper and citadel with the unity animation system;
 * The citadel has 3 animations which are triggered from the sequence. These will open and close all the arms.
@@ -81,6 +81,11 @@ Im most proud of the sequencing managers that is easy to add to and can seemless
 * The game manager handles the closing of the application at the end as well as when the user presses escape.
 * A scale chart was used to compare the models to ensure everything was sized correctly.
 
+# How to use
+* You can load the project into unity or just run the exe in the build
+* It runs autonomously and will close when it ends
+* Press escape to close it at any time
+
 # Storyboard
 ![Storyboard](/images/Storyboard1.png)
 ![Storyboard](/images/Storyboard2.png)
@@ -90,7 +95,7 @@ Im most proud of the sequencing managers that is easy to add to and can seemless
 ![Storyboard](/images/Storyboard6.png)
 ![Storyboard](/images/Storyboard7.png)
 
-## Models
+# Models
 Some models were downloaded had to be heavilty edited by editing/adding verticies, changed the flat faces to smooth, splitting the mesh into multiple objects for animations and UV unwrapping.
 * Models made by me: Normandy, Citadel, Alliance ships, Rockets & Debris.
 * Downloaded/edited models: https://www.thingiverse.com/thing:702830/comments, https://www.thingiverse.com/thing:877304, https://www.thingiverse.com/thing:878702/files, https://www.thingiverse.com/thing:81436

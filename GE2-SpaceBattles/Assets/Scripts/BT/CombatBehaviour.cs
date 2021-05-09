@@ -5,6 +5,7 @@ using Panda;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+/* combat behaviour for ships fighting */
 public class CombatBehaviour : BaseShipBehaviour
 {
     public Transform enemyTarget;
@@ -24,6 +25,7 @@ public class CombatBehaviour : BaseShipBehaviour
         shipsHolder = GameObject.Find("-ActiveShips-");
     }
     
+    /* call add force towards enemy*/
     [Task]
     public void PursueEnemy()
     {
@@ -37,6 +39,7 @@ public class CombatBehaviour : BaseShipBehaviour
         Task.current.Succeed();
     }
     
+    /* go to a divert point to get ready for attack run*/
     [Task]
     public void Diverting()
     {
@@ -65,6 +68,7 @@ public class CombatBehaviour : BaseShipBehaviour
         
     }
     
+    /* needs to get a point to divert to*/
     [Task]
     public void NeedsToDivertCondition()
     {
@@ -79,7 +83,7 @@ public class CombatBehaviour : BaseShipBehaviour
         }
     }
     
-
+    /*get target from an enemy in world*/
     [Task]
     public void GetEnemyTarget()
     {

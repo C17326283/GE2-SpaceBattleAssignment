@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/* The behaviours add forces to the ship boid script which handles applying the actual forces that are applied to the rigidbody as well as the turning & banking.*/
 public class ShipBoid : MonoBehaviour
 {
     
@@ -44,6 +45,7 @@ public class ShipBoid : MonoBehaviour
         
     }
     
+    /* go directly to target */
     public void SeekForce(Vector3 target)
     {
         Vector3 desired = target - transform.position;
@@ -53,9 +55,9 @@ public class ShipBoid : MonoBehaviour
         AddToForce(desired,2);
     }
 
+    /* go to target but add backward force as it approaches to slow it down*/
     public void ArriveForce(Vector3 target, float slowingDistance, float stoppingDist)
     {
-//        print("arrive force");
         Vector3 toTarget = target - transform.position;
 
         float distance = toTarget.magnitude-stoppingDist;//account for dist they actually stop at
@@ -71,7 +73,7 @@ public class ShipBoid : MonoBehaviour
         }  
     }
 
-    //separated so can be called in special cases as well as from seek or arrive force
+    //called from behaviours to build on the force thats applied in calculate force
     public void AddToForce(Vector3 forceToAdd,float mult)
     {
         forceToApply = forceToApply + (forceToAdd*mult);
@@ -86,7 +88,7 @@ public class ShipBoid : MonoBehaviour
         forceToApply = Vector3.zero;//reset
     }
     
-    //add the force based on the built up calculations
+    //apply the force to the rigidbody
     public void ApplyForce()
     {
         Vector3 newAcceleration = force / mass;//1 is temp mass
@@ -97,6 +99,7 @@ public class ShipBoid : MonoBehaviour
 
     }
 
+    //turn to look at the direction the ship is going
     public void AimAtMag()
     {
         if (rb.velocity.magnitude > 0)

@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/* The reaper has a ramming script so it will destroy alliance ships it crashes into. */
 public class Ramming : MonoBehaviour
 {
-    
     public String[] enemyTags;
 
     private Rigidbody rb;
@@ -14,13 +14,6 @@ public class Ramming : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter(Collision other)
     {
         foreach (var tag in enemyTags)
@@ -42,7 +35,5 @@ public class Ramming : MonoBehaviour
             }
         }
         */
-        
-        
     }
 }

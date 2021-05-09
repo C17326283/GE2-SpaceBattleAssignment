@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Panda;
 using UnityEngine;
 
+/* add forces in a direction away from raycast hit*/
 public class ObstacleAvoidBehaviour : BaseShipBehaviour
 {
     public float feelerLength = 300;
@@ -22,11 +23,7 @@ public class ObstacleAvoidBehaviour : BaseShipBehaviour
         Gizmos.DrawRay(this.transform.position,rayDir);
     }*/
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-    
+    /* call all raycast avoidances*/
     [Task]
     public void AttemptAvoidance()
     {
@@ -41,6 +38,7 @@ public class ObstacleAvoidBehaviour : BaseShipBehaviour
     }
 
 
+    /* shoot ray in direction and avoid if hit*/
     public void ShootRay(float angle, Vector3 RotAround, Vector3 forceToAddDirection, float length)
     {
         Quaternion shipRot = transform.rotation;

@@ -5,6 +5,7 @@ using Panda;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+/* sway the ship left and right for more natural movement, also avoid issue with pursuing target directly behind causing fats turn*/
 public class HarmonicSwayBehaviour : BaseShipBehaviour
 {
     public float swaySpeed = 0.5f;//bigger is faster
@@ -16,6 +17,7 @@ public class HarmonicSwayBehaviour : BaseShipBehaviour
 
     }
 
+    /* add left and right sway based on pingpong function*/
     [Task]
     public void AddSway()
     {

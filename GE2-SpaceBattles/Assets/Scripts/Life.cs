@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+/*  handles the health, turning off of ai and the explosions on death. */
 public class Life : MonoBehaviour
 {
 
@@ -52,6 +53,7 @@ public class Life : MonoBehaviour
         Destroy(this.gameObject, timeToDespawnAfterDeath);
     }
     
+    /* split objects or spawn debris*/
     private void ExplodeParts()
     {
         if (breakUpChildObjsOnDeath)
@@ -71,6 +73,5 @@ public class Life : MonoBehaviour
         
         if(debrisSpawner)
             debrisSpawner.SpawnDebris();
-        
     }
 }

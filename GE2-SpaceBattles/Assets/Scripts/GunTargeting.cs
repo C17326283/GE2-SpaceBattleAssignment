@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+/* used by shooting to get a target thats infront of ship in cyclinder*/
 public class GunTargeting : MonoBehaviour
 {
     public float range = 3000;
@@ -34,6 +35,7 @@ public class GunTargeting : MonoBehaviour
             enemyTags = GetComponentInParent<CombatBehaviour>().enemyTags;//get the same enemy tags as combat behav
     }
 
+    /* get everything overlapping in area*/
     public List<Collider> GetCollidersInArea()
     {
         centerOfStartSphere = transform.position+ (transform.forward * radius);
@@ -58,6 +60,7 @@ public class GunTargeting : MonoBehaviour
         return validTargetList;
     }
 
+    /* get specific target by calling the get overlap method and picking a random one*/
     public Transform GetTarget()
     {
         List<Collider> validTargetList = GetCollidersInArea();

@@ -5,6 +5,10 @@ using Panda;
 using UnityEngine;
 using UnityEngine.Events;
 
+/* sequence manager that has a method for each individual sequence section.
+ They are stored and triggered from an array of unity events allowing them to be
+  triggered from anywhere such as in world triggers or sequentially after a time. */
+
 public class SequenceManager : MonoBehaviour
 {
     public float timeToWaitBeforeStarting = 2;
@@ -389,8 +393,6 @@ public class SequenceManager : MonoBehaviour
         Reaper.GetComponent<ReaperWeaponManager>().DisableWeapons();
         
         camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
-        //camTargeting.SetCamLookAt(GameObject.Find("Normandy(Clone)").transform);
-
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(TriggerNextSequenceTime));
     }

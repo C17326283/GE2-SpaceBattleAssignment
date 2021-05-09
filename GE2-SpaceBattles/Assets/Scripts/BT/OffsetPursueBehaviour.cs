@@ -5,6 +5,7 @@ using Panda;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+/* follow a target object with an offset*/
 public class OffsetPursueBehaviour : BaseShipBehaviour
 {
     public String followObjName;
@@ -22,6 +23,7 @@ public class OffsetPursueBehaviour : BaseShipBehaviour
 
     private Vector3 targetWorldPos;
 
+    /* get the offset of the target, random or set on teleport in*/
     [Task]
     public void GetTargetOffset()
     {
@@ -50,6 +52,7 @@ public class OffsetPursueBehaviour : BaseShipBehaviour
         }
     }
     
+    /* check if the ship should actually try fight*/
     [Task]
     public void ShouldFightCondition()
     {
@@ -71,6 +74,7 @@ public class OffsetPursueBehaviour : BaseShipBehaviour
         }
     }
     
+    /* add the actual forces towards dir offset*/
     [Task]
     public void OffsetPursuit()
     {
@@ -93,6 +97,7 @@ public class OffsetPursueBehaviour : BaseShipBehaviour
         }
     }
 
+    /* need to get a new target point because either something changed or they arrived*/
     [Task]
     public void NeedNewTargetCondition()
     {

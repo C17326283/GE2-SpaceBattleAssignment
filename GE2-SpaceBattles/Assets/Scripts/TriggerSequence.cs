@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+/* for triggering a sequence from a collider in the world*/
 public class TriggerSequence : MonoBehaviour
 {
     public String nameOfTriggerObj;

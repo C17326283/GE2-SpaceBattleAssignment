@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*This has a continuous force forward as it moves. These will also explode after a set amount of time if it doesnt hit anything.*/
 public class Rocket : Projectile
 {
     public float continuousForce = 100f;

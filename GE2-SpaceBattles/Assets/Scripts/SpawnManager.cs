@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/* The spawn manager triggers the specific teleporting group when the sequence manager needs it */
 public class SpawnManager : MonoBehaviour
 {
     public TeleportSpawner[] spawnerGroupsInOrder;

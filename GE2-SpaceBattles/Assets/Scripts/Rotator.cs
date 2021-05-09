@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/* simple rotate around axis script */
 public class Rotator : MonoBehaviour
 {
     public float rotateSpeedX = .5f;

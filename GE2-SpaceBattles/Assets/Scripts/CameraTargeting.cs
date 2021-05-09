@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*Control the position and behaviour of cam. the camera targetting script has a lot of methods and behaviours for controlling camera such as moving/aligning to fixed point, panning, look obj, follow object pos with offset.*/
 public class CameraTargeting : MonoBehaviour
 {
     public Transform gameObjectToLookAt;
@@ -16,17 +17,17 @@ public class CameraTargeting : MonoBehaviour
     public int curOffsetIndex = 0;
     public float magDecreaseMult = 3f;
     
-    // Update is called once per frame
+    // late update for camera calculations after physics updates
     void LateUpdate()
     {
+        //follow faster to keep up with moving objects
         float magIncrease = 0;
         if (gameObjectToLookAt && gameObjectToLookAt.GetComponent<Rigidbody>())
         {
             magIncrease = gameObjectToLookAt.GetComponent<Rigidbody>().velocity.magnitude/magDecreaseMult;
         }
-            
-            
-        
+
+        //Follow object with offset or pan if no target
         if (gameObjectToFollow !=null)
         {
             Vector3 toPos = gameObjectToFollow.position + gameObjectToFollow.TransformDirection(objectFollowOffset);
@@ -39,15 +40,16 @@ public class CameraTargeting : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, toPos, Time.deltaTime * moveLerpSpeed);
         }
         
-        
+        //Stay looking in direction
         if (gameObjectToLookAt)
         {
             Vector3 relativePos = gameObjectToLookAt.transform.position - transform.position;
             Quaternion toRotation = Quaternion.LookRotation(relativePos);
             transform.rotation = Quaternion.Slerp( transform.rotation, toRotation, Time.deltaTime * (rotLerpSpeed+magIncrease) );
         }
-        
     }
+    
+    //set at static point offset from a dynamic object
     public void SetCameraWithRelativeOffset(Transform obj,int offsetIndex)
     {
         Vector3 offset = GetOffset(offsetIndex);
@@ -57,6 +59,7 @@ public class CameraTargeting : MonoBehaviour
         print("obj"+obj.transform.position+",offset: "+offsetIndex+","+offset+", with offset:"+(obj.transform.position+obj.transform.TransformPoint(offset)));
     }
     
+    //set to a static world point and direction
     public void SetCameraMatchPoint(Transform cameraPoint)
     {
         SetCamNotFollowing();
@@ -64,12 +67,14 @@ public class CameraTargeting : MonoBehaviour
         transform.rotation = cameraPoint.transform.rotation;
     }
     
+    //move with and look at obj
     public void SetCamFollowAndLook(Transform obj, int offsetIndex)
     {
         SetCamFollow(obj, offsetIndex);
         SetCamLookAt(obj);
     }
 
+    //move with obj
     public void SetCamFollow(Transform obj, int offsetIndex)
     {
         Vector3 offset = GetOffset(offsetIndex);
@@ -77,17 +82,21 @@ public class CameraTargeting : MonoBehaviour
         gameObjectToFollow = obj;
         objectFollowOffset = offset;
     }
+    
+    //look at obj
     public void SetCamLookAt(Transform obj)
     {
         gameObjectToLookAt = obj;
     }
 
+    //unset objects
     public void SetCamNotFollowing()
     {
         gameObjectToFollow = null;
         objectFollowOffset = Vector3.zero;
     }
     
+    //get offset from set list of static points
     public Vector3 GetOffset(int index)
     {
         Vector3 selectedOffset = cameraOffsets[index];
@@ -97,14 +106,11 @@ public class CameraTargeting : MonoBehaviour
         return selectedOffset;
     }
 
+    //cycle through points
     public Vector3 GetNextOffset()
     {
-
         Vector3 selectedOffset = GetOffset(curOffsetIndex);
-
-        
         curOffsetIndex++;
-
         return selectedOffset;
     }
     
