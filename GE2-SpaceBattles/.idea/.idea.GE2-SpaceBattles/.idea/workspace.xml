@@ -19,44 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE2-SpaceBattles/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ships/Reaper.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioVariance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioVariance.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/BaseShipBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/BaseShipBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/CombatBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/CombatBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/HarmonicSwayBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/HarmonicSwayBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/ObstacleAvoidBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/ObstacleAvoidBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/OffsetPursueBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BT/PathFollowBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BT/PathFollowBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraTargeting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraTargeting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DebrisSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DebrisSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestroyAfterTime.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DestroyAfterTime.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GunTargeting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GunTargeting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Laser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Laser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Life.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Life.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathManage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PathManage.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PointManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PointManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ramming.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ramming.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ReaperWeaponManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ReaperWeaponManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rocket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Rotator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Rotator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SeekingRocket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SeekingRocket.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SequenceManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShipBoid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShipBoid.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TeleportSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TriggerSequence.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TriggerSequence.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/ApiUpdaterCheck.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-    </list>
+    <list default="true" id="37e39553-0c66-424d-8d35-d3f935f429ea" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

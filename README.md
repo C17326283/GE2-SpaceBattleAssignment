@@ -22,7 +22,7 @@ Im most proud of the sequencing managers that is easy to add to and can seemless
 * There is a sequence manager that has a method for each individual sequence section. They are stored and triggered from an array of unity events allowing them to be triggered from anywhere such as in world triggers or sequentially after a time.
 * Triggering: There are world triggers that can cause specific sequences to start when the desired object hits it. Sequences can also trigger the following sequence once its done.
 * The point manager is used for paths, trigger and camera points which allows access to cycling through or selecting individual objects from the lists.
-* Spawn manager: The spawn manager triggers the specific teleporting group when the sequence manager needs it, which also handles the teleporting trail & spawn effect.
+* Spawn manager: The spawn manager triggers the specific teleporting group when the sequence manager needs it, which also handles the teleporting trail & spawn effect. Has a no overlap spawning system.
 * Audio manager: All the voice and music is managed with the audio manager. More detail below
 * Camera Targetting: the camera targetting script has a lot of methods and behaviours for controlling camera such as moving/aligning to fixed point, panning, look obj, follow object pos with offset.
 
@@ -32,6 +32,7 @@ Im most proud of the sequencing managers that is easy to add to and can seemless
 * There are multiple abstracted behaviour scripts for handling specific behaviours but they all pull from the BaseShipBehaviour abstract class. Some behaviours are listed below.
 * There are multiple behaviour tree structure for different functions like the fighter behaviour tree and the scene ship path following behaviour tree.
 * There is also a life class which handles the health, turning off of ai and the explosions on death.
+![BT](/images/BehaviourTrees.png)
 
 ## Behaviours:
   * Path Following: Cycle through path waypoints and seek the next point.
@@ -99,6 +100,9 @@ Im most proud of the sequencing managers that is easy to add to and can seemless
 Some models were downloaded had to be heavilty edited by editing/adding verticies, changed the flat faces to smooth, splitting the mesh into multiple objects for animations and UV unwrapping.
 * Models made by me: Normandy, Citadel, Alliance ships, Rockets & Debris.
 * Downloaded/edited models: https://www.thingiverse.com/thing:702830/comments, https://www.thingiverse.com/thing:877304, https://www.thingiverse.com/thing:878702/files, https://www.thingiverse.com/thing:81436
+![Storyboard](/images/Models1.png)
+![Storyboard](/images/Models2.png)
+![Storyboard](/images/Models3.png)
 
 
 
