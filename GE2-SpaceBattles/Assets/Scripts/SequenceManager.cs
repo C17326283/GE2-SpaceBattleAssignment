@@ -417,10 +417,16 @@ public class SequenceManager : MonoBehaviour
         camTargeting.SetCameraMatchPoint(camPointManager.GetNextPoint());
         
         //normandy sets target to fly past camera
-        normandy.GetComponent<OffsetPursueBehaviour>().followObj = GameObject.Find("EndFlyPoint").gameObject;
+        OffsetPursueBehaviour normandyFollowB = normandy.GetComponent<OffsetPursueBehaviour>();
+        //maybe send some after ascension?
+        normandyFollowB.followObjName = "EndFlyPoint";
+        normandyFollowB.followObj = null;
+        
         //make normandy super fast so it can fly by camera
-        normandy.GetComponent<ShipBoid>().moveSpeed = 1500;
-        normandy.GetComponent<ShipBoid>().maxMag = 1500;
+        normandy.GetComponent<ShipBoid>().moveSpeed = 1800;
+        normandy.GetComponent<ShipBoid>().maxMag = 1800;
+        
+        
         
         //continue to next event which trigger next seq
         StartCoroutine(NextSeq(TriggerNextSequenceTime));

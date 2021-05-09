@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5210357130399442917}
-  - component: {fileID: 4700354124514421623}
   - component: {fileID: 651098678136584903}
   - component: {fileID: 5311416907141372187}
   - component: {fileID: 4005834024593650106}
@@ -43,25 +42,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &4700354124514421623
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427803425292049769}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b61c992aadff6804d9380c7a2e2881cc, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &651098678136584903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,9 +54,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181d075cff82e74bb6fdbe2279eb3c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 600
-  currentHealth: 600
-  DeathExplosion: {fileID: 7170199903285590178, guid: 26af278b6a7a2984685a10043378302b, type: 3}
+  maxHealth: 700
+  currentHealth: 700
+  DeathExplosion: {fileID: 7170199903285590178, guid: a752da8a8a187c94083e2b375a5e0d05, type: 3}
   alive: 1
   explosionSize: 90
   timeToDespawnAfterDeath: 0
@@ -97,7 +77,7 @@ MonoBehaviour:
   scripts:
   - {fileID: 4900000, guid: 86f8db1f4e15b4e4cbf6c1e607c34f62, type: 3}
   autoReset: 1
-  tickOn: 0
+  tickOn: 2
   sourceInfos:
   - isFoldout: 1
     breakPoints: 
@@ -118,11 +98,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceToApply: {x: -0.90991277, y: -0.011531306, z: 1.78099}
   rb: {fileID: 1128173742498250210}
-  moveSpeed: 400
-  maxMag: 300
-  bankingAmount: 0.2
-  turnSpeed: 0.5
-  mass: 100
+  moveSpeed: 500
+  maxMag: 400
+  bankingAmount: 0.15
+  turnSpeed: 0.1
+  mass: 29
 --- !u!114 &-709042884225375726
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,8 +122,8 @@ MonoBehaviour:
   enemyTags:
   - Alliance
   - Normandy
-  engagementDistance: 1500
-  divertDistance: 200
+  engagementDistance: 1200
+  divertDistance: 300
   arrivedDist: 150
 --- !u!114 &-129555161611945519
 MonoBehaviour:
@@ -162,8 +142,8 @@ MonoBehaviour:
   followObj: {fileID: 0}
   followOffset: {x: 0, y: 0, z: 0}
   followOffsetDistance: 800
-  arriveDist: 100
-  maxDistAway: 1500
+  arriveDist: 150
+  maxDistAway: 1600
   keepFirstTeleportOffset: 1
   followObjLastPos: {x: 0, y: 0, z: 0}
 --- !u!54 &1128173742498250210
@@ -174,14 +154,14 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427803425292049769}
   serializedVersion: 2
-  m_Mass: 2
-  m_Drag: 1
-  m_AngularDrag: 0.5
+  m_Mass: 5
+  m_Drag: 5
+  m_AngularDrag: 5
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &4144053255930222854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,9 +212,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipBoid: {fileID: 4005834024593650106}
-  feelerLength: 400
-  rayAngle: 45
-  strengthMultiplier: 2
+  feelerLength: 350
+  rayAngle: 60
+  strengthMultiplier: 2.5
 --- !u!114 &-5104243686475617257
 MonoBehaviour:
   m_ObjectHideFlags: 0

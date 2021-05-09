@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5655017479815528008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 24.57}
+  m_LocalPosition: {x: 0, y: -3.3, z: 19.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5655017480225913834}
@@ -47,12 +47,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6173444437283657836, guid: 2f8574e5fec016d46ab333ae69e84484, type: 3}
   shootAttemptRate: 0.2
-  shotCooldown: 2
+  shotCooldown: 1
   shootAngle: 80
   readyToShoot: 0
   target: {fileID: 0}
   toTarget: {x: 0, y: 0, z: 0}
-  maxAccuracyOffset: 0.01
+  maxAccuracyOffset: 0.001
   combatBehaviours: {fileID: 0}
   targeting: {fileID: 0}
   enemyTags: []
@@ -261,7 +261,7 @@ MonoBehaviour:
   scripts:
   - {fileID: 4900000, guid: 86f8db1f4e15b4e4cbf6c1e607c34f62, type: 3}
   autoReset: 1
-  tickOn: 0
+  tickOn: 2
   sourceInfos:
   - isFoldout: 1
     breakPoints: 
@@ -287,7 +287,7 @@ MonoBehaviour:
   enemyTags:
   - Reaper
   - Sovereign
-  engagementDistance: 2000
+  engagementDistance: 2500
   divertDistance: 200
   arrivedDist: 100
 --- !u!114 &-6579382620608616288
@@ -323,8 +323,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d181d075cff82e74bb6fdbe2279eb3c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 500
-  currentHealth: 500
+  maxHealth: 600
+  currentHealth: 600
   DeathExplosion: {fileID: 7170199903285590178, guid: 26af278b6a7a2984685a10043378302b, type: 3}
   alive: 1
   explosionSize: 70
@@ -382,7 +382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shipBoid: {fileID: 5655017480225913833}
   feelerLength: 150
-  rayAngle: 45
+  rayAngle: 60
   strengthMultiplier: 2
 --- !u!114 &6355064326642364526
 MonoBehaviour:
@@ -692,7 +692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.3
+      value: -4.3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 754a44094856f524ca0b456d7d61330b, type: 3}
       propertyPath: m_LocalRotation.w

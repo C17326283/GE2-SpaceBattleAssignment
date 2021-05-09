@@ -566,7 +566,7 @@ MonoBehaviour:
   scripts:
   - {fileID: 4900000, guid: 49daa5c60e4c7b144a9afe7484390d24, type: 3}
   autoReset: 1
-  tickOn: 0
+  tickOn: 2
   sourceInfos:
   - isFoldout: 1
     breakPoints: 
@@ -587,8 +587,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shipBoid: {fileID: 0}
   path: {fileID: 0}
-  waypointDistance: 250
-  arriveSlowDist: 500
+  waypointDistance: 200
+  arriveSlowDist: 300
   spawnedPathName: ReaperPath
 --- !u!54 &675041803783481498
 Rigidbody:
@@ -641,10 +641,10 @@ MonoBehaviour:
   forceToApply: {x: 0, y: 0, z: 0}
   rb: {fileID: 675041803783481498}
   moveSpeed: 400
-  maxMag: 160
+  maxMag: 180
   bankingAmount: 0.06
-  turnSpeed: 1
-  mass: 5
+  turnSpeed: 0.2
+  mass: 10
 --- !u!114 &7887602638127581548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -714,7 +714,7 @@ CapsuleCollider:
   m_Radius: 100.29
   m_Height: 600.83
   m_Direction: 2
-  m_Center: {x: 0, y: 37.1, z: -193.12}
+  m_Center: {x: 0, y: 3.8, z: -70}
 --- !u!114 &5732610561213596182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,11 +776,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 98d63715a3ed5684bab5008932477666, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 98d63715a3ed5684bab5008932477666, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -28.99998
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 98d63715a3ed5684bab5008932477666, type: 3}
       propertyPath: m_LocalRotation.w

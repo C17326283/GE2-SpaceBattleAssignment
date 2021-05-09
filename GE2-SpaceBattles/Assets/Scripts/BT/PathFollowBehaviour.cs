@@ -27,6 +27,7 @@ public class PathFollowBehaviour : BaseShipBehaviour
     {
         if (path.IsLast())
         {
+            
             Task.current.Succeed();
         }
         else
@@ -61,9 +62,16 @@ public class PathFollowBehaviour : BaseShipBehaviour
     {
 //        print("get next checkpoint");
         path.AdvanceToNext();
-        
-        if(path.NextWaypoint()!=null)
+
+        if (path.NextWaypoint() != null)
+        {
+            if (path.IsLast())
+            {
+                GetComponent<Rigidbody>().drag *= 2;//increase drag for better stopping control to not overshoot
+                GetComponent<Rigidbody>().mass *= 2;//increase mass for better stopping control to not overshoot
+            }
             Task.current.Succeed();
+        }
         else
             Task.current.Fail();
     }

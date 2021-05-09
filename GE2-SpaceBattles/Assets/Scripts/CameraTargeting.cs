@@ -14,6 +14,7 @@ public class CameraTargeting : MonoBehaviour
     
     public Vector3[] cameraOffsets; //for having cam a certain distance away from a target
     public int curOffsetIndex = 0;
+    public float magDecreaseMult = 3f;
     
     // Update is called once per frame
     void LateUpdate()
@@ -21,7 +22,7 @@ public class CameraTargeting : MonoBehaviour
         float magIncrease = 0;
         if (gameObjectToLookAt && gameObjectToLookAt.GetComponent<Rigidbody>())
         {
-            magIncrease = gameObjectToLookAt.GetComponent<Rigidbody>().velocity.magnitude;
+            magIncrease = gameObjectToLookAt.GetComponent<Rigidbody>().velocity.magnitude/magDecreaseMult;
         }
             
             

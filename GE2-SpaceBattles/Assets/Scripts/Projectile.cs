@@ -58,7 +58,7 @@ public class Projectile : MonoBehaviour
             foreach (var tag in enemyTags)
             {
                 if (hit.transform.CompareTag(tag)) //dont hit self
-                    HitObj(hit.transform.gameObject, hit.transform.position);
+                    HitObj(hit.transform.gameObject, hit.point);
             }
         }
 
@@ -79,12 +79,12 @@ public class Projectile : MonoBehaviour
         
 //        print(transform.name+" hit "+hitGameObject.transform.name);
         GameObject explosion = GameObject.Instantiate(hitExplosion);
-        explosion.transform.position = this.transform.position;
+        explosion.transform.position = hitPos;
         explosion.transform.localScale = new Vector3(hitExplosionSize,hitExplosionSize,hitExplosionSize);
         GetComponentInChildren<MeshRenderer>().enabled = false;
         
-        //try get a life script reference
-        Life otherLife = CheckHitParentLifeRecursive(hitGameObject.transform.gameObject);
+        Life otherLife = hitGameObject.transform.gameObject.GetComponent<Life>();
+        //Life otherLife = CheckHitParentLifeRecursive(hitGameObject.transform.gameObject);
             
         if (otherLife!=null)
         {
@@ -92,6 +92,7 @@ public class Projectile : MonoBehaviour
         }
     }
 
+    //try get a life script reference, this is deprecated but may be useful again
     public Life CheckHitParentLifeRecursive(GameObject objToCheck)
     {
         if (objToCheck.GetComponent<Life>() != null)

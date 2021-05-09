@@ -58,7 +58,7 @@ public class ObstacleAvoidBehaviour : BaseShipBehaviour
             
             shipBoid.AddToForce(forceToAddDirection*shipBoid.moveSpeed,strengthMultiplier);
 
-            //print("avoiding object"+forceToAddDirection*shipBoid.moveSpeed);
+            //print("avoiding object"+forceToAddDirection*shipBoid.moveSpeed+hit.transform.name);
         }
         
     }

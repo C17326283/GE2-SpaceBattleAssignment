@@ -81,7 +81,7 @@ MonoBehaviour:
   maxDestroyTime: 2000000
   rb: {fileID: 0}
   lastPos: {x: 0, y: 0, z: 0}
-  hitExplosion: {fileID: 7170199903285590178, guid: 26af278b6a7a2984685a10043378302b, type: 3}
+  hitExplosion: {fileID: 690787040354296551}
   hitExplosionSize: 10
   startForce: 20
   parentShipTag: Alliance
