@@ -8,9 +8,10 @@
 * A recreation of a mass effect scene in unity with autonomous agents. The ships are controlled with behaviour trees and some of them were modelled by myself in blender. The scene runs entired unassisted and the sequence manager will handle the sequences. I wrote all the code myself.
 
 # Videos:
+Video Demo:
+[![Source](https://img.youtube.com/vi/o8OacDj2oX8/0.jpg)](https://youtu.be/o8OacDj2oX8)
 Source scene: Mass Effect 1 - Battle for the citadel - Paragon
 [![Source](https://img.youtube.com/vi/bNnd6oUEQ2I/0.jpg)](https://youtu.be/bNnd6oUEQ2I)
-[![Source](https://img.youtube.com/vi/o8OacDj2oX8/0.jpg)](https://youtu.be/o8OacDj2oX8)
 
 # Most proud of
 Im most proud of the sequencing managers that is easy to add to and can seemlessly trigger sequences and camera functions. Im also proud of the ships ai and behaviours which seemlessy handle what the ship is doing at any time and moves it around naturally.
