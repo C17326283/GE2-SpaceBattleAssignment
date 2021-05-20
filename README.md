@@ -20,6 +20,34 @@ Source scene: Mass Effect 1 - Battle for the citadel - Paragon
 Im most proud of the sequencing managers that is easy to add to and can seemlessly trigger sequences and camera functions. Im also proud of the ships ai and behaviours which seemlessy handle what the ship is doing at any time and moves it around naturally.
 
 
+# Events summary
+1. Reapers arrive and camera follows them as they move toward citadel
+2. Spawn Geth after reaper
+3. Reaper Side view
+4. Destiny ascension tries to escape
+5. Citadel Starts closing
+6. Reaper ramming ships
+7. Reaper inside citadel
+8. Watch battle outside citadel
+9. Reaper attaching to spire
+10. Focus on teleporter Arrives
+11. Normandy Arrives
+12. Alliance Arrives
+13. Watch geth around alliance blow up
+14. Alliance flies in through explosions
+15. Ascension starts leaving
+16. Citadel opens and ships move in
+17. Sovereign fights back as its getting attacked while attached
+18. Sovereign shields down
+19. Everyone starts firing
+20. Normandy dips for big attack
+21. Normandy shoots big rocket
+22. Sovereign explodes
+23. End speach as ships fly away
+24. End
+
+
+
 # How it works
 
 ## Sequence
@@ -91,6 +119,43 @@ Im most proud of the sequencing managers that is easy to add to and can seemless
 * It runs autonomously and will close when it ends
 * Press escape to close it at any time
 
+# Classes
+* AudioManager: Made myself with inspiration for fading audio from https://gamedevbeginner.com/how-to-fade-audio-in-unity-i-tested-every-method-this-ones-the-best/
+* AudioVariance: Wrote Enirely Myself
+* CameraTargeting: Wrote Enirely Myself
+* DebrisSpawner: Wrote Enirely Myself
+* DestroyAfterTime: Wrote Enirely Myself
+* GameManager: Wrote Enirely Myself
+* GunTargeting: Wrote Enirely Myself
+* Laser: Wrote Enirely Myself
+* Life: Wrote Enirely Myself
+* PointManager: Wrote Enirely Myself
+* Projectile: Wrote Enirely Myself
+* Ramming: Wrote Enirely Myself
+* ReaperWeaponManager: Wrote Enirely Myself
+* Rocket: Wrote Enirely Myself
+* Rotator: Wrote Enirely Myself
+* SeekingRocket: Wrote Enirely Myself
+* SequenceManager: Wrote Enirely Myself
+* ShipBoid: Wrote myself but partially adapted from course code
+* Shooting: Wrote Enirely Myself
+* SpawnManager: Wrote Enirely Myself
+* TeleportSpawner: Wrote Enirely Myself
+* TriggerSequence: Wrote Enirely Myself
+* BaseShipBehaviour: Wrote Enirely Myself
+* CombatBehaviour: Wrote Enirely Myself
+* HarmonicSwayBehaviour: Wrote Enirely Myself
+* ObstacleAvoidBehaviour: Wrote Enirely Myself
+* OffsetPursueBehaviour: Wrote Enirely Myself
+* PathFollowBehaviour: Wrote Enirely Myself
+* CreatePandaScriptMenu: From PandaBT asset
+* PandaBehaviourEditor: From PandaBT asset
+* PandaBehaviour: From PandaBT asset
+**BT trees**
+* FighterShip: Wrote Enirely Myself
+* PathingShip: Wrote Enirely Myself
+
+
 # Storyboard
 ![Storyboard](/images/Storyboard1.png)
 ![Storyboard](/images/Storyboard2.png)
@@ -101,12 +166,16 @@ Im most proud of the sequencing managers that is easy to add to and can seemless
 ![Storyboard](/images/Storyboard7.png)
 
 # Models
-Some models were downloaded had to be heavilty edited by editing/adding verticies, changed the flat faces to smooth, splitting the mesh into multiple objects for animations and UV unwrapping.
-* Models made by me: Normandy, Citadel, Alliance ships, Rockets & Debris.
+Some models were made by me in blender and some were downloaded but had to be heavilty edited by editing/adding verticies, changed the flat faces to smooth, splitting the mesh into multiple objects for animations and UV unwrapping.
+* Models made by me: Normandy, Citadel, Alliance frigates, Rockets & Debris.
 * Downloaded/edited models: https://www.thingiverse.com/thing:702830/comments, https://www.thingiverse.com/thing:877304, https://www.thingiverse.com/thing:878702/files, https://www.thingiverse.com/thing:81436
-![Storyboard](/images/Models1.png)
-![Storyboard](/images/Models2.png)
-![Storyboard](/images/Models3.png)
+
+Normandy, Geth, Reaper
+![Models](/images/Models1.png)
+Citadel open, Citadel closed, Teleport relay
+![Models](/images/Models2.png)
+Destiny Ascension(Alliance Flagship), Alliance Frigate
+![Models](/images/Models3.png)
 
 
 
